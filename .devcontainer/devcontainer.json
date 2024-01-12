@@ -1,41 +1,49 @@
-// See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-	"dockerFile": "Dockerfile",
+	"name": "agvcore",
+	"dockerFile": "../Dockerfile",
+    
 	"build": {
-		"args": {
-			"WORKSPACE": "${containerWorkspaceFolder}"
-		}
+	    "args": {"USE_RVIZ": "1"}
 	},
-	"remoteUser": "ros",
+    
 	"runArgs": [
-		"--network=host",
-		"--cap-add=SYS_PTRACE",
-		"--security-opt=seccomp:unconfined",
-		"--security-opt=apparmor:unconfined",
-		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
-		"--gpus=all"
-	],
-	"containerEnv": {
-		"DISPLAY": "${localEnv:DISPLAY}",
-		"LIBGL_ALWAYS_SOFTWARE": "1" // Needed for software rendering of opengl
-	},
-	// Set *default* container specific settings.json values on container create.
+	  "--device=/dev/ttyUSB0",
+	  "--privileged",
+	  "--network=host",
+	  // "--cap", crashing?
+	  "--security-opt=seccomp:unconfined",
+	  "--security-opt=apparmor:unconfined",
+	  "--volume=/dev:/dev",
+	  "--volume=/tmp/.X11-unix:/tmp/.X11-unix"
+	//   "--runtime=nvidia" // TODO check if viable
+	], 
+    
+	// used for GUI programs like RVIZ / QT
+	"containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
+    
 	"customizations": {
-		"vscode": {
-			"extensions": [
-				"althack.ament-task-provider",
-				"DotJoshJohnson.xml",
-				"ms-azuretools.vscode-docker",
-				"ms-python.python",
-				"ms-vscode.cpptools",
-				"redhat.vscode-yaml",
-				"smilerobotics.urdf",
-				"streetsidesoftware.code-spell-checker",
-				"twxs.cmake",
-				"yzhang.markdown-all-in-one",
-				"zachflower.uncrustify",
-				"betwo.b2-catkin-tools"
-			]
+	    "vscode": {
+		"extensions": [
+		    "dotjoshjohnson.xml",
+		    "ms-azuretools.vscode-docker",
+		    "ms-python.python",
+		    "ms-iot.vscode-ros",
+		    "ms-vscode.cpptools",
+		    "redhat.vscode-yaml",
+		    "smilerobotics.urdf",
+		    "streetsidesoftware.code-spell-checker",
+		    "twxs.cmake",
+		    "yzhang.markdown-all-in-one",
+		    "augustocdias.tasks-shell-input",
+		    "eamodio.gitlens"
+		],
+		"settings":{
+		    "terminal.integrated.profiles.linux": {
+			"bash": {
+			    "path": "zsh"
+			}
+		    }
 		}
+	    }
 	}
-}
+    }

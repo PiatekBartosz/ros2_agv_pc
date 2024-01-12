@@ -2,3 +2,4 @@ build/*
 install/*
 log/*
 site/*
+5.12.*/*
