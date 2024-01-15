@@ -1,4 +1,4 @@
-ARG ROS_DISTRO=foxy
+ARG ROS_DISTRO=humble
 
 # FROM luxonis/depthai-ros:v2.8.1-humble 
 

@@ -16,6 +16,7 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "std_msgs/msg/int32.hpp"
 using std::placeholders::_1;
 
 class MinimalSubscriber : public rclcpp::Node
