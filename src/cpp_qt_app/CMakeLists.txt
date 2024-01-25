@@ -9,10 +9,12 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(Qt5 COMPONENTS Core Quick REQUIRED)
+find_package(Qt5 COMPONENTS Core Quick Widgets REQUIRED)
 
 set(PROJECT_SOURCES
   src/main.cpp
+  src/main.qml
+  src/qml.qrc
   )
 
 if(BUILD_TESTING)
@@ -37,6 +39,7 @@ ament_target_dependencies(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME} 
   Qt5::Core
   Qt5::Quick
+  Qt5::Widgets
   )
 
 install(TARGETS ${PROJECT_NAME}
