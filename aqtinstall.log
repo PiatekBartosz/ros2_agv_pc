@@ -1569,3 +1569,402 @@
 2024-01-25 15:03:25,246 - aqt.updater - INFO - updater 140031691191552 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.15.2/gcc_64/lib/libQt5Nfc.prl
 2024-01-25 15:03:25,247 - aqt.main - INFO - installer 140031691191552 Finished installation
 2024-01-25 15:03:25,247 - aqt.main - INFO - installer 140031691191552 Time elapsed: 8.60865448 second
+2024-01-25 19:21:54,724 - aqt.main - INFO - installer 139816914822400 aqtinstall(aqt) v3.1.11 on Python 3.9.12 [CPython GCC 7.5.0]
+2024-01-25 19:21:54,725 - aqt.main - ERROR - installer 139816914822400 Invalid version or SimpleSpec: 'gcc_64'
+See documentation at: https://python-semanticversion.readthedocs.io/en/latest/reference.html#semantic_version.SimpleSpec
+Examples:
+* "*": matches everything
+* "5": matches every version with major=5
+* "5.6": matches every version beginning with 5.6
+* "5.*.3": matches versions with major=5 and patch=3
+2024-01-25 19:22:11,590 - aqt.main - INFO - installer 139806646879488 aqtinstall(aqt) v3.1.11 on Python 3.9.12 [CPython GCC 7.5.0]
+2024-01-25 19:22:11,590 - aqt.helper - DEBUG - helper 139806646879488 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/Updates.xml.sha256
+2024-01-25 19:22:12,168 - aqt.helper - DEBUG - helper 139631084930304 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtbase-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:12,168 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtx11extras-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:12,173 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtmultimedia-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:12,177 - aqt.helper - DEBUG - helper 140328726418688 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtgraphicaleffects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:12,317 - aqt.helper - INFO - helper 139814106051840 Downloading qtx11extras...
+2024-01-25 19:22:12,317 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtx11extras-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,321 - aqt.helper - INFO - helper 140103056729344 Downloading qtmultimedia...
+2024-01-25 19:22:12,321 - aqt.helper - INFO - helper 140328726418688 Downloading qtgraphicaleffects...
+2024-01-25 19:22:12,321 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtmultimedia-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,321 - aqt.installer - DEBUG - installer 140328726418688 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtgraphicaleffects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,326 - aqt.helper - INFO - helper 139631084930304 Downloading qtbase...
+2024-01-25 19:22:12,326 - aqt.installer - DEBUG - installer 139631084930304 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtbase-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,465 - aqt.helper - DEBUG - helper 140328726418688 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtgraphicaleffects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,465 - aqt.helper - INFO - helper 140328726418688 Redirected: ftp.fau.de
+2024-01-25 19:22:12,471 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtx11extras-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,471 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:12,471 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtmultimedia-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,471 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:12,476 - aqt.helper - DEBUG - helper 139631084930304 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtbase-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,476 - aqt.helper - INFO - helper 139631084930304 Redirected: ftp.fau.de
+2024-01-25 19:22:12,696 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtx11extras-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.52902654
+2024-01-25 19:22:12,704 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebchannel-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:12,799 - aqt.installer - INFO - installer 140328726418688 Finished installation of qtgraphicaleffects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.62339519
+2024-01-25 19:22:12,806 - aqt.helper - DEBUG - helper 140328726418688 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtsvg-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:12,854 - aqt.helper - INFO - helper 139814106051840 Downloading qtwebchannel...
+2024-01-25 19:22:12,854 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebchannel-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:12,961 - aqt.helper - INFO - helper 140328726418688 Downloading qtsvg...
+2024-01-25 19:22:12,961 - aqt.installer - DEBUG - installer 140328726418688 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtsvg-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,009 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebchannel-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,009 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:13,020 - aqt.installer - INFO - installer 140103056729344 Finished installation of qtmultimedia-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.84895134
+2024-01-25 19:22:13,032 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qttranslations-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:13,140 - aqt.helper - DEBUG - helper 140328726418688 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtsvg-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,140 - aqt.helper - INFO - helper 140328726418688 Redirected: ftp.fau.de
+2024-01-25 19:22:13,206 - aqt.helper - INFO - helper 140103056729344 Downloading qttranslations...
+2024-01-25 19:22:13,206 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qttranslations-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,274 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtwebchannel-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.57242658
+2024-01-25 19:22:13,281 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtdeclarative-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:13,389 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qttranslations-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,390 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:13,447 - aqt.helper - INFO - helper 139814106051840 Downloading qtdeclarative...
+2024-01-25 19:22:13,447 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtdeclarative-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,533 - aqt.installer - INFO - installer 140328726418688 Finished installation of qtsvg-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.72883658
+2024-01-25 19:22:13,540 - aqt.helper - DEBUG - helper 140328726418688 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtimageformats-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:13,794 - aqt.helper - INFO - helper 140328726418688 Downloading qtimageformats...
+2024-01-25 19:22:13,794 - aqt.installer - DEBUG - installer 140328726418688 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtimageformats-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,795 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtdeclarative-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,795 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:13,939 - aqt.helper - DEBUG - helper 140328726418688 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtimageformats-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:13,939 - aqt.helper - INFO - helper 140328726418688 Redirected: ftp.fau.de
+2024-01-25 19:22:14,047 - aqt.installer - INFO - installer 140103056729344 Finished installation of qttranslations-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 1.01695958
+2024-01-25 19:22:14,058 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtxmlpatterns-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:14,198 - aqt.helper - INFO - helper 140103056729344 Downloading qtxmlpatterns...
+2024-01-25 19:22:14,199 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtxmlpatterns-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:14,357 - aqt.installer - INFO - installer 140328726418688 Finished installation of qtimageformats-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.81809925
+2024-01-25 19:22:14,365 - aqt.helper - DEBUG - helper 140328726418688 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qttools-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:14,380 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtxmlpatterns-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:14,380 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:14,517 - aqt.helper - INFO - helper 140328726418688 Downloading qttools...
+2024-01-25 19:22:14,517 - aqt.installer - DEBUG - installer 140328726418688 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qttools-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:14,678 - aqt.helper - DEBUG - helper 140328726418688 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qttools-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:14,678 - aqt.helper - INFO - helper 140328726418688 Redirected: ftp.fau.de
+2024-01-25 19:22:15,598 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtdeclarative-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 2.31823601
+2024-01-25 19:22:15,610 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebsockets-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:15,778 - aqt.helper - INFO - helper 139814106051840 Downloading qtwebsockets...
+2024-01-25 19:22:15,779 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebsockets-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:15,932 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebsockets-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:15,932 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:16,229 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtwebsockets-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.62105371
+2024-01-25 19:22:16,237 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtserialport-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:16,398 - aqt.helper - INFO - helper 139814106051840 Downloading qtserialport...
+2024-01-25 19:22:16,398 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtserialport-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:16,549 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtserialport-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:16,549 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:16,781 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtserialport-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.54589775
+2024-01-25 19:22:16,788 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtlocation-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:16,930 - aqt.helper - INFO - helper 139814106051840 Downloading qtlocation...
+2024-01-25 19:22:16,930 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtlocation-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:17,074 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtlocation-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:17,074 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:17,109 - aqt.installer - INFO - installer 139631084930304 Finished installation of qtbase-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 4.94209445
+2024-01-25 19:22:17,120 - aqt.helper - DEBUG - helper 139631084930304 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtconnectivity-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:17,273 - aqt.helper - INFO - helper 139631084930304 Downloading qtconnectivity...
+2024-01-25 19:22:17,273 - aqt.installer - DEBUG - installer 139631084930304 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtconnectivity-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:17,426 - aqt.helper - DEBUG - helper 139631084930304 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtconnectivity-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:17,426 - aqt.helper - INFO - helper 139631084930304 Redirected: ftp.fau.de
+2024-01-25 19:22:17,812 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtlocation-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 1.02504026
+2024-01-25 19:22:17,822 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtquickcontrols-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:17,932 - aqt.installer - INFO - installer 139631084930304 Finished installation of qtconnectivity-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.81231006
+2024-01-25 19:22:17,939 - aqt.helper - DEBUG - helper 139631084930304 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qt3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:17,973 - aqt.helper - INFO - helper 139814106051840 Downloading qtquickcontrols...
+2024-01-25 19:22:17,973 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtquickcontrols-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:18,085 - aqt.helper - INFO - helper 139631084930304 Downloading qt3d...
+2024-01-25 19:22:18,085 - aqt.installer - DEBUG - installer 139631084930304 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qt3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:18,123 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtquickcontrols-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:18,123 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:18,148 - aqt.installer - INFO - installer 140103056729344 Finished installation of qtxmlpatterns-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 4.09216251
+2024-01-25 19:22:18,157 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtsensors-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:18,237 - aqt.helper - DEBUG - helper 139631084930304 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qt3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:18,238 - aqt.helper - INFO - helper 139631084930304 Redirected: ftp.fau.de
+2024-01-25 19:22:18,299 - aqt.helper - INFO - helper 140103056729344 Downloading qtsensors...
+2024-01-25 19:22:18,299 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtsensors-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:18,443 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtsensors-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:18,443 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:18,669 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtquickcontrols-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.84921593
+2024-01-25 19:22:18,681 - aqt.helper - DEBUG - helper 139814106051840 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtquickcontrols2-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:18,820 - aqt.installer - INFO - installer 140103056729344 Finished installation of qtsensors-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.66382684
+2024-01-25 19:22:18,831 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebview-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:18,854 - aqt.helper - INFO - helper 139814106051840 Downloading qtquickcontrols2...
+2024-01-25 19:22:18,854 - aqt.installer - DEBUG - installer 139814106051840 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtquickcontrols2-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,015 - aqt.helper - INFO - helper 140103056729344 Downloading qtwebview...
+2024-01-25 19:22:19,015 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebview-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,028 - aqt.helper - DEBUG - helper 139814106051840 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtquickcontrols2-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,028 - aqt.helper - INFO - helper 139814106051840 Redirected: ftp.fau.de
+2024-01-25 19:22:19,163 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwebview-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,163 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:19,173 - aqt.installer - INFO - installer 140328726418688 Finished installation of qttools-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 4.80979514
+2024-01-25 19:22:19,184 - aqt.helper - DEBUG - helper 140328726418688 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtscxml-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:19,332 - aqt.helper - INFO - helper 140328726418688 Downloading qtscxml...
+2024-01-25 19:22:19,332 - aqt.installer - DEBUG - installer 140328726418688 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtscxml-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,403 - aqt.installer - INFO - installer 140103056729344 Finished installation of qtwebview-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.57363016
+2024-01-25 19:22:19,418 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtserialbus-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:19,501 - aqt.helper - DEBUG - helper 140328726418688 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtscxml-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,501 - aqt.helper - INFO - helper 140328726418688 Redirected: ftp.fau.de
+2024-01-25 19:22:19,620 - aqt.helper - INFO - helper 140103056729344 Downloading qtserialbus...
+2024-01-25 19:22:19,621 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtserialbus-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,752 - aqt.installer - INFO - installer 139814106051840 Finished installation of qtquickcontrols2-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 1.07204754
+2024-01-25 19:22:19,768 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtserialbus-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:19,768 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:19,981 - aqt.helper - DEBUG - helper 140160895476992 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtspeech-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:20,048 - aqt.installer - INFO - installer 140328726418688 Finished installation of qtscxml-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.86553215
+2024-01-25 19:22:20,056 - aqt.helper - DEBUG - helper 140328726418688 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtgamepad-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:20,122 - aqt.helper - INFO - helper 140160895476992 Downloading qtspeech...
+2024-01-25 19:22:20,123 - aqt.installer - DEBUG - installer 140160895476992 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtspeech-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,201 - aqt.helper - INFO - helper 140328726418688 Downloading qtgamepad...
+2024-01-25 19:22:20,202 - aqt.installer - DEBUG - installer 140328726418688 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtgamepad-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,238 - aqt.installer - INFO - installer 140103056729344 Finished installation of qtserialbus-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.82242441
+2024-01-25 19:22:20,253 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtremoteobjects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:20,268 - aqt.helper - DEBUG - helper 140160895476992 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtspeech-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,268 - aqt.helper - INFO - helper 140160895476992 Redirected: ftp.fau.de
+2024-01-25 19:22:20,342 - aqt.helper - DEBUG - helper 140328726418688 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtgamepad-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,342 - aqt.helper - INFO - helper 140328726418688 Redirected: ftp.fau.de
+2024-01-25 19:22:20,396 - aqt.helper - INFO - helper 140103056729344 Downloading qtremoteobjects...
+2024-01-25 19:22:20,396 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtremoteobjects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,507 - aqt.installer - INFO - installer 140160895476992 Finished installation of qtspeech-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.52705827
+2024-01-25 19:22:20,513 - aqt.helper - DEBUG - helper 140160895476992 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwayland-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:20,548 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtremoteobjects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,548 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:20,619 - aqt.installer - INFO - installer 140328726418688 Finished installation of qtgamepad-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.56359629
+2024-01-25 19:22:20,654 - aqt.helper - INFO - helper 140160895476992 Downloading qtwayland...
+2024-01-25 19:22:20,654 - aqt.installer - DEBUG - installer 140160895476992 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwayland-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,669 - aqt.installer - INFO - installer 139631084930304 Finished installation of qt3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 2.73085652
+2024-01-25 19:22:20,681 - aqt.helper - DEBUG - helper 139631084930304 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtcanvas3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z.sha256
+2024-01-25 19:22:20,804 - aqt.helper - DEBUG - helper 140160895476992 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtwayland-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,804 - aqt.helper - INFO - helper 140160895476992 Redirected: ftp.fau.de
+2024-01-25 19:22:20,825 - aqt.helper - INFO - helper 139631084930304 Downloading qtcanvas3d...
+2024-01-25 19:22:20,825 - aqt.installer - DEBUG - installer 139631084930304 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtcanvas3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,972 - aqt.helper - DEBUG - helper 139631084930304 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858qtcanvas3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z
+2024-01-25 19:22:20,972 - aqt.helper - INFO - helper 139631084930304 Redirected: ftp.fau.de
+2024-01-25 19:22:21,135 - aqt.installer - INFO - installer 140103056729344 Finished installation of qtremoteobjects-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.88316061
+2024-01-25 19:22:21,141 - aqt.helper - DEBUG - helper 140103056729344 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858icu-linux-Rhel7.2-x64.7z.sha256
+2024-01-25 19:22:21,298 - aqt.helper - INFO - helper 140103056729344 Downloading icu...
+2024-01-25 19:22:21,298 - aqt.installer - DEBUG - installer 140103056729344 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858icu-linux-Rhel7.2-x64.7z
+2024-01-25 19:22:21,348 - aqt.installer - INFO - installer 140160895476992 Finished installation of qtwayland-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.83574472
+2024-01-25 19:22:21,411 - aqt.installer - INFO - installer 139631084930304 Finished installation of qtcanvas3d-Linux-RHEL_7_4-GCC-Linux-RHEL_7_4-X86_64.7z in 0.73081498
+2024-01-25 19:22:21,451 - aqt.helper - DEBUG - helper 140103056729344 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5122/qt.qt5.5122.gcc_64/5.12.2-0-201903121858icu-linux-Rhel7.2-x64.7z
+2024-01-25 19:22:21,451 - aqt.helper - INFO - helper 140103056729344 Redirected: ftp.fau.de
+2024-01-25 19:22:22,415 - aqt.installer - INFO - installer 140103056729344 Finished installation of icu-linux-Rhel7.2-x64.7z in 1.27477284
+2024-01-25 19:22:22,670 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/bin/qmake
+2024-01-25 19:22:23,620 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5WebView.pc
+2024-01-25 19:22:23,639 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DQuick.pc
+2024-01-25 19:22:23,639 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5QuickWidgets.pc
+2024-01-25 19:22:23,639 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5UiTools.pc
+2024-01-25 19:22:23,640 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5X11Extras.pc
+2024-01-25 19:22:23,651 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5MultimediaWidgets.pc
+2024-01-25 19:22:23,651 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DExtras.pc
+2024-01-25 19:22:23,651 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Gui.pc
+2024-01-25 19:22:23,652 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5RemoteObjects.pc
+2024-01-25 19:22:23,652 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Bluetooth.pc
+2024-01-25 19:22:23,672 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DCore.pc
+2024-01-25 19:22:23,672 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DQuickExtras.pc
+2024-01-25 19:22:23,673 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DLogic.pc
+2024-01-25 19:22:23,673 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Qml.pc
+2024-01-25 19:22:23,673 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Test.pc
+2024-01-25 19:22:23,673 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Designer.pc
+2024-01-25 19:22:23,673 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Core.pc
+2024-01-25 19:22:23,677 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5WebChannel.pc
+2024-01-25 19:22:23,677 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Help.pc
+2024-01-25 19:22:23,677 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Sensors.pc
+2024-01-25 19:22:23,677 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5WebSockets.pc
+2024-01-25 19:22:23,678 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DQuickRender.pc
+2024-01-25 19:22:23,729 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5SerialBus.pc
+2024-01-25 19:22:23,730 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5DBus.pc
+2024-01-25 19:22:23,730 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Concurrent.pc
+2024-01-25 19:22:23,774 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5SerialPort.pc
+2024-01-25 19:22:23,774 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Scxml.pc
+2024-01-25 19:22:23,774 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5PositioningQuick.pc
+2024-01-25 19:22:23,774 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5TextToSpeech.pc
+2024-01-25 19:22:23,774 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Multimedia.pc
+2024-01-25 19:22:23,775 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5OpenGLExtensions.pc
+2024-01-25 19:22:23,775 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Gamepad.pc
+2024-01-25 19:22:23,775 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DRender.pc
+2024-01-25 19:22:23,775 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5QuickControls2.pc
+2024-01-25 19:22:23,788 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Network.pc
+2024-01-25 19:22:23,788 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DQuickInput.pc
+2024-01-25 19:22:23,789 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Location.pc
+2024-01-25 19:22:23,789 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5WaylandCompositor.pc
+2024-01-25 19:22:23,852 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Positioning.pc
+2024-01-25 19:22:23,852 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Xml.pc
+2024-01-25 19:22:23,852 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5OpenGL.pc
+2024-01-25 19:22:23,852 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DInput.pc
+2024-01-25 19:22:23,853 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Quick.pc
+2024-01-25 19:22:23,853 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Svg.pc
+2024-01-25 19:22:23,853 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5QuickTest.pc
+2024-01-25 19:22:23,853 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Widgets.pc
+2024-01-25 19:22:23,853 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5WaylandClient.pc
+2024-01-25 19:22:23,867 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Nfc.pc
+2024-01-25 19:22:23,868 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5Sql.pc
+2024-01-25 19:22:23,868 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5PrintSupport.pc
+2024-01-25 19:22:23,868 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DQuickScene2D.pc
+2024-01-25 19:22:23,924 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DAnimation.pc
+2024-01-25 19:22:23,924 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt53DQuickAnimation.pc
+2024-01-25 19:22:23,924 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/pkgconfig/Qt5XmlPatterns.pc
+2024-01-25 19:22:23,925 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Bluetooth.la
+2024-01-25 19:22:23,950 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Multimedia.la
+2024-01-25 19:22:24,015 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WebView.la
+2024-01-25 19:22:24,101 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5OpenGL.la
+2024-01-25 19:22:24,102 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5FbSupport.la
+2024-01-25 19:22:24,175 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Svg.la
+2024-01-25 19:22:24,232 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5ThemeSupport.la
+2024-01-25 19:22:24,424 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WaylandClient.la
+2024-01-25 19:22:24,541 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickParticles.la
+2024-01-25 19:22:24,673 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5LinuxAccessibilitySupport.la
+2024-01-25 19:22:24,773 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DRender.la
+2024-01-25 19:22:24,774 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PlatformCompositorSupport.la
+2024-01-25 19:22:24,778 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PrintSupport.la
+2024-01-25 19:22:24,868 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Gui.la
+2024-01-25 19:22:24,871 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickShapes.la
+2024-01-25 19:22:24,873 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickScene2D.la
+2024-01-25 19:22:24,879 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5UiTools.la
+2024-01-25 19:22:24,880 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Sensors.la
+2024-01-25 19:22:24,882 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DAnimation.la
+2024-01-25 19:22:24,883 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickTest.la
+2024-01-25 19:22:24,884 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WebSockets.la
+2024-01-25 19:22:24,886 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Location.la
+2024-01-25 19:22:24,888 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickAnimation.la
+2024-01-25 19:22:24,889 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5RemoteObjects.la
+2024-01-25 19:22:24,892 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Designer.la
+2024-01-25 19:22:24,894 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickInput.la
+2024-01-25 19:22:24,896 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EglSupport.la
+2024-01-25 19:22:24,898 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Positioning.la
+2024-01-25 19:22:24,899 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Concurrent.la
+2024-01-25 19:22:24,901 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EventDispatcherSupport.la
+2024-01-25 19:22:24,904 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Qml.la
+2024-01-25 19:22:24,910 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5MultimediaGstTools.la
+2024-01-25 19:22:24,915 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5DesignerComponents.la
+2024-01-25 19:22:24,918 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WaylandCompositor.la
+2024-01-25 19:22:24,920 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Gamepad.la
+2024-01-25 19:22:24,921 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5OpenGLExtensions.la
+2024-01-25 19:22:24,923 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickWidgets.la
+2024-01-25 19:22:24,924 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EglFsKmsSupport.la
+2024-01-25 19:22:24,926 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5AccessibilitySupport.la
+2024-01-25 19:22:24,927 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DInput.la
+2024-01-25 19:22:24,929 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PacketProtocol.la
+2024-01-25 19:22:24,930 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Network.la
+2024-01-25 19:22:24,932 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DExtras.la
+2024-01-25 19:22:24,933 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5InputSupport.la
+2024-01-25 19:22:24,935 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Help.la
+2024-01-25 19:22:24,936 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5FontDatabaseSupport.la
+2024-01-25 19:22:24,938 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Nfc.la
+2024-01-25 19:22:24,939 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Widgets.la
+2024-01-25 19:22:24,941 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickControls2.la
+2024-01-25 19:22:24,941 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DLogic.la
+2024-01-25 19:22:24,941 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Test.la
+2024-01-25 19:22:25,035 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EglFSDeviceIntegration.la
+2024-01-25 19:22:25,253 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuick.la
+2024-01-25 19:22:25,395 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WebChannel.la
+2024-01-25 19:22:25,538 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickExtras.la
+2024-01-25 19:22:25,677 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5TextToSpeech.la
+2024-01-25 19:22:25,818 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickRender.la
+2024-01-25 19:22:25,972 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Scxml.la
+2024-01-25 19:22:26,017 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QmlDebug.la
+2024-01-25 19:22:26,018 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5ServiceSupport.la
+2024-01-25 19:22:26,018 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Xml.la
+2024-01-25 19:22:26,019 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickTemplates2.la
+2024-01-25 19:22:26,019 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PositioningQuick.la
+2024-01-25 19:22:26,020 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Bootstrap.la
+2024-01-25 19:22:26,020 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5X11Extras.la
+2024-01-25 19:22:26,021 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5DBus.la
+2024-01-25 19:22:26,021 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5XcbQpa.la
+2024-01-25 19:22:26,022 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EdidSupport.la
+2024-01-25 19:22:26,022 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5GlxSupport.la
+2024-01-25 19:22:26,023 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5MultimediaQuick.la
+2024-01-25 19:22:26,023 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5KmsSupport.la
+2024-01-25 19:22:26,024 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5MultimediaWidgets.la
+2024-01-25 19:22:26,024 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DCore.la
+2024-01-25 19:22:26,025 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5DeviceDiscoverySupport.la
+2024-01-25 19:22:26,026 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5SerialBus.la
+2024-01-25 19:22:26,026 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Core.la
+2024-01-25 19:22:26,027 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Sql.la
+2024-01-25 19:22:26,027 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Quick.la
+2024-01-25 19:22:26,028 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5SerialPort.la
+2024-01-25 19:22:26,028 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QmlDevTools.la
+2024-01-25 19:22:26,029 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5XmlPatterns.la
+2024-01-25 19:22:26,030 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QmlDevTools.prl
+2024-01-25 19:22:26,030 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Bootstrap.prl
+2024-01-25 19:22:26,030 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5DesignerComponents.prl
+2024-01-25 19:22:26,030 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5MultimediaGstTools.prl
+2024-01-25 19:22:26,030 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PacketProtocol.prl
+2024-01-25 19:22:26,031 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickRender.prl
+2024-01-25 19:22:26,031 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DInput.prl
+2024-01-25 19:22:26,031 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Svg.prl
+2024-01-25 19:22:26,031 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5OpenGLExtensions.prl
+2024-01-25 19:22:26,031 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PlatformCompositorSupport.prl
+2024-01-25 19:22:26,032 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libqtlibpng.prl
+2024-01-25 19:22:26,032 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickAnimation.prl
+2024-01-25 19:22:26,032 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Designer.prl
+2024-01-25 19:22:26,032 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickTemplates2.prl
+2024-01-25 19:22:26,032 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickScene2D.prl
+2024-01-25 19:22:26,033 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickParticles.prl
+2024-01-25 19:22:26,033 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Gamepad.prl
+2024-01-25 19:22:26,033 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5FbSupport.prl
+2024-01-25 19:22:26,033 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Widgets.prl
+2024-01-25 19:22:26,033 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5XmlPatterns.prl
+2024-01-25 19:22:26,033 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuick.prl
+2024-01-25 19:22:26,034 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5KmsSupport.prl
+2024-01-25 19:22:26,034 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DRender.prl
+2024-01-25 19:22:26,034 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EglFSDeviceIntegration.prl
+2024-01-25 19:22:26,034 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WebView.prl
+2024-01-25 19:22:26,034 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5MultimediaQuick.prl
+2024-01-25 19:22:26,035 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Xml.prl
+2024-01-25 19:22:26,035 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DAnimation.prl
+2024-01-25 19:22:26,035 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5X11Extras.prl
+2024-01-25 19:22:26,035 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DLogic.prl
+2024-01-25 19:22:26,035 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WebChannel.prl
+2024-01-25 19:22:26,036 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Scxml.prl
+2024-01-25 19:22:26,036 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WebSockets.prl
+2024-01-25 19:22:26,036 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Multimedia.prl
+2024-01-25 19:22:26,036 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EventDispatcherSupport.prl
+2024-01-25 19:22:26,036 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5SerialBus.prl
+2024-01-25 19:22:26,037 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Gui.prl
+2024-01-25 19:22:26,037 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5SerialPort.prl
+2024-01-25 19:22:26,037 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Location.prl
+2024-01-25 19:22:26,037 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickTest.prl
+2024-01-25 19:22:26,037 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WaylandClient.prl
+2024-01-25 19:22:26,038 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5ServiceSupport.prl
+2024-01-25 19:22:26,038 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Test.prl
+2024-01-25 19:22:26,038 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QmlDebug.prl
+2024-01-25 19:22:26,038 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Sql.prl
+2024-01-25 19:22:26,038 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5XcbQpa.prl
+2024-01-25 19:22:26,039 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickWidgets.prl
+2024-01-25 19:22:26,039 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Sensors.prl
+2024-01-25 19:22:26,039 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5MultimediaWidgets.prl
+2024-01-25 19:22:26,039 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5UiTools.prl
+2024-01-25 19:22:26,039 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EglSupport.prl
+2024-01-25 19:22:26,039 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Help.prl
+2024-01-25 19:22:26,040 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Positioning.prl
+2024-01-25 19:22:26,040 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5TextToSpeech.prl
+2024-01-25 19:22:26,040 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EdidSupport.prl
+2024-01-25 19:22:26,040 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Bluetooth.prl
+2024-01-25 19:22:26,040 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PositioningQuick.prl
+2024-01-25 19:22:26,041 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DCore.prl
+2024-01-25 19:22:26,041 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickControls2.prl
+2024-01-25 19:22:26,041 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5GlxSupport.prl
+2024-01-25 19:22:26,041 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Core.prl
+2024-01-25 19:22:26,041 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5OpenGL.prl
+2024-01-25 19:22:26,042 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DExtras.prl
+2024-01-25 19:22:26,042 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickExtras.prl
+2024-01-25 19:22:26,042 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5DBus.prl
+2024-01-25 19:22:26,042 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5InputSupport.prl
+2024-01-25 19:22:26,042 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Network.prl
+2024-01-25 19:22:26,043 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5AccessibilitySupport.prl
+2024-01-25 19:22:26,043 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5WaylandCompositor.prl
+2024-01-25 19:22:26,043 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5RemoteObjects.prl
+2024-01-25 19:22:26,043 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Quick.prl
+2024-01-25 19:22:26,043 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5ThemeSupport.prl
+2024-01-25 19:22:26,044 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5EglFsKmsSupport.prl
+2024-01-25 19:22:26,044 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5LinuxAccessibilitySupport.prl
+2024-01-25 19:22:26,044 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5DeviceDiscoverySupport.prl
+2024-01-25 19:22:26,044 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Concurrent.prl
+2024-01-25 19:22:26,044 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Qml.prl
+2024-01-25 19:22:26,044 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5FontDatabaseSupport.prl
+2024-01-25 19:22:26,045 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5PrintSupport.prl
+2024-01-25 19:22:26,045 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt53DQuickInput.prl
+2024-01-25 19:22:26,045 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5QuickShapes.prl
+2024-01-25 19:22:26,045 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Nfc.prl
+2024-01-25 19:22:26,045 - aqt.updater - INFO - updater 139806646879488 Patching /home/bartek/AGV/ros2_foxy_gpu_new/5.12.2/gcc_64/lib/libQt5Core.so.5.12.2
+2024-01-25 19:22:26,062 - aqt.main - INFO - installer 139806646879488 Finished installation
+2024-01-25 19:22:26,062 - aqt.main - INFO - installer 139806646879488 Time elapsed: 14.47171051 second

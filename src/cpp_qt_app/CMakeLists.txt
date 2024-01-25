@@ -14,7 +14,7 @@ find_package(Qt5 COMPONENTS Core Quick Widgets REQUIRED)
 set(PROJECT_SOURCES
   src/main.cpp
   src/main.qml
-  src/qml.qrc
+  "src/qml.qrc"
   )
 
 if(BUILD_TESTING)
@@ -29,7 +29,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} ${QT_RESOURCES})
 
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
