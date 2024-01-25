@@ -7,9 +7,13 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(Qt5 COMPONENTS Core Quick REQUIRED)
+
+set(PROJECT_SOURCES
+  src/main.cpp
+  )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -23,14 +27,17 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
 
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   std_msgs
   )
 
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} 
+  Qt5::Core
+  Qt5::Quick
+  )
 
 install(TARGETS ${PROJECT_NAME}
   DESTINATION lib/${PROJECT_NAME}
