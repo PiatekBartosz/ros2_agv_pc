@@ -1,16 +1,9 @@
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
+#include "mainwindow.h"
+#include <QApplication>
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling); // Enable High DPI scaling
-
-    QGuiApplication app(argc, argv);
-
-    QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml"))); // Load main.qml
-    if (engine.rootObjects().isEmpty())
-        return -1;
-
-    return app.exec();
+int main(int argc, char *argv[]) {
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }

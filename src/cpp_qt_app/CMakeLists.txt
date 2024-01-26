@@ -11,11 +11,11 @@ find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Qt5 COMPONENTS Core Quick Widgets REQUIRED)
 
-set(PROJECT_SOURCES
-  src/main.cpp
-  src/main.qml
-  "src/qml.qrc"
-  )
+# setup sources
+file(GLOB PRO_SOURCE_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  src/*.cpp)
+file(GLOB PRO_UI_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  ui/*.ui)
+file(GLOB PRO_INCLUDE_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  include/*.h *.hpp)
+file(GLOB PRO_RESOURCE_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  resource/*.qrc)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -29,7 +29,21 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} ${QT_RESOURCES})
+qt5_wrap_ui(QT_UI_HPP ${PRO_UI_DIR})
+qt5_wrap_cpp(QT_MOC_HPP ${PRO_INCLUDE_DIR})
+qt5_add_resources(QT_RESOUCE_HPP ${PRO_RESOURCE_DIR})
+include_directories(
+	include/
+	${CMAKE_CURRENT_BINARY_DIR}
+)
+add_executable(${PROJECT_NAME}
+    ${PRO_SOURCE_DIR}
+    ${PRO_INCLUDE_DIR}
+    ${PRO_UI_DIR}
+    ${QT_MOC_HPP}
+    ${QT_RESOUCE_HPP}
+  )
+
 
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
