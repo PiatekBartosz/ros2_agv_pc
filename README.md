@@ -1,135 +1,93 @@
-# VSCode ROS2 Workspace Template
+# ROS_AGV_PC
 
-This template will get you set up using ROS2 with VSCode as your IDE.
 
-See [how I develop with vscode and ros2](https://www.allisonthackston.com/articles/vscode_docker_ros2.html) for a more in-depth look on how to use this workspace.
 
-## Features
+## Getting started
 
-### Style
+To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-ROS2-approved formatters are included in the IDE.  
+Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
-* **c++** uncrustify; config from `ament_uncrustify`
-* **python** autopep8; vscode settings consistent with the [style guide](https://index.ros.org/doc/ros2/Contributing/Code-Style-Language-Versions/)
+## Add your files
 
-### Tasks
+- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-There are many pre-defined tasks, see [`.vscode/tasks.json`](.vscode/tasks.json) for a complete listing.  Feel free to adjust them to suit your needs.  
-
-Take a look at [how I develop using tasks](https://www.allisonthackston.com/articles/vscode_tasks.html) for an idea on how I use tasks in my development.
-
-### Debugging
-
-This template sets up debugging for python files and gdb for cpp programs.  See [`.vscode/launch.json`](.vscode/launch.json) for configuration details.
-
-### Continuous Integration
-
-The template also comes with basic continuous integration set up. See [`.github/workflows/ros.yaml`](/.github/workflows/ros.yaml).
-
-To remove a linter just delete it's name from this line:
-
-```yaml
-      matrix:
-          linter: [cppcheck, cpplint, uncrustify, lint_cmake, xmllint, flake8, pep257]
+```
+cd existing_repo
+git remote add origin https://gitlab.com/sknce/agv/ros_agv_pc.git
+git branch -M main
+git push -uf origin main
 ```
 
-## How to use this template
+## Integrate with your tools
 
-### Prerequisites
+- [ ] [Set up project integrations](https://gitlab.com/sknce/agv/ros_agv_pc/-/settings/integrations)
 
-You should already have Docker and VSCode with the remote containers plugin installed on your system.
-To make nvidia driver and opengl available in docker, follow the installation instructions for docker-nvidia. 
-They include the steps in docker and add the additional gpu layer. 
+## Collaborate with your team
 
-* [docker](https://docs.docker.com/engine/install/)
-* [docker-nvidia (includes docker install and additional installation for NVidia GPU accelerated hosts)](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
-* [vscode](https://code.visualstudio.com/)
-* [vscode remote containers plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-### Get the template
+## Test and Deploy
 
-Click on "use this template"
+Use the built-in continuous integration in GitLab.
 
-![template_use](https://user-images.githubusercontent.com/6098197/91331899-43f23b80-e780-11ea-92c8-b4665ce126f1.png)
+- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-### Create your repository
+***
 
-On the next dialog, name the repository you would like to start and decide if you want all of the branches, or just the latest LTS: foxy.
+# Editing this README
 
-![template_new](https://user-images.githubusercontent.com/6098197/91332035-713ee980-e780-11ea-81d3-13b170f568b0.png)
+When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-Github will then create a new repository with the contents of this one in your account.  It grabs the latest changes as "initial commit".
+## Suggestions for a good README
 
-### Clone your repo
+Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-Now you can clone your repo as normal
+## Name
+Choose a self-explaining name for your project.
 
-![template_download](https://user-images.githubusercontent.com/6098197/91332342-e4e0f680-e780-11ea-9525-49b0afa0e4bb.png)
+## Description
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-### Open it in vscode
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-Now that you've cloned your repo onto your computer, you can open it in VSCode (File->Open Folder). 
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-When you open it for the first time, you should see a little popup that asks you if you would like to open it in a container.  Say yes!
+## Installation
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-![template_vscode](https://user-images.githubusercontent.com/6098197/91332551-36898100-e781-11ea-9080-729964373719.png)
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-If you don't see the pop-up, click on the little green square in the bottom left corner, which should bring up the container dialog
+## Support
+Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-![template_vscode_bottom](https://user-images.githubusercontent.com/6098197/91332638-5d47b780-e781-11ea-9fb6-4d134dbfc464.png)
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-In the dialog, select "Remote Containers: Reopen in container"
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
 
-VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open a terminal inside VSCode (Terminal->New Terminal), you should see that your username has been changed to `ros`, and the bottom left green corner should say "Dev Container"
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-![template_container](https://user-images.githubusercontent.com/6098197/91332895-adbf1500-e781-11ea-8afc-7a22a5340d4a.png)
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
-### Update the template with your code
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
 
-1. Specify the repositories you want to include in your workspace in `src/ros2.repos` or delete `src/ros2.repos` and develop directly within the workspace.
-2. If you are using a `ros2.repos` file, import the contents `Terminal->Run Task..->import from workspace file`
-3. Install dependencies `Terminal->Run Task..->install dependencies`
-4. (optional) Adjust scripts to your liking.  These scripts are used both within tasks and CI.
-   1. `setup.sh` The setup commands for your code.  Default to import workspace and install dependencies.
-   2. `build.sh` The build commands for your code.  Default to `--merge-install` and `--symlink-install`
-   3. `test.sh` The test commands for your code.
-5. Develop!
+## License
+For open source projects, say how it is licensed.
 
-## Error handling for GPU acceleration
-
-
-#### Docker image cannot be built: 
-
-The dockerfile can be built but using devcontainer.json results in error messages like "docker container cannot connect to device [[gpu]]" means docker itself is installed, but not the above mentioned nvidia part. 
-
-Solution is, to follow the guide and the test with nvidia-smi as indicated here: 
-- [docker-nvidia(for GPU acceleration on Nvidia GPU hosts)](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
-
-
-### Programs in Docker cannot access GPU
-
-Error messages that show lacking GPU acceleration (in docker terminal) 
-```
-  $ sudo apt-get update   && sudo apt-get install -y -qq glmark2   && glmark2
-```
-results in: 
-```
-   libGL error: No matching fbConfigs or visuals found
-   libGL error: failed to load driver: swrast
-      X Error of failed request:  GLXBadContext
-   Major opcode of failed request:  151 (GLX)
-   Minor opcode of failed request:  6 (X_GLXIsDirect)
-   Serial number of failed request:  48
-   Current serial number in output stream:  47
-```
-
-Solution is, to follow the guide and the test with nvidia-smi as indicated here: 
-[docker-nvidia(for GPU acceleration on Nvidia GPU hosts)](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
-
-
-#### more information
-
-- https://wiki.ros.org/docker/Tutorials/GUI
-- https://medium.com/@benjamin.botto/opengl-and-cuda-applications-in-docker-af0eece000f1
-- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
