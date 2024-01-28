@@ -1,63 +1,56 @@
 cmake_minimum_required(VERSION 3.8)
 project(cpp_qt_app)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
+# Default to C99
+if(NOT CMAKE_C_STANDARD)
+  set(CMAKE_C_STANDARD 99)
 endif()
 
-# find dependencies
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
 find_package(ament_cmake REQUIRED)
-find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(Qt5 COMPONENTS Core Quick Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-# setup sources
-file(GLOB PRO_SOURCE_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  src/*.cpp)
-file(GLOB PRO_UI_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  ui/*.ui)
-file(GLOB PRO_INCLUDE_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  include/*.h *.hpp)
-file(GLOB PRO_RESOURCE_DIR RELATIVE ${CMAKE_SOURCE_DIR} FOLLOW_SYMLINKS  resource/*.qrc)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+file(GLOB PRO_FORM_DIR RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ui/*.ui)
+file(GLOB_RECURSE PRO_INCLUDE_DIR RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/*.hpp *.h )
+file(GLOB_RECURSE PRO_SOURCES_DIR RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/*.cpp)
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
-
-qt5_wrap_ui(QT_UI_HPP ${PRO_UI_DIR})
-qt5_wrap_cpp(QT_MOC_HPP ${PRO_INCLUDE_DIR})
-qt5_add_resources(QT_RESOUCE_HPP ${PRO_RESOURCE_DIR})
 include_directories(
-	include/
-	${CMAKE_CURRENT_BINARY_DIR}
+    include
+    ${Qt5Widgets_INCLUDE_DIRS}
+    ${CMAKE_CURRENT_BINARY_DIR}
 )
-add_executable(${PROJECT_NAME}
-    ${PRO_SOURCE_DIR}
-    ${PRO_INCLUDE_DIR}
-    ${PRO_UI_DIR}
-    ${QT_MOC_HPP}
-    ${QT_RESOUCE_HPP}
-  )
 
+# Generate Qt-related files
+qt5_wrap_ui(PROJECT_SOURCES_UI ${PRO_FORM_DIR})
+qt5_wrap_cpp(PROJECT_SOURCES_MOC ${PRO_IN})
 
-ament_target_dependencies(${PROJECT_NAME}
-  rclcpp
-  std_msgs
-  )
+add_executable(cpp_qt_app 
+    ${PRO_SOURCES_DIR} 
+    ${PROJECT_SOURCES_UI} 
+    ${PROJECT_SOURCES_MOC}
+)
 
-target_link_libraries(${PROJECT_NAME} 
-  Qt5::Core
-  Qt5::Quick
-  Qt5::Widgets
-  )
+ament_target_dependencies(cpp_qt_app
+    rclcpp
+)
 
-install(TARGETS ${PROJECT_NAME}
-  DESTINATION lib/${PROJECT_NAME}
-  )
+target_link_libraries(cpp_qt_app 
+    Qt5::Widgets
+)
+
+# Install the executable
+install(TARGETS cpp_qt_app
+        DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

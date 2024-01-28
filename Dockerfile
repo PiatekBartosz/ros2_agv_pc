@@ -23,7 +23,8 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     git \
     wget \
     htop \
-    python3-pip 
+    python3-pip \
+    qtbase5-private-dev
 
 # RUN pip3 install aqtinstall -y
 # RUN aqt install-qt linux desktop 5.12.2 -y
