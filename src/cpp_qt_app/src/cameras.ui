@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Cameras</class>
+ <widget class="QMainWindow" name="Cameras">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,13 +17,29 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>9</y>
+      <x>10</x>
+      <y>10</y>
       <width>781</width>
       <height>461</height>
      </rect>
     </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
     <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>130</y>
+        <width>67</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cameras</string>
+      </property>
+     </widget>
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
@@ -49,33 +65,13 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_cameras">
+        <widget class="QPushButton" name="pushButton_home">
          <property name="text">
-          <string>Cameras</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_close">
-         <property name="text">
-          <string>Close Application</string>
+          <string>Home</string>
          </property>
         </widget>
        </item>
       </layout>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>90</y>
-        <width>67</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>MENU</string>
-      </property>
      </widget>
     </widget>
    </widget>

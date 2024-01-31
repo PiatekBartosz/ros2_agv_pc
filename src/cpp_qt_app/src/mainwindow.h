@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "settings.h"
+#include "control.h"
+#include "cameras.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,9 +22,26 @@ public:
 
 private slots:
 
-    void on_dial_valueChanged(int value);
+    void on_pushButton_close_clicked();
+
+    void on_pushButton_settings_clicked();
+
+    void on_pushButton_control_clicked();
+
+    void on_pushButton_cameras_clicked();
+
+    void moveHome();
+
+    void moveSettings();
+
+    void moveControl();
+
+    void moveCameras();
 
 private:
     Ui::MainWindow *ui;
+    Settings Set;
+    Control Ctrl;
+    Cameras Cam;
 };
 #endif // MAINWINDOW_H
