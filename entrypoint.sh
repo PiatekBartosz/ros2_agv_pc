@@ -1,4 +1,4 @@
 #! /bin/bash
 
-source /opt/ros/humb/setup.bash
+source /opt/ros/humble/setup.bash
 rosdep update

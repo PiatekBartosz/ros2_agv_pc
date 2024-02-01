@@ -19,15 +19,16 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     python3-rosdep \
     build-essential \
     gpiod \
+    libasound2-dev \
+    ros-${ROS_DISTRO}-rviz2 \
     ros-${ROS_DISTRO}-pcl-ros \
     ros-${ROS_DISTRO}-std-msgs \
-    # libasound2-dev \
-    # ros-${ROS_DISTRO}-cv-bridge \ 
-    # ros-${ROS_DISTRO}-image-transport \
-    # ros-${ROS_DISTRO}-image-transport-plugins \
-    # ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
-    # ros-${ROS_DISTRO}-image-proc \
-    # ros-${ROS_DISTRO}-rtabmap-slam \ 
+    ros-${ROS_DISTRO}-cv-bridge \ 
+    ros-${ROS_DISTRO}-image-transport \
+    ros-${ROS_DISTRO}-image-transport-plugins \
+    ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
+    ros-${ROS_DISTRO}-image-proc \
+    ros-${ROS_DISTRO}-rtabmap-slam \ 
     gstreamer1.0-plugins-bad \
     alsa-utils \
     mpg123 \
@@ -41,6 +42,4 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     qtbase5-private-dev \
     libopencv-dev
 
-# RUN pip3 install aqtinstall -y
-
-
+# TODO install rosdep from src
