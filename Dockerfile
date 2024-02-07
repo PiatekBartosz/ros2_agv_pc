@@ -20,6 +20,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     build-essential \
     gpiod \
     libasound2-dev \
+    ros-${ROS_DISTRO}-rclpy \ 
     ros-${ROS_DISTRO}-rviz2 \
     ros-${ROS_DISTRO}-pcl-ros \
     ros-${ROS_DISTRO}-std-msgs \

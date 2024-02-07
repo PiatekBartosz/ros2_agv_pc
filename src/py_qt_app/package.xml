@@ -7,6 +7,9 @@
   <maintainer email="bartekpiatek123@gmail.com">root</maintainer>
   <license>MIT</license>
 
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>pyqt5</exec_depend>
+
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

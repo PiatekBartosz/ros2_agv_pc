@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'py_qt_app = py_qt_app.main_qt:main'
         ],
     },
 )
