@@ -13,11 +13,12 @@ set(_opencv_version 4)
 find_package(OpenCV 4 QUIET COMPONENTS imgproc highgui)
 if(NOT OpenCV_FOUND)
   set(_opencv_version 3)
-  find_package(OpenCV 3 REQUIRED COMPONENTS imgproc highgui)
+  find_package(OpenCV 3 REQUIRED COMPONENTS highgui)
 endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(camera_info_manager REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(depthai REQUIRED)
 find_package(depthai_bridge REQUIRED)
@@ -29,8 +30,7 @@ find_package(vision_msgs REQUIRED)
 
 set(dependencies
   camera_info_manager
-  cv_bridge
-  depthai_ros_msgs
+  cv_bridge depthai_ros_msgs
   depthai_bridge
   rclcpp
   sensor_msgs
@@ -50,7 +50,8 @@ macro(dai_add_node_ros2 node_name node_src)
   target_link_libraries("${node_name}"
                         depthai::core
                         opencv_imgproc
-                        opencv_highgui)
+                        opencv_highgui
+                        )
 
   ament_target_dependencies("${node_name}"
                             ${dependencies})
