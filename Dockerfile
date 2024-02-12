@@ -1,8 +1,7 @@
 ARG ROS_DISTRO=humble
 
-# FROM luxonis/depthai-ros:v2.8.1-humble 
-
 FROM ros:${ROS_DISTRO}-ros-base
+# FROM luxonis/depthai-ros:v2.8.1-humble 
 # FROM luxonis/depthai-ros:foxy-latest
 # FROM dustynv/ros:foxy-ros-base-l4t-r32.7.1
 # FROM dustynv/ros:humble-pytorch-l4t-r32.7.1
@@ -30,6 +29,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
     ros-${ROS_DISTRO}-image-proc \
     ros-${ROS_DISTRO}-rtabmap-slam \ 
+    ros-${ROS_DISTRO}-depthai-ros \ 
     gstreamer1.0-plugins-bad \
     alsa-utils \
     mpg123 \
@@ -42,5 +42,3 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     python3-pip \
     qtbase5-private-dev \
     libopencv-dev
-
-# TODO install rosdep from src
