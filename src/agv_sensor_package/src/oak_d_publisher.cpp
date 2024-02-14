@@ -58,8 +58,6 @@ int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
     auto node = rclcpp::Node::make_shared("stereo_inertial_node");
 
-    bool isDeviceFound = false;
-
     // TODO: move parameters into launch file / cfg file
     int previewWidth = 300;
     int previewHeight = 300;
@@ -68,47 +66,31 @@ int main(int argc, char** argv) {
     int width, height;
 
     std::tie(pipeline, width, height) = createPipeline(); 
+    dai::Device device(pipeline);
+    auto previewQueue = device.getOutputQueue("preview", 30, false);
 
-    // TODO: change single pointer to a vector for multiple OAK-D's
-    std::shared_ptr<dai::Device> device;
-    std::vector<dai::DeviceInfo> availableDevices = dai::Device::getAllAvailableDevices();
+    auto calibrationHandler = device.readCalibration();
 
-    std::cout << "Listening for devices" << std::endl;
-
-    // bind device based on MxID
-    for (auto deviceInfo: availableDevices) {
-        std::cout << "Device Mx ID:" << deviceInfo.getMxId() << std::endl;
-
-        // TODO: change for specific deviceID  
-        if (deviceInfo.state == X_LINK_UNBOOTED || deviceInfo.state == X_LINK_BOOTLOADER) {
-            isDeviceFound = true;
-            device = std::make_shared<dai::Device>(pipeline, deviceInfo);
-        } else {
-            throw std::runtime_error("DepthAI already booted");
-        }
-    }
-
-    if (!isDeviceFound) {
-        throw std::runtime_error("Device not found");
-    }
-    auto calibrationHandler = device->readCalibration();
+    std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> rgbPreviewPublish;
 
     dai::rosBridge::ImageConverter rgbConverter("oak_camera_optical_frame", true);
-
-    auto previewQueue = device->getOutputQueue("xoutPreview", 30, false);
     auto previewCameraInfo = rgbConverter.calibrationToCameraInfo(calibrationHandler, dai::CameraBoardSocket::CAM_A, previewWidth, previewHeight);
+    rgbPreviewPublish = std::make_unique<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>>(  
+            previewQueue,
+            node,
+            std::string("color/preview/image"),
+            std::bind(&dai::rosBridge::ImageConverter::toRosMsg,
+                &rgbConverter,
+                std::placeholders::_1,
+                std::placeholders::_2),
+            30,
+            previewCameraInfo,
+            "color/preview"
+    );
 
-    dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame> previewPublish(
-        previewQueue,
-        node,
-        std::string("color/preview/image"),
-        std::bind(&dai::rosBridge::ImageConverter::toRosMsg, &rgbConverter, std::placeholders::_1, std::placeholders::_2),
-        30,
-        previewCameraInfo,
-        "color/preview");
-
-    previewPublish.addPublisherCallback();
+    rgbPreviewPublish->addPublisherCallback();
 
     rclcpp::spin(node);
+    rclcpp::shutdown();
     return 0;
 }
