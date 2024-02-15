@@ -3557,3 +3557,405 @@ Examples:
 2024-02-07 11:26:57,697 - aqt.updater - INFO - updater 140037609459712 Patching /workspaces/ros2_foxy_gpu_new/5.15.2/gcc_64/lib/libQt5QmlModels.prl
 2024-02-07 11:26:57,698 - aqt.main - INFO - installer 140037609459712 Finished installation
 2024-02-07 11:26:57,698 - aqt.main - INFO - installer 140037609459712 Time elapsed: 27.45565421 second
+2024-02-14 12:11:04,697 - aqt.main - INFO - installer 140627640938496 aqtinstall(aqt) v3.1.11 on Python 3.10.12 [CPython GCC 11.4.0]
+2024-02-14 12:11:04,706 - aqt.helper - DEBUG - helper 140627640938496 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/Updates.xml.sha256
+2024-02-14 12:11:05,373 - aqt.helper - DEBUG - helper 140479530766336 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtbase-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:05,373 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtx11extras-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:05,373 - aqt.helper - DEBUG - helper 140095243735040 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtgraphicaleffects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:05,373 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtmultimedia-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:05,564 - aqt.helper - INFO - helper 140095243735040 Downloading qtgraphicaleffects...
+2024-02-14 12:11:05,564 - aqt.helper - INFO - helper 140250309038080 Downloading qtmultimedia...
+2024-02-14 12:11:05,564 - aqt.installer - DEBUG - installer 140095243735040 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtgraphicaleffects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,564 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtmultimedia-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,566 - aqt.helper - INFO - helper 140332325277696 Downloading qtx11extras...
+2024-02-14 12:11:05,566 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtx11extras-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,568 - aqt.helper - INFO - helper 140479530766336 Downloading qtbase...
+2024-02-14 12:11:05,568 - aqt.installer - DEBUG - installer 140479530766336 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtbase-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,752 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtmultimedia-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,752 - aqt.helper - DEBUG - helper 140095243735040 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtgraphicaleffects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,752 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:05,752 - aqt.helper - INFO - helper 140095243735040 Redirected: ftp.fau.de
+2024-02-14 12:11:05,753 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtx11extras-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,753 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:05,757 - aqt.helper - DEBUG - helper 140479530766336 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtbase-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:05,757 - aqt.helper - INFO - helper 140479530766336 Redirected: ftp.fau.de
+2024-02-14 12:11:05,950 - aqt.installer - INFO - installer 140332325277696 Finished installation of qtx11extras-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.57909219
+2024-02-14 12:11:05,956 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebchannel-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:06,010 - aqt.installer - INFO - installer 140095243735040 Finished installation of qtgraphicaleffects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.63925432
+2024-02-14 12:11:06,022 - aqt.helper - DEBUG - helper 140095243735040 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtsvg-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:06,160 - aqt.helper - INFO - helper 140332325277696 Downloading qtwebchannel...
+2024-02-14 12:11:06,160 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebchannel-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,223 - aqt.helper - INFO - helper 140095243735040 Downloading qtsvg...
+2024-02-14 12:11:06,224 - aqt.installer - DEBUG - installer 140095243735040 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtsvg-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,257 - aqt.installer - INFO - installer 140250309038080 Finished installation of qtmultimedia-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.88620154
+2024-02-14 12:11:06,273 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qttranslations-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:06,353 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebchannel-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,353 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:06,434 - aqt.helper - DEBUG - helper 140095243735040 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtsvg-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,435 - aqt.helper - INFO - helper 140095243735040 Redirected: ftp.fau.de
+2024-02-14 12:11:06,461 - aqt.helper - INFO - helper 140250309038080 Downloading qttranslations...
+2024-02-14 12:11:06,461 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qttranslations-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,553 - aqt.installer - INFO - installer 140332325277696 Finished installation of qtwebchannel-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.59848890
+2024-02-14 12:11:06,562 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtdeclarative-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:06,650 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qttranslations-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,650 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:06,697 - aqt.installer - INFO - installer 140095243735040 Finished installation of qtsvg-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.67697161
+2024-02-14 12:11:06,710 - aqt.helper - DEBUG - helper 140095243735040 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtimageformats-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:06,749 - aqt.helper - INFO - helper 140332325277696 Downloading qtdeclarative...
+2024-02-14 12:11:06,749 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtdeclarative-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,913 - aqt.helper - INFO - helper 140095243735040 Downloading qtimageformats...
+2024-02-14 12:11:06,913 - aqt.installer - DEBUG - installer 140095243735040 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtimageformats-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,949 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtdeclarative-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:06,949 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:07,124 - aqt.helper - DEBUG - helper 140095243735040 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtimageformats-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:07,124 - aqt.helper - INFO - helper 140095243735040 Redirected: ftp.fau.de
+2024-02-14 12:11:07,295 - aqt.installer - INFO - installer 140250309038080 Finished installation of qttranslations-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 1.02414030
+2024-02-14 12:11:07,306 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtxmlpatterns-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:07,450 - aqt.installer - INFO - installer 140095243735040 Finished installation of qtimageformats-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.74206418
+2024-02-14 12:11:07,460 - aqt.helper - DEBUG - helper 140095243735040 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qttools-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:07,503 - aqt.helper - INFO - helper 140250309038080 Downloading qtxmlpatterns...
+2024-02-14 12:11:07,503 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtxmlpatterns-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:07,658 - aqt.helper - INFO - helper 140095243735040 Downloading qttools...
+2024-02-14 12:11:07,658 - aqt.installer - DEBUG - installer 140095243735040 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qttools-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:07,696 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtxmlpatterns-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:07,696 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:07,848 - aqt.helper - DEBUG - helper 140095243735040 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qttools-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:07,848 - aqt.helper - INFO - helper 140095243735040 Redirected: ftp.fau.de
+2024-02-14 12:11:08,307 - aqt.installer - INFO - installer 140250309038080 Finished installation of qtxmlpatterns-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 1.00236371
+2024-02-14 12:11:08,317 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtsensors-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:08,512 - aqt.helper - INFO - helper 140250309038080 Downloading qtsensors...
+2024-02-14 12:11:08,512 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtsensors-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:08,701 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtsensors-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:08,701 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:08,968 - aqt.installer - INFO - installer 140250309038080 Finished installation of qtsensors-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.65195139
+2024-02-14 12:11:08,976 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtserialport-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:09,164 - aqt.helper - INFO - helper 140250309038080 Downloading qtserialport...
+2024-02-14 12:11:09,165 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtserialport-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:09,354 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtserialport-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:09,354 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:09,544 - aqt.installer - INFO - installer 140250309038080 Finished installation of qtserialport-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.56977288
+2024-02-14 12:11:09,551 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtlocation-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:09,743 - aqt.helper - INFO - helper 140250309038080 Downloading qtlocation...
+2024-02-14 12:11:09,743 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtlocation-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:09,940 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtlocation-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:09,941 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:11,232 - aqt.installer - INFO - installer 140250309038080 Finished installation of qtlocation-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 1.68295714
+2024-02-14 12:11:11,244 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtquickcontrols-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:11,439 - aqt.helper - INFO - helper 140250309038080 Downloading qtquickcontrols...
+2024-02-14 12:11:11,440 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtquickcontrols-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:11,648 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtquickcontrols-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:11,648 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:12,275 - aqt.installer - INFO - installer 140250309038080 Finished installation of qtquickcontrols-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 1.03243630
+2024-02-14 12:11:12,286 - aqt.helper - DEBUG - helper 140250309038080 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtquickcontrols2-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:12,482 - aqt.helper - INFO - helper 140250309038080 Downloading qtquickcontrols2...
+2024-02-14 12:11:12,482 - aqt.installer - DEBUG - installer 140250309038080 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtquickcontrols2-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:12,689 - aqt.helper - DEBUG - helper 140250309038080 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtquickcontrols2-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:12,689 - aqt.helper - INFO - helper 140250309038080 Redirected: ftp.fau.de
+2024-02-14 12:11:12,863 - aqt.installer - INFO - installer 140332325277696 Finished installation of qtdeclarative-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 6.30237800
+2024-02-14 12:11:12,873 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebsockets-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:13,112 - aqt.helper - INFO - helper 140332325277696 Downloading qtwebsockets...
+2024-02-14 12:11:13,112 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebsockets-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:13,301 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebsockets-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:13,301 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:13,361 - aqt.installer - INFO - installer 140250309038080 Finished installation of qtquickcontrols2-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 1.07708799
+2024-02-14 12:11:13,543 - aqt.installer - INFO - installer 140332325277696 Finished installation of qtwebsockets-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.67128237
+2024-02-14 12:11:13,551 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qt3d-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:13,603 - aqt.helper - DEBUG - helper 139674558189568 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtserialbus-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:13,747 - aqt.helper - INFO - helper 140332325277696 Downloading qt3d...
+2024-02-14 12:11:13,747 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qt3d-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:13,808 - aqt.helper - INFO - helper 139674558189568 Downloading qtserialbus...
+2024-02-14 12:11:13,808 - aqt.installer - DEBUG - installer 139674558189568 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtserialbus-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:13,938 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qt3d-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:13,938 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:13,995 - aqt.helper - DEBUG - helper 139674558189568 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtserialbus-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:13,995 - aqt.helper - INFO - helper 139674558189568 Redirected: ftp.fau.de
+2024-02-14 12:11:14,581 - aqt.installer - INFO - installer 139674558189568 Finished installation of qtserialbus-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.97962985
+2024-02-14 12:11:14,589 - aqt.helper - DEBUG - helper 139674558189568 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtscxml-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:14,799 - aqt.helper - INFO - helper 139674558189568 Downloading qtscxml...
+2024-02-14 12:11:14,799 - aqt.installer - DEBUG - installer 139674558189568 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtscxml-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:14,998 - aqt.helper - DEBUG - helper 139674558189568 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtscxml-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:14,998 - aqt.helper - INFO - helper 139674558189568 Redirected: ftp.fau.de
+2024-02-14 12:11:15,284 - aqt.installer - INFO - installer 139674558189568 Finished installation of qtscxml-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.69599349
+2024-02-14 12:11:15,293 - aqt.helper - DEBUG - helper 139674558189568 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtgamepad-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:15,484 - aqt.helper - INFO - helper 139674558189568 Downloading qtgamepad...
+2024-02-14 12:11:15,484 - aqt.installer - DEBUG - installer 139674558189568 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtgamepad-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:15,512 - aqt.installer - INFO - installer 140332325277696 Finished installation of qt3d-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 1.96251106
+2024-02-14 12:11:15,533 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebview-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:15,681 - aqt.helper - DEBUG - helper 139674558189568 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtgamepad-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:15,681 - aqt.helper - INFO - helper 139674558189568 Redirected: ftp.fau.de
+2024-02-14 12:11:15,721 - aqt.helper - INFO - helper 140332325277696 Downloading qtwebview...
+2024-02-14 12:11:15,721 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebview-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:15,898 - aqt.installer - INFO - installer 139674558189568 Finished installation of qtgamepad-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.60639922
+2024-02-14 12:11:15,904 - aqt.helper - DEBUG - helper 139674558189568 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtspeech-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:15,909 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwebview-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:15,909 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:16,096 - aqt.helper - INFO - helper 139674558189568 Downloading qtspeech...
+2024-02-14 12:11:16,096 - aqt.installer - DEBUG - installer 139674558189568 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtspeech-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:16,114 - aqt.installer - INFO - installer 140332325277696 Finished installation of qtwebview-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.58169814
+2024-02-14 12:11:16,129 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwayland-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:16,291 - aqt.helper - DEBUG - helper 139674558189568 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtspeech-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:16,291 - aqt.helper - INFO - helper 139674558189568 Redirected: ftp.fau.de
+2024-02-14 12:11:16,322 - aqt.helper - INFO - helper 140332325277696 Downloading qtwayland...
+2024-02-14 12:11:16,322 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwayland-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:16,472 - aqt.installer - INFO - installer 139674558189568 Finished installation of qtspeech-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.56921197
+2024-02-14 12:11:16,480 - aqt.helper - DEBUG - helper 139674558189568 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804icu-linux-Rhel7.2-x64.7z.sha256
+2024-02-14 12:11:16,511 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtwayland-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:16,511 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:16,675 - aqt.helper - INFO - helper 139674558189568 Downloading icu...
+2024-02-14 12:11:16,675 - aqt.installer - DEBUG - installer 139674558189568 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804icu-linux-Rhel7.2-x64.7z
+2024-02-14 12:11:16,871 - aqt.helper - DEBUG - helper 139674558189568 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804icu-linux-Rhel7.2-x64.7z
+2024-02-14 12:11:16,871 - aqt.helper - INFO - helper 139674558189568 Redirected: ftp.fau.de
+2024-02-14 12:11:16,925 - aqt.installer - INFO - installer 140332325277696 Finished installation of qtwayland-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.79734011
+2024-02-14 12:11:16,933 - aqt.helper - DEBUG - helper 140332325277696 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtremoteobjects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:17,129 - aqt.helper - INFO - helper 140332325277696 Downloading qtremoteobjects...
+2024-02-14 12:11:17,129 - aqt.installer - DEBUG - installer 140332325277696 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtremoteobjects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:17,335 - aqt.helper - DEBUG - helper 140332325277696 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtremoteobjects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:17,335 - aqt.helper - INFO - helper 140332325277696 Redirected: ftp.fau.de
+2024-02-14 12:11:17,657 - aqt.installer - INFO - installer 140332325277696 Finished installation of qtremoteobjects-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.72521661
+2024-02-14 12:11:18,920 - aqt.installer - INFO - installer 140095243735040 Finished installation of qttools-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 11.46187997
+2024-02-14 12:11:19,724 - aqt.installer - INFO - installer 139674558189568 Finished installation of icu-linux-Rhel7.2-x64.7z in 3.24522206
+2024-02-14 12:11:19,736 - aqt.helper - DEBUG - helper 139674558189568 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qt-5.15.0-linux.7z.sha256
+2024-02-14 12:11:19,926 - aqt.helper - INFO - helper 139674558189568 Downloading qt...
+2024-02-14 12:11:19,926 - aqt.installer - DEBUG - installer 139674558189568 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qt-5.15.0-linux.7z
+2024-02-14 12:11:20,124 - aqt.installer - INFO - installer 139674558189568 Finished installation of qt-5.15.0-linux.7z in 0.38923433
+2024-02-14 12:11:25,226 - aqt.installer - INFO - installer 140479530766336 Finished installation of qtbase-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 19.85597692
+2024-02-14 12:11:25,240 - aqt.helper - DEBUG - helper 140479530766336 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtconnectivity-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z.sha256
+2024-02-14 12:11:25,429 - aqt.helper - INFO - helper 140479530766336 Downloading qtconnectivity...
+2024-02-14 12:11:25,429 - aqt.installer - DEBUG - installer 140479530766336 Download URL: https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtconnectivity-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:25,617 - aqt.helper - DEBUG - helper 140479530766336 Asked to redirect(302) to: https://ftp.fau.de/qtproject/online/qtsdkrepository/linux_x64/desktop/qt5_5150/qt.qt5.5150.gcc_64/5.15.0-0-202005140804qtconnectivity-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z
+2024-02-14 12:11:25,617 - aqt.helper - INFO - helper 140479530766336 Redirected: ftp.fau.de
+2024-02-14 12:11:26,137 - aqt.installer - INFO - installer 140479530766336 Finished installation of qtconnectivity-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z in 0.89839401
+2024-02-14 12:11:26,229 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/bin/qmake
+2024-02-14 12:11:26,274 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Scxml.pc
+2024-02-14 12:11:26,274 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Designer.pc
+2024-02-14 12:11:26,274 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Svg.pc
+2024-02-14 12:11:26,274 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DQuickRender.pc
+2024-02-14 12:11:26,275 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5UiPlugin.pc
+2024-02-14 12:11:26,275 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Sensors.pc
+2024-02-14 12:11:26,275 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5QuickWidgets.pc
+2024-02-14 12:11:26,275 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5WebSockets.pc
+2024-02-14 12:11:26,275 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5SerialBus.pc
+2024-02-14 12:11:26,275 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Sql.pc
+2024-02-14 12:11:26,276 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Gui.pc
+2024-02-14 12:11:26,276 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5UiTools.pc
+2024-02-14 12:11:26,276 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5DBus.pc
+2024-02-14 12:11:26,276 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Widgets.pc
+2024-02-14 12:11:26,276 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DExtras.pc
+2024-02-14 12:11:26,276 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DRender.pc
+2024-02-14 12:11:26,277 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Core.pc
+2024-02-14 12:11:26,277 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Qml.pc
+2024-02-14 12:11:26,277 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Concurrent.pc
+2024-02-14 12:11:26,277 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5QuickTest.pc
+2024-02-14 12:11:26,277 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5OpenGLExtensions.pc
+2024-02-14 12:11:26,277 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5WebView.pc
+2024-02-14 12:11:26,277 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DQuickExtras.pc
+2024-02-14 12:11:26,278 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5QuickControls2.pc
+2024-02-14 12:11:26,278 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DQuick.pc
+2024-02-14 12:11:26,278 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DLogic.pc
+2024-02-14 12:11:26,278 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Bluetooth.pc
+2024-02-14 12:11:26,278 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Multimedia.pc
+2024-02-14 12:11:26,278 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Quick.pc
+2024-02-14 12:11:26,278 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DQuickScene2D.pc
+2024-02-14 12:11:26,279 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Test.pc
+2024-02-14 12:11:26,279 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DQuickAnimation.pc
+2024-02-14 12:11:26,279 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DInput.pc
+2024-02-14 12:11:26,279 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Xml.pc
+2024-02-14 12:11:26,279 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5WaylandClient.pc
+2024-02-14 12:11:26,279 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5RemoteObjects.pc
+2024-02-14 12:11:26,280 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Network.pc
+2024-02-14 12:11:26,280 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5MultimediaWidgets.pc
+2024-02-14 12:11:26,280 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5QuickTemplates2.pc
+2024-02-14 12:11:26,280 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Positioning.pc
+2024-02-14 12:11:26,280 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DQuickInput.pc
+2024-02-14 12:11:26,280 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DCore.pc
+2024-02-14 12:11:26,280 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Gamepad.pc
+2024-02-14 12:11:26,281 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5WebChannel.pc
+2024-02-14 12:11:26,281 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5QmlModels.pc
+2024-02-14 12:11:26,281 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5XmlPatterns.pc
+2024-02-14 12:11:26,281 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5TextToSpeech.pc
+2024-02-14 12:11:26,281 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5SerialPort.pc
+2024-02-14 12:11:26,281 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5PositioningQuick.pc
+2024-02-14 12:11:26,282 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5OpenGL.pc
+2024-02-14 12:11:26,282 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5RepParser.pc
+2024-02-14 12:11:26,282 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5X11Extras.pc
+2024-02-14 12:11:26,282 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5PrintSupport.pc
+2024-02-14 12:11:26,282 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5QmlWorkerScript.pc
+2024-02-14 12:11:26,282 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Nfc.pc
+2024-02-14 12:11:26,283 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Help.pc
+2024-02-14 12:11:26,283 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt5Location.pc
+2024-02-14 12:11:26,283 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/pkgconfig/Qt53DAnimation.pc
+2024-02-14 12:11:26,284 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WebChannel.la
+2024-02-14 12:11:26,284 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Nfc.la
+2024-02-14 12:11:26,285 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickShapes.la
+2024-02-14 12:11:26,285 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickWidgets.la
+2024-02-14 12:11:26,286 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuick.la
+2024-02-14 12:11:26,286 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5FbSupport.la
+2024-02-14 12:11:26,287 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickExtras.la
+2024-02-14 12:11:26,287 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Test.la
+2024-02-14 12:11:26,288 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5RemoteObjects.la
+2024-02-14 12:11:26,288 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Network.la
+2024-02-14 12:11:26,289 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DInput.la
+2024-02-14 12:11:26,289 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5DesignerComponents.la
+2024-02-14 12:11:26,289 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Bluetooth.la
+2024-02-14 12:11:26,290 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Core.la
+2024-02-14 12:11:26,290 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DCore.la
+2024-02-14 12:11:26,291 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickAnimation.la
+2024-02-14 12:11:26,291 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Multimedia.la
+2024-02-14 12:11:26,292 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Quick.la
+2024-02-14 12:11:26,292 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5X11Extras.la
+2024-02-14 12:11:26,293 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Gamepad.la
+2024-02-14 12:11:26,293 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5AccessibilitySupport.la
+2024-02-14 12:11:26,294 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EdidSupport.la
+2024-02-14 12:11:26,294 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/Qt5UiPlugin.la
+2024-02-14 12:11:26,295 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/Qt5RepParser.la
+2024-02-14 12:11:26,295 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5UiTools.la
+2024-02-14 12:11:26,295 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PacketProtocol.la
+2024-02-14 12:11:26,296 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Scxml.la
+2024-02-14 12:11:26,296 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5MultimediaQuick.la
+2024-02-14 12:11:26,297 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5XmlPatterns.la
+2024-02-14 12:11:26,297 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickScene2D.la
+2024-02-14 12:11:26,298 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5InputSupport.la
+2024-02-14 12:11:26,298 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5LinuxAccessibilitySupport.la
+2024-02-14 12:11:26,299 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlDevTools.la
+2024-02-14 12:11:26,299 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5GlxSupport.la
+2024-02-14 12:11:26,300 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5VulkanSupport.la
+2024-02-14 12:11:26,300 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EglSupport.la
+2024-02-14 12:11:26,301 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Location.la
+2024-02-14 12:11:26,301 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PrintSupport.la
+2024-02-14 12:11:26,302 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5OpenGLExtensions.la
+2024-02-14 12:11:26,302 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlWorkerScript.la
+2024-02-14 12:11:26,303 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5OpenGL.la
+2024-02-14 12:11:26,303 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WebSockets.la
+2024-02-14 12:11:26,303 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Positioning.la
+2024-02-14 12:11:26,304 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5XkbCommonSupport.la
+2024-02-14 12:11:26,304 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickTest.la
+2024-02-14 12:11:26,305 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WaylandClient.la
+2024-02-14 12:11:26,305 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5MultimediaWidgets.la
+2024-02-14 12:11:26,306 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickTemplates2.la
+2024-02-14 12:11:26,306 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DRender.la
+2024-02-14 12:11:26,307 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WebView.la
+2024-02-14 12:11:26,307 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5FontDatabaseSupport.la
+2024-02-14 12:11:26,308 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DAnimation.la
+2024-02-14 12:11:26,308 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Qml.la
+2024-02-14 12:11:26,309 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlModels.la
+2024-02-14 12:11:26,309 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlDebug.la
+2024-02-14 12:11:26,309 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5SerialPort.la
+2024-02-14 12:11:26,310 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Xml.la
+2024-02-14 12:11:26,310 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5ServiceSupport.la
+2024-02-14 12:11:26,311 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PositioningQuick.la
+2024-02-14 12:11:26,312 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Help.la
+2024-02-14 12:11:26,312 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Sql.la
+2024-02-14 12:11:26,312 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Bootstrap.la
+2024-02-14 12:11:26,313 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Widgets.la
+2024-02-14 12:11:26,313 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EventDispatcherSupport.la
+2024-02-14 12:11:26,314 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PlatformCompositorSupport.la
+2024-02-14 12:11:26,315 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EglFsKmsSupport.la
+2024-02-14 12:11:26,315 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Designer.la
+2024-02-14 12:11:26,316 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DLogic.la
+2024-02-14 12:11:26,316 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EglFSDeviceIntegration.la
+2024-02-14 12:11:26,317 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5XcbQpa.la
+2024-02-14 12:11:26,317 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickRender.la
+2024-02-14 12:11:26,318 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5ThemeSupport.la
+2024-02-14 12:11:26,318 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Svg.la
+2024-02-14 12:11:26,318 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5DBus.la
+2024-02-14 12:11:26,319 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5SerialBus.la
+2024-02-14 12:11:26,320 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Sensors.la
+2024-02-14 12:11:26,320 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DExtras.la
+2024-02-14 12:11:26,321 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickInput.la
+2024-02-14 12:11:26,321 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5TextToSpeech.la
+2024-02-14 12:11:26,321 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickParticles.la
+2024-02-14 12:11:26,322 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Concurrent.la
+2024-02-14 12:11:26,322 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5KmsSupport.la
+2024-02-14 12:11:26,323 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickControls2.la
+2024-02-14 12:11:26,323 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5MultimediaGstTools.la
+2024-02-14 12:11:26,324 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5DeviceDiscoverySupport.la
+2024-02-14 12:11:26,324 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Gui.la
+2024-02-14 12:11:26,325 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EglFSDeviceIntegration.prl
+2024-02-14 12:11:26,325 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5MultimediaQuick.prl
+2024-02-14 12:11:26,326 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Sql.prl
+2024-02-14 12:11:26,326 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PlatformCompositorSupport.prl
+2024-02-14 12:11:26,326 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5RepParser.prl
+2024-02-14 12:11:26,326 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DInput.prl
+2024-02-14 12:11:26,326 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DLogic.prl
+2024-02-14 12:11:26,326 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libqtlibpng.prl
+2024-02-14 12:11:26,326 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Nfc.prl
+2024-02-14 12:11:26,327 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5ServiceSupport.prl
+2024-02-14 12:11:26,327 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickTemplates2.prl
+2024-02-14 12:11:26,327 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5TextToSpeech.prl
+2024-02-14 12:11:26,327 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Test.prl
+2024-02-14 12:11:26,327 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5FbSupport.prl
+2024-02-14 12:11:26,327 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickRender.prl
+2024-02-14 12:11:26,328 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Scxml.prl
+2024-02-14 12:11:26,328 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WebChannel.prl
+2024-02-14 12:11:26,328 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5MultimediaWidgets.prl
+2024-02-14 12:11:26,328 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Quick.prl
+2024-02-14 12:11:26,328 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickAnimation.prl
+2024-02-14 12:11:26,328 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Help.prl
+2024-02-14 12:11:26,328 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Multimedia.prl
+2024-02-14 12:11:26,329 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5LinuxAccessibilitySupport.prl
+2024-02-14 12:11:26,329 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Sensors.prl
+2024-02-14 12:11:26,329 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5GlxSupport.prl
+2024-02-14 12:11:26,329 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Concurrent.prl
+2024-02-14 12:11:26,329 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5XcbQpa.prl
+2024-02-14 12:11:26,329 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5XkbCommonSupport.prl
+2024-02-14 12:11:26,329 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5AccessibilitySupport.prl
+2024-02-14 12:11:26,330 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DCore.prl
+2024-02-14 12:11:26,330 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EglFsKmsSupport.prl
+2024-02-14 12:11:26,330 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickScene2D.prl
+2024-02-14 12:11:26,330 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5DesignerComponents.prl
+2024-02-14 12:11:26,330 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5VulkanSupport.prl
+2024-02-14 12:11:26,330 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickControls2.prl
+2024-02-14 12:11:26,331 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5InputSupport.prl
+2024-02-14 12:11:26,331 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5UiTools.prl
+2024-02-14 12:11:26,331 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlWorkerScript.prl
+2024-02-14 12:11:26,331 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5MultimediaGstTools.prl
+2024-02-14 12:11:26,331 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Xml.prl
+2024-02-14 12:11:26,332 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlDevTools.prl
+2024-02-14 12:11:26,332 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickWidgets.prl
+2024-02-14 12:11:26,332 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PacketProtocol.prl
+2024-02-14 12:11:26,332 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Bootstrap.prl
+2024-02-14 12:11:26,332 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickInput.prl
+2024-02-14 12:11:26,332 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EdidSupport.prl
+2024-02-14 12:11:26,333 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5XmlPatterns.prl
+2024-02-14 12:11:26,333 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5DeviceDiscoverySupport.prl
+2024-02-14 12:11:26,333 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5FontDatabaseSupport.prl
+2024-02-14 12:11:26,333 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EglSupport.prl
+2024-02-14 12:11:26,333 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5DBus.prl
+2024-02-14 12:11:26,333 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5SerialPort.prl
+2024-02-14 12:11:26,334 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Network.prl
+2024-02-14 12:11:26,334 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5OpenGLExtensions.prl
+2024-02-14 12:11:26,334 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WaylandClient.prl
+2024-02-14 12:11:26,334 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Gui.prl
+2024-02-14 12:11:26,334 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DRender.prl
+2024-02-14 12:11:26,334 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuick.prl
+2024-02-14 12:11:26,335 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PositioningQuick.prl
+2024-02-14 12:11:26,335 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5PrintSupport.prl
+2024-02-14 12:11:26,335 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Designer.prl
+2024-02-14 12:11:26,335 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Qml.prl
+2024-02-14 12:11:26,335 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Bluetooth.prl
+2024-02-14 12:11:26,335 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Core.prl
+2024-02-14 12:11:26,336 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Gamepad.prl
+2024-02-14 12:11:26,336 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5KmsSupport.prl
+2024-02-14 12:11:26,336 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Widgets.prl
+2024-02-14 12:11:26,336 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Positioning.prl
+2024-02-14 12:11:26,336 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5OpenGL.prl
+2024-02-14 12:11:26,336 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5UiPlugin.prl
+2024-02-14 12:11:26,337 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickParticles.prl
+2024-02-14 12:11:26,337 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DAnimation.prl
+2024-02-14 12:11:26,337 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5X11Extras.prl
+2024-02-14 12:11:26,337 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickShapes.prl
+2024-02-14 12:11:26,337 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Location.prl
+2024-02-14 12:11:26,337 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5RemoteObjects.prl
+2024-02-14 12:11:26,338 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DQuickExtras.prl
+2024-02-14 12:11:26,338 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5SerialBus.prl
+2024-02-14 12:11:26,338 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5ThemeSupport.prl
+2024-02-14 12:11:26,338 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QuickTest.prl
+2024-02-14 12:11:26,338 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WebView.prl
+2024-02-14 12:11:26,338 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5WebSockets.prl
+2024-02-14 12:11:26,339 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5Svg.prl
+2024-02-14 12:11:26,339 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5EventDispatcherSupport.prl
+2024-02-14 12:11:26,339 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt53DExtras.prl
+2024-02-14 12:11:26,339 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlDebug.prl
+2024-02-14 12:11:26,339 - aqt.updater - INFO - updater 140627640938496 Patching /workspaces/ros2_agv_pc/5.15.0/gcc_64/lib/libQt5QmlModels.prl
+2024-02-14 12:11:26,340 - aqt.main - INFO - installer 140627640938496 Finished installation
+2024-02-14 12:11:26,340 - aqt.main - INFO - installer 140627640938496 Time elapsed: 21.64209822 second
