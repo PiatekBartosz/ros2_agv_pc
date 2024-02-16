@@ -11,11 +11,15 @@ if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
 endif()
 
+# Required for Qt5
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(OpenCV REQUIRED)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 file(GLOB PRO_FORM_DIR RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ui/*.ui)
@@ -26,9 +30,11 @@ include_directories(
     include
     ${Qt5Widgets_INCLUDE_DIRS}
     ${CMAKE_CURRENT_BINARY_DIR}
+    ${OpenCV_INCLUDE_DIRS}
 )
 
 # Generate Qt-related files
+
 qt5_wrap_ui(PROJECT_SOURCES_UI ${PRO_FORM_DIR})
 qt5_wrap_cpp(PROJECT_SOURCES_MOC ${PRO_IN})
 
@@ -44,6 +50,7 @@ ament_target_dependencies(cpp_qt_app
 
 target_link_libraries(cpp_qt_app 
     Qt5::Widgets
+    ${OpenCV_LIBS}
 )
 
 # Install the executable
