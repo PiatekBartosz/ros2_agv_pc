@@ -12,13 +12,14 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
+#include "qnode.h"
+
 
 namespace Ui {
 class Cameras;
 }
 
-class Cameras : public QMainWindow
-{
+class Cameras : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -45,6 +46,7 @@ signals:
 
 private:
     Ui::Cameras *ui;
+    QNode qnode;
 };
 
 #endif // CAMERAS_H
