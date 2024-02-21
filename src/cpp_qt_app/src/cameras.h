@@ -12,7 +12,11 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-#include "qnode.h"
+#include <cv_bridge/cv_bridge.h>
+#include <image_transport/image_transport.hpp>
+#include <image_transport/subscriber.hpp>
+
+#include <sensor_msgs/msg/image.hpp>
 
 
 namespace Ui {
@@ -36,17 +40,24 @@ private slots:
 
     static void captureRun(QLabel *label, QPushButton *btn);
 
-    void on_pushbutton_capture_clicked();
+    void on_pushButton_capture_clicked();
 
 
 signals:
     void HomeClicked();
     void ControlClicked();
     void SettingsClicked();
+    void CaptureClicked();
+
+protected:
+    image_transport::Subscriber subscriber;
+    cv::Mat conversion_matrix;
+
+    void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& msg);
+
 
 private:
     Ui::Cameras *ui;
-    QNode qnode;
 };
 
 #endif // CAMERAS_H
