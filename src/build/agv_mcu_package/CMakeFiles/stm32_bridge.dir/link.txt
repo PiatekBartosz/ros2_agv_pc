@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/stm32_bridge.dir/src/stm32_bridge.cpp.o -o stm32_bridge 

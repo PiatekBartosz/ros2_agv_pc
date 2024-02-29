@@ -1,0 +1,16 @@
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/lib/agv_mcu_package/stm32_bridge
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/package_run_dependencies/agv_mcu_package
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/parent_prefix_path/agv_mcu_package
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/ament_prefix_path.sh
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/ament_prefix_path.dsv
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/path.sh
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/path.dsv
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.bash
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.sh
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.zsh
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.dsv
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.dsv
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/packages/agv_mcu_package
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/cmake/agv_mcu_packageConfig.cmake
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/cmake/agv_mcu_packageConfig-version.cmake
+/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.xml
