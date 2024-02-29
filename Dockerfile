@@ -41,4 +41,5 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     htop \
     python3-pip \
     qtbase5-private-dev \
-    libopencv-dev
+    libopencv-dev \
+    ~nros-humble-rqt*
