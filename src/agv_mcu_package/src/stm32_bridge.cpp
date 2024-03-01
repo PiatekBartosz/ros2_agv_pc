@@ -8,6 +8,33 @@
 #include <termios.h>
 #include <unistd.h>
 
+// #include "rclcpp/rclcpp.hpp"
+// #include "std_msgs/msg/string.hpp"
+
+// class MinimalPublisher : public rclcpp::Node
+// {
+//   public:
+//     MinimalPublisher()
+//     : Node("stm32_message"), count_(0)
+//     {
+//       publisher_ = this->create_publisher<std_msgs::msg::String>("chatter", 10);
+//       timer_ = this->create_wall_timer(
+//       500ms, std::bind(&MinimalPublisher::timer_callback, this));
+//     }
+
+//   private:
+//     void timer_callback()
+//     {
+//       auto message = std_msgs::msg::String();
+//       message.data = "Hello, world! " + std::to_string(count_++);
+//       RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+//       publisher_->publish(message);
+//     }
+//     rclcpp::TimerBase::SharedPtr timer_;
+//     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+//     size_t count_;
+// };
+
 int main(int argc, char ** argv)
 {
   (void) argc;
@@ -46,7 +73,7 @@ int main(int argc, char ** argv)
   // tty.c_oflag &= ~ONOEOT; // Prevent removal of C-d chars (0x004) in output (NOT PRESENT ON LINUX)
 
   tty.c_cc[VTIME] = 10;    // Wait for up to 1s (10 deciseconds), returning as soon as any data is received.
-  tty.c_cc[VMIN] = 0;
+  tty.c_cc[VMIN] = 19;
 
   // Set in/out baud rate to be 9600
   cfsetispeed(&tty, B115200);
@@ -60,31 +87,30 @@ int main(int argc, char ** argv)
 
   // Write to serial port
   unsigned char msg[] = { 'H', 'e', 'l', 'l', 'o','_','F','r','o','m','_','R','O','S','_','D','U','P','\r' };
-  write(serial_port, msg, sizeof(msg));
+  // write(serial_port, msg, sizeof(msg));
 
   // Allocate memory for read buffer, set size according to your needs
-  // char read_buf [256];
+  char read_buf [19];
+  for(int i = 0;i<=100;i++){
+    // Normally you wouldn't do this memset() call, but since we will just receive
+    // ASCII data for this example, we'll set everything to 0 so we can
+    // call printf() easily.
+    memset(&read_buf, '\0', sizeof(read_buf));
 
-  // // Normally you wouldn't do this memset() call, but since we will just receive
-  // // ASCII data for this example, we'll set everything to 0 so we can
-  // // call printf() easily.
-  // memset(&read_buf, '\0', sizeof(read_buf));
+    // Read bytes. The behaviour of read() (e.g. does it block?,
+    // how long does it block for?) depends on the configuration
+    // settings above, specifically VMIN and VTIME
+    int num_bytes = read(serial_port, &read_buf, sizeof(read_buf));
 
-  // // Read bytes. The behaviour of read() (e.g. does it block?,
-  // // how long does it block for?) depends on the configuration
-  // // settings above, specifically VMIN and VTIME
-  // int num_bytes = read(serial_port, &read_buf, sizeof(read_buf));
-
-  // // n is the number of bytes read. n may be 0 if no bytes were received, and can also be -1 to signal an error.
-  // if (num_bytes < 0) {
-  //     printf("Error reading: %s", strerror(errno));
-  //     return 1;
-  // }
-
-  // // Here we assume we received ASCII data, but you might be sending raw bytes (in that case, don't try and
-  // // print it to the screen like this!)
-  // printf("Read %i bytes. Received message: %s", num_bytes, read_buf);
-
+    // n is the number of bytes read. n may be 0 if no bytes were received, and can also be -1 to signal an error.
+    if (num_bytes < 0) {
+        printf("Error reading: %s", strerror(errno));
+        return 1;
+    } 
+    // Here we assume we received ASCII data, but you might be sending raw bytes (in that case, don't try and
+    // print it to the screen like this!)
+    printf("Read %i bytes. Received message: %s\n", num_bytes, read_buf);
+  }
   close(serial_port);
 
   // printf("hello world agv_mcu_package package\n");
