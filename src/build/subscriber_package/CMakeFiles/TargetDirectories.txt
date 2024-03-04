@@ -1,6 +1,7 @@
 /workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/uninstall.dir
 /workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/subscriber_package_uninstall.dir
 /workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/subcpp.dir
+/workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/steer_sub.dir
 /workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/test.dir
 /workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/edit_cache.dir
 /workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/rebuild_cache.dir

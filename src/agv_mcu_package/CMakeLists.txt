@@ -8,13 +8,13 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(interfaces REQUIRED)   
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 add_executable(stm32_bridge src/stm32_bridge.cpp)
-
+ament_target_dependencies(stm32_bridge rclcpp interfaces)
 
 
 target_include_directories(stm32_bridge PUBLIC

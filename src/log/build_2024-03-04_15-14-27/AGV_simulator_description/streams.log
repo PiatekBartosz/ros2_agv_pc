@@ -1,0 +1,24 @@
+[2.217s] Invoking command in '/workspaces/ros_agv_pc/src/AGV_simulator_description': PYTHONPATH=/workspaces/ros_agv_pc/src/build/AGV_simulator_description/prefix_override:/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/AGV_simulator_description build --build-base /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build install --record /workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log --install-scripts $base/lib/AGV_simulator_description --single-version-externally-managed
+[2.508s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.508s]   warnings.warn(
+[2.522s] running egg_info
+[2.523s] writing ../build/AGV_simulator_description/AGV_simulator_description.egg-info/PKG-INFO
+[2.524s] writing dependency_links to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/dependency_links.txt
+[2.524s] writing entry points to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/entry_points.txt
+[2.524s] writing requirements to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/requires.txt
+[2.525s] writing top-level names to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/top_level.txt
+[2.527s] reading manifest file '../build/AGV_simulator_description/AGV_simulator_description.egg-info/SOURCES.txt'
+[2.529s] writing manifest file '../build/AGV_simulator_description/AGV_simulator_description.egg-info/SOURCES.txt'
+[2.529s] running build
+[2.530s] running build_py
+[2.530s] running install
+[2.530s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.531s]   warnings.warn(
+[2.531s] running install_lib
+[2.537s] running install_data
+[2.537s] running install_egg_info
+[2.540s] removing '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description-0.0.0-py3.10.egg-info' (and everything under it)
+[2.541s] Copying ../build/AGV_simulator_description/AGV_simulator_description.egg-info to /workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description-0.0.0-py3.10.egg-info
+[2.542s] running install_scripts
+[2.569s] writing list of installed files to '/workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log'
+[2.654s] Invoked command in '/workspaces/ros_agv_pc/src/AGV_simulator_description' returned '0': PYTHONPATH=/workspaces/ros_agv_pc/src/build/AGV_simulator_description/prefix_override:/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/AGV_simulator_description build --build-base /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build install --record /workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log --install-scripts $base/lib/AGV_simulator_description --single-version-externally-managed

@@ -210,6 +210,43 @@ subcpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subcpp.dir/build.make CMakeFiles/subcpp.dir/build
 .PHONY : subcpp/fast
 
+#=============================================================================
+# Target rules for targets named steer_sub
+
+# Build rule for target.
+steer_sub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 steer_sub
+.PHONY : steer_sub
+
+# fast build rule for target.
+steer_sub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steer_sub.dir/build.make CMakeFiles/steer_sub.dir/build
+.PHONY : steer_sub/fast
+
+src/steer_sub.o: src/steer_sub.cpp.o
+.PHONY : src/steer_sub.o
+
+# target to build an object file
+src/steer_sub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steer_sub.dir/build.make CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o
+.PHONY : src/steer_sub.cpp.o
+
+src/steer_sub.i: src/steer_sub.cpp.i
+.PHONY : src/steer_sub.i
+
+# target to preprocess a source file
+src/steer_sub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steer_sub.dir/build.make CMakeFiles/steer_sub.dir/src/steer_sub.cpp.i
+.PHONY : src/steer_sub.cpp.i
+
+src/steer_sub.s: src/steer_sub.cpp.s
+.PHONY : src/steer_sub.s
+
+# target to generate assembly for a file
+src/steer_sub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steer_sub.dir/build.make CMakeFiles/steer_sub.dir/src/steer_sub.cpp.s
+.PHONY : src/steer_sub.cpp.s
+
 src/subcpp.o: src/subcpp.cpp.o
 .PHONY : src/subcpp.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... subscriber_package_uninstall"
 	@echo "... uninstall"
+	@echo "... steer_sub"
 	@echo "... subcpp"
+	@echo "... src/steer_sub.o"
+	@echo "... src/steer_sub.i"
+	@echo "... src/steer_sub.s"
 	@echo "... src/subcpp.o"
 	@echo "... src/subcpp.i"
 	@echo "... src/subcpp.s"

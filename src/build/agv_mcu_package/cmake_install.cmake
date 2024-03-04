@@ -52,6 +52,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/agv_mcu_package" TYPE EXECUTABLE FILES "/workspaces/ros_agv_pc/src/build/agv_mcu_package/stm32_bridge")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/agv_mcu_package/stm32_bridge" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/agv_mcu_package/stm32_bridge")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/agv_mcu_package/stm32_bridge"
+         OLD_RPATH "/opt/ros/humble/lib:/workspaces/ros_agv_pc/src/install/interfaces/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/agv_mcu_package/stm32_bridge")
     endif()

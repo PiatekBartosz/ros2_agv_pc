@@ -42,4 +42,9 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     python3-pip \
     qtbase5-private-dev \
     libopencv-dev \
+    kmod \
+    kbd \
     ~nros-humble-rqt*
+
+RUN pip install --upgrade pip && \
+    pip install pyserial textual keyboard

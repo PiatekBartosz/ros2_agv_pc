@@ -1,5 +1,7 @@
 /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+/workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/steer_sub
 /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+/workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/steer_sub
 /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/package_run_dependencies/subscriber_package
 /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/parent_prefix_path/subscriber_package
 /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.sh

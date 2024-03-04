@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target steer_sub[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o[0m
+[ 75%] Built target subcpp
