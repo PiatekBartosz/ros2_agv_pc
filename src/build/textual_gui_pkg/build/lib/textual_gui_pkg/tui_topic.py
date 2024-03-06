@@ -249,15 +249,17 @@ def main(args=None):
     global ser
     global publisher
     publisher = MinimalPublisher()
-    ser = serial.Serial()
-    ser.port="/dev/ttyACM0"
-    ser.baudrate=115200
-    ser.open()
-    if ser.is_open:
-        app = MoteusApp()
-        app.run()
+    app = MoteusApp()
+    app.run()
+    # ser = serial.Serial()
+    # ser.port="/dev/ttyACM0"
+    # ser.baudrate=115200
+    # ser.open()
+    # if ser.is_open:
+    #     app = MoteusApp()
+    #     app.run()
 
-    ser.close()
+    # ser.close()
 
 if __name__ == "__main__":
     main()

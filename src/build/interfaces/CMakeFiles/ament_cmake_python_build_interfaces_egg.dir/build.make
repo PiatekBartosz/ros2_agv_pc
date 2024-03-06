@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/compiler_depend.m
 include CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_interfaces_egg:
-	cd /workspaces/ros_agv_pc/src/build/interfaces/ament_cmake_python/interfaces && /usr/bin/python3.10 setup.py egg_info
+	cd /workspaces/ros_agv_pc/src/build/interfaces/ament_cmake_python/interfaces && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_interfaces_egg: CMakeFiles/ament_cmake_python_build_interfaces_egg
 ament_cmake_python_build_interfaces_egg: CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/build.make

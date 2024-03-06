@@ -79,7 +79,7 @@ rosidl_typesupport_introspection_cpp/interfaces/msg/detail/steer__rosidl_typesup
 rosidl_typesupport_introspection_cpp/interfaces/msg/detail/steer__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_introspection_cpp/interfaces/msg/detail/steer__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/interfaces/msg/Steer.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspaces/ros_agv_pc/src/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ introspection for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_typesupport_introspection_cpp__arguments.json
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_typesupport_introspection_cpp__arguments.json
 
 rosidl_typesupport_introspection_cpp/interfaces/msg/detail/steer__type_support.cpp: rosidl_typesupport_introspection_cpp/interfaces/msg/detail/steer__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/interfaces/msg/detail/steer__type_support.cpp

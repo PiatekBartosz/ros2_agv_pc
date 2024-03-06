@@ -84,7 +84,7 @@ rosidl_generator_c/interfaces/msg/steer.h: /opt/ros/humble/share/rosidl_generato
 rosidl_generator_c/interfaces/msg/steer.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/interfaces/msg/steer.h: rosidl_adapter/interfaces/msg/Steer.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspaces/ros_agv_pc/src/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_generator_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/interfaces/msg/detail/steer__functions.h: rosidl_generator_c/interfaces/msg/steer.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interfaces/msg/detail/steer__functions.h
