@@ -38,7 +38,7 @@ private slots:
 
     void on_pushButton_home_clicked();
 
-    static void captureRun(QLabel *label, QPushButton *btn);
+    // static void captureRun(QLabel *label, QPushButton *btn);
 
     void on_pushButton_capture_clicked();
 
@@ -48,13 +48,6 @@ signals:
     void ControlClicked();
     void SettingsClicked();
     void CaptureClicked();
-
-protected:
-    image_transport::Subscriber subscriber;
-    cv::Mat conversion_matrix;
-
-    void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& msg);
-
 
 private:
     Ui::Cameras *ui;

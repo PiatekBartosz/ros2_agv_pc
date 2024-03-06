@@ -10,9 +10,10 @@
 #include "sensor_msgs/msg/imu.hpp"
 #include "stereo_msgs/msg/disparity_image.hpp"
 
-// Inludes common necessary includes for development using depthai library
+// Includes common necessary includes for development using depthai library
 #include "depthai/device/DataQueue.hpp"
 #include "depthai/device/Device.hpp"
+
 #include "depthai/pipeline/Pipeline.hpp"
 #include "depthai/pipeline/node/ColorCamera.hpp"
 #include "depthai/pipeline/node/IMU.hpp"
@@ -21,6 +22,7 @@
 #include "depthai/pipeline/node/StereoDepth.hpp"
 #include "depthai/pipeline/node/XLinkIn.hpp"
 #include "depthai/pipeline/node/XLinkOut.hpp"
+
 #include "depthai_bridge/BridgePublisher.hpp"
 #include "depthai_bridge/DisparityConverter.hpp"
 #include "depthai_bridge/ImageConverter.hpp"
@@ -35,10 +37,15 @@ std::tuple<dai::Pipeline, int, int> createPipeline() {
 
     // create nodes
     auto cam = pipeline.create<dai::node::ColorCamera>();
-    auto xoutPreview = pipeline.create<dai::node::XLinkOut>();
+    auto imu = pipeline.create<dai::node::IMU>();
 
-    // name inputs and outputs
+    // crete output nodes
+    auto xoutPreview = pipeline.create<dai::node::XLinkOut>();
+    auto xoutImu = pipeline.create<dai::node::XLinkOut>();
+
+    // name outputs
     xoutPreview->setStreamName("preview");
+    xoutPreview->setStreamName("imu");
 
     // node properties
     cam->setPreviewSize(width, height);
@@ -46,10 +53,13 @@ std::tuple<dai::Pipeline, int, int> createPipeline() {
     cam->setResolution(dai::ColorCameraProperties::SensorResolution::THE_1080_P);
     cam->setInterleaved(false);
     cam->setColorOrder(dai::ColorCameraProperties::ColorOrder::RGB);
+    imu->enableIMUSensor(dai::IMUSensor::ACCELEROMETER_RAW, 500);
+    imu->enableIMUSensor(dai::IMUSensor::GYROSCOPE_RAW, 400);
+    imu->setMaxBatchReports(10);
 
     // linking 
     cam->preview.link(xoutPreview->input);
-
+    imu->preview.link(xoutImu->input);
 
     return std::make_tuple(pipeline, width, height);
 }
@@ -67,7 +77,9 @@ int main(int argc, char** argv) {
 
     std::tie(pipeline, width, height) = createPipeline(); 
     dai::Device device(pipeline);
+
     auto previewQueue = device.getOutputQueue("preview", 30, false);
+    auto imuQueue = device.getOutputQueue("imu", 50, false);
 
     auto calibrationHandler = device.readCalibration();
 
