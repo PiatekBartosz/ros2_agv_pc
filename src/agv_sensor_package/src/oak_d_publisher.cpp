@@ -8,7 +8,6 @@
 #include "rclcpp/node.hpp"
 #include "sensor_msgs/msg/image.hpp"
 #include "sensor_msgs/msg/imu.hpp"
-#include "stereo_msgs/msg/disparity_image.hpp"
 
 // Includes common necessary includes for development using depthai library
 #include "depthai/device/DataQueue.hpp"
@@ -53,6 +52,7 @@ std::tuple<dai::Pipeline, int, int> createPipeline() {
     cam->setResolution(dai::ColorCameraProperties::SensorResolution::THE_1080_P);
     cam->setInterleaved(false);
     cam->setColorOrder(dai::ColorCameraProperties::ColorOrder::RGB);
+
     imu->enableIMUSensor(dai::IMUSensor::ACCELEROMETER_RAW, 500);
     imu->enableIMUSensor(dai::IMUSensor::GYROSCOPE_RAW, 400);
     imu->setMaxBatchReports(10);
@@ -84,9 +84,11 @@ int main(int argc, char** argv) {
     auto calibrationHandler = device.readCalibration();
 
     std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> rgbPreviewPublish;
+    std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>> imuPublish;
 
     dai::rosBridge::ImageConverter rgbConverter("oak_camera_optical_frame", true);
     auto previewCameraInfo = rgbConverter.calibrationToCameraInfo(calibrationHandler, dai::CameraBoardSocket::CAM_A, previewWidth, previewHeight);
+
     rgbPreviewPublish = std::make_unique<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>>(  
             previewQueue,
             node,
@@ -99,7 +101,20 @@ int main(int argc, char** argv) {
             previewCameraInfo,
             "color/preview"
     );
+    rgbPreviewPublish->addPublisherCallback();
 
+    imuPreview = std::make_unique<dai::rosBridgend ::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>>(  
+            previewQueue,
+            node,
+            std::string("color/preview/image"),
+            std::bind(&dai::rosBridge::ImageConverter::toRosMsg,
+                &rgbConverter,
+                std::placeholders::_1,
+                std::placeholders::_2),
+            30,
+            previewCameraInfo,
+            "color/preview"
+    );
     rgbPreviewPublish->addPublisherCallback();
 
     rclcpp::spin(node);
