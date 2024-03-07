@@ -42,6 +42,7 @@ add_executable(cpp_qt_app
     ${PRO_SOURCES_DIR} 
     ${PROJECT_SOURCES_UI} 
     ${PROJECT_SOURCES_MOC}
+    #resources.qrc
 )
 
 ament_target_dependencies(cpp_qt_app

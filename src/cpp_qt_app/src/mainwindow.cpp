@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+
+
     ui->stackedWidget->insertWidget(1, &Set);
     ui->stackedWidget->insertWidget(2, &Ctrl);
     ui->stackedWidget->insertWidget(3, &Cam);

@@ -7,7 +7,6 @@ Cameras::Cameras(QWidget *parent)
 {
     ui->setupUi(this);
 
-
     std::cout << "here" << std::endl;
     std::thread capRunTh(captureRun, ui->label_cam1, ui->pushButton_capture);
     capRunTh.detach();
@@ -39,12 +38,13 @@ void Cameras::captureRun(QLabel *label, QPushButton *btn)
     cv::VideoCapture cap(0);
     cv::Mat frame;
 
-    if (!cap.isOpened()) {
+    if (!cap.isOpened())
+    {
         std::runtime_error("Cam not available");
     }
 
-
-    while(true) {
+    while(true)
+    {
         cap >> frame;
         cv::resize(frame, frame, cv::Size(640, 480));
 

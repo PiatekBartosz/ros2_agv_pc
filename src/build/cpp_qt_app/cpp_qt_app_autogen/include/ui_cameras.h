@@ -26,10 +26,10 @@ class Ui_Cameras
 public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
+    QLabel *label;
     QStackedWidget *stackedWidget;
     QWidget *page;
     QVBoxLayout *verticalLayout_2;
-    QLabel *label;
     QWidget *widget;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_cam1;
@@ -48,25 +48,26 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setStyleSheet(QString::fromUtf8("font: 16pt \"Sans Serif\";\n"
+"qproperty-alignment: AlignCenter;"));
+
+        verticalLayout->addWidget(label);
+
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
         page = new QWidget();
         page->setObjectName(QString::fromUtf8("page"));
         verticalLayout_2 = new QVBoxLayout(page);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        label = new QLabel(page);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setStyleSheet(QString::fromUtf8("font: 16pt \"Sans Serif\";\n"
-"qproperty-alignment: AlignCenter;"));
-
-        verticalLayout_2->addWidget(label);
-
         widget = new QWidget(page);
         widget->setObjectName(QString::fromUtf8("widget"));
         horizontalLayout_2 = new QHBoxLayout(widget);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         label_cam1 = new QLabel(widget);
         label_cam1->setObjectName(QString::fromUtf8("label_cam1"));
+        label_cam1->setStyleSheet(QString::fromUtf8("qproperty-alignment: AlignCenter;"));
 
         horizontalLayout_2->addWidget(label_cam1);
 
