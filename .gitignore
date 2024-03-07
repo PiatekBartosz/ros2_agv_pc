@@ -2,3 +2,8 @@ build/*
 install/*
 log/*
 site/*
+
+src/build/*
+src/install/*
+src/log/*
+src/site/*
