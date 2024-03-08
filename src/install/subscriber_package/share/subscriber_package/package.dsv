@@ -1,8 +1,0 @@
-source;share/subscriber_package/hook/cmake_prefix_path.ps1
-source;share/subscriber_package/hook/cmake_prefix_path.dsv
-source;share/subscriber_package/hook/cmake_prefix_path.sh
-source;share/subscriber_package/local_setup.bash
-source;share/subscriber_package/local_setup.dsv
-source;share/subscriber_package/local_setup.ps1
-source;share/subscriber_package/local_setup.sh
-source;share/subscriber_package/local_setup.zsh

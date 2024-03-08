@@ -1,1 +1,0 @@
-AGV_simulator_description

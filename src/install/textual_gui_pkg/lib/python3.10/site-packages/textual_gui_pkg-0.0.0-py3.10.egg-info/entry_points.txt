@@ -1,5 +1,0 @@
-[console_scripts]
-tui_2 = textual_gui_pkg.tui_2:main
-tui_serial = textual_gui_pkg.tui_serial:main
-tui_topic = textual_gui_pkg.tui_topic:main
-

@@ -1,5 +1,0 @@
-[1.464s] Invoking command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/cpp_qt_app -- -j8 -l8
-[3.263s] [ 12%] [34m[1mAutomatic MOC and UIC for target cpp_qt_app[0m
-[3.263s] [ 12%] Built target cpp_qt_app_autogen
-[3.263s] [100%] Built target cpp_qt_app
-[3.269s] Invoked command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/cpp_qt_app -- -j8 -l8

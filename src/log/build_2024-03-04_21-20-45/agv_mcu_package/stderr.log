@@ -1,7 +1,0 @@
-[01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:[m[K In member function ‘[01m[Kvoid STMSubscriber::topic_callback(const Steer&) const[m[K’:
-[01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:33:28:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kconst _data_type[m[K’ {aka ‘[01m[Kconst std::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to type ‘[01m[Kint[m[K’
-   33 |         write(serial_port, [01;31m[K(int)msg.data[m[K, sizeof(msg.data));
-      |                            [01;31m[K^~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/stm32_bridge.dir/build.make:76: CMakeFiles/stm32_bridge.dir/src/stm32_bridge.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/stm32_bridge.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
