@@ -1,0 +1,10 @@
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/uninstall.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/publisher_pkg_uninstall.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/publisher_exp.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/test.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/edit_cache.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/rebuild_cache.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/list_install_components.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/install.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/install/local.dir
+/workspaces/ros_agv_pc/src/build/publisher_pkg/CMakeFiles/install/strip.dir

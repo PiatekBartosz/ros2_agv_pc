@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:27 (target_include_directories):
+  target_include_directories called with invalid arguments
+
+[0m
+[31mCMake Error at CMakeLists.txt:30 (target_compile_features):
+  target_compile_features called with invalid arguments
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

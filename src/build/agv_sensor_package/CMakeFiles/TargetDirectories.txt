@@ -1,0 +1,10 @@
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/uninstall.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/agv_sensor_package_uninstall.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/oak_d_publisher.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/test.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/edit_cache.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/rebuild_cache.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/list_install_components.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/install.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/install/local.dir
+/workspaces/ros_agv_pc/src/build/agv_sensor_package/CMakeFiles/install/strip.dir

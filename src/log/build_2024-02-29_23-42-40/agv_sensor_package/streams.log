@@ -1,0 +1,22 @@
+[1.327s] Invoking command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_sensor_package -- -j8 -l8
+[2.203s] [100%] Built target oak_d_publisher
+[2.218s] Invoked command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_sensor_package -- -j8 -l8
+[2.409s] Invoking command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_sensor_package
+[2.469s] -- Install configuration: ""
+[2.469s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/agv_sensor_package/oak_d_publisher
+[2.469s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/package_run_dependencies/agv_sensor_package
+[2.470s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/parent_prefix_path/agv_sensor_package
+[2.470s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/ament_prefix_path.sh
+[2.471s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/ament_prefix_path.dsv
+[2.471s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/path.sh
+[2.471s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/path.dsv
+[2.475s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.bash
+[2.475s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.sh
+[2.476s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.zsh
+[2.476s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.dsv
+[2.476s] -- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.dsv
+[2.476s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/packages/agv_sensor_package
+[2.476s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/cmake/agv_sensor_packageConfig.cmake
+[2.476s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/cmake/agv_sensor_packageConfig-version.cmake
+[2.477s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.xml
+[2.819s] Invoked command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_sensor_package

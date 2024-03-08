@@ -1,0 +1,29 @@
+[2.511s] Invoking command in '/workspaces/ros_agv_pc/src/textual_gui_pkg': PYTHONPATH=/workspaces/ros_agv_pc/src/build/textual_gui_pkg/prefix_override:/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/textual_gui_pkg build --build-base /workspaces/ros_agv_pc/src/build/textual_gui_pkg/build install --record /workspaces/ros_agv_pc/src/build/textual_gui_pkg/install.log --single-version-externally-managed
+[2.956s] running egg_info
+[2.957s] writing ../build/textual_gui_pkg/textual_gui_pkg.egg-info/PKG-INFO
+[2.958s] writing dependency_links to ../build/textual_gui_pkg/textual_gui_pkg.egg-info/dependency_links.txt
+[2.958s] writing entry points to ../build/textual_gui_pkg/textual_gui_pkg.egg-info/entry_points.txt
+[2.959s] writing requirements to ../build/textual_gui_pkg/textual_gui_pkg.egg-info/requires.txt
+[2.959s] writing top-level names to ../build/textual_gui_pkg/textual_gui_pkg.egg-info/top_level.txt
+[2.963s] reading manifest file '../build/textual_gui_pkg/textual_gui_pkg.egg-info/SOURCES.txt'
+[2.964s] adding license file 'LICENSE'
+[2.965s] writing manifest file '../build/textual_gui_pkg/textual_gui_pkg.egg-info/SOURCES.txt'
+[2.965s] running build
+[2.966s] running build_py
+[2.966s] copying textual_gui_pkg/tui_topic.py -> /workspaces/ros_agv_pc/src/build/textual_gui_pkg/build/lib/textual_gui_pkg
+[2.966s] running install
+[2.967s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.967s]   warnings.warn(
+[2.967s] running install_lib
+[2.970s] copying /workspaces/ros_agv_pc/src/build/textual_gui_pkg/build/lib/textual_gui_pkg/tui_topic.py -> /workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages/textual_gui_pkg
+[2.971s] byte-compiling /workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages/textual_gui_pkg/tui_topic.py to tui_topic.cpython-310.pyc
+[2.975s] running install_data
+[2.977s] running install_egg_info
+[2.981s] removing '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages/textual_gui_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.981s] Copying ../build/textual_gui_pkg/textual_gui_pkg.egg-info to /workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages/textual_gui_pkg-0.0.0-py3.10.egg-info
+[2.983s] running install_scripts
+[3.038s] Installing tui_2 script to /workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/textual_gui_pkg
+[3.039s] Installing tui_serial script to /workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/textual_gui_pkg
+[3.039s] Installing tui_topic script to /workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/textual_gui_pkg
+[3.040s] writing list of installed files to '/workspaces/ros_agv_pc/src/build/textual_gui_pkg/install.log'
+[3.175s] Invoked command in '/workspaces/ros_agv_pc/src/textual_gui_pkg' returned '0': PYTHONPATH=/workspaces/ros_agv_pc/src/build/textual_gui_pkg/prefix_override:/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/textual_gui_pkg build --build-base /workspaces/ros_agv_pc/src/build/textual_gui_pkg/build install --record /workspaces/ros_agv_pc/src/build/textual_gui_pkg/install.log --single-version-externally-managed

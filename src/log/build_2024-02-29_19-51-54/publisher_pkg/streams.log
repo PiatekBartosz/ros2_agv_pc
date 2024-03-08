@@ -1,0 +1,68 @@
+[0.956s] Invoking command in '/workspaces/ros_agv_pc/src/build/publisher_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/ros_agv_pc/src/publisher_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/ros_agv_pc/src/install/publisher_pkg
+[1.625s] -- The C compiler identification is GNU 11.4.0
+[1.681s] -- The CXX compiler identification is GNU 11.4.0
+[1.719s] -- Detecting C compiler ABI info
+[2.089s] -- Detecting C compiler ABI info - done
+[2.177s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.178s] -- Detecting C compile features
+[2.190s] -- Detecting C compile features - done
+[2.221s] -- Detecting CXX compiler ABI info
+[2.633s] -- Detecting CXX compiler ABI info - done
+[2.672s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.673s] -- Detecting CXX compile features
+[2.673s] -- Detecting CXX compile features - done
+[2.673s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.532s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[3.949s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[4.254s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.272s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.334s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.380s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.452s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.689s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.697s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.286s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.385s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.538s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.570s] -- Looking for pthread.h
+[5.765s] -- Looking for pthread.h - found
+[5.767s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.999s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.002s] -- Found Threads: TRUE  
+[6.492s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.748s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.748s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspaces/ros_agv_pc/src/publisher_pkg/include>
+[6.753s] -- Configured cppcheck exclude dirs and/or files: 
+[6.760s] -- Added test 'lint_cmake' to check CMake code style
+[6.765s] -- Added test 'uncrustify' to check C / C++ code style
+[6.769s] -- Configured uncrustify additional arguments: 
+[6.769s] -- Added test 'xmllint' to check XML markup files
+[6.784s] -- Configuring done
+[6.802s] -- Generating done
+[6.806s] -- Build files have been written to: /workspaces/ros_agv_pc/src/build/publisher_pkg
+[6.841s] Invoked command in '/workspaces/ros_agv_pc/src/build/publisher_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/ros_agv_pc/src/publisher_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/ros_agv_pc/src/install/publisher_pkg
+[6.851s] Invoking command in '/workspaces/ros_agv_pc/src/build/publisher_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/publisher_pkg -- -j8 -l8
+[7.011s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_exp.dir/src/publisher_exp.cpp.o[0m
+[21.955s] [100%] [32m[1mLinking CXX executable publisher_exp[0m
+[22.413s] [100%] Built target publisher_exp
+[22.432s] Invoked command in '/workspaces/ros_agv_pc/src/build/publisher_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/publisher_pkg -- -j8 -l8
+[22.488s] Invoking command in '/workspaces/ros_agv_pc/src/build/publisher_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/publisher_pkg
+[22.503s] -- Install configuration: ""
+[22.504s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/lib/publisher_pkg/publisher_exp
+[22.507s] -- Set runtime path of "/workspaces/ros_agv_pc/src/install/publisher_pkg/lib/publisher_pkg/publisher_exp" to ""
+[22.508s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/package_run_dependencies/publisher_pkg
+[22.508s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/parent_prefix_path/publisher_pkg
+[22.508s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/ament_prefix_path.sh
+[22.508s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/ament_prefix_path.dsv
+[22.508s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/path.sh
+[22.509s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/path.dsv
+[22.509s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.bash
+[22.509s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.sh
+[22.509s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.zsh
+[22.509s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.dsv
+[22.509s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.dsv
+[22.510s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/packages/publisher_pkg
+[22.510s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/cmake/publisher_pkgConfig.cmake
+[22.511s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/cmake/publisher_pkgConfig-version.cmake
+[22.511s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.xml
+[22.515s] Invoked command in '/workspaces/ros_agv_pc/src/build/publisher_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/publisher_pkg

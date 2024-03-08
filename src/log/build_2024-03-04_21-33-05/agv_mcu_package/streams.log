@@ -1,0 +1,15 @@
+[1.925s] Invoking command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8
+[2.995s] [35m[1mConsolidate compiler generated dependencies of target stm32_bridge[0m
+[2.995s] [ 50%] [32mBuilding CXX object CMakeFiles/stm32_bridge.dir/src/stm32_bridge.cpp.o[0m
+[9.034s] [01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:[m[K In constructor ‘[01m[KSTMSubscriber::STMSubscriber()[m[K’:
+[9.034s] [01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:30:18:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+[9.034s]    30 |           return [01;31m[K1[m[K;
+[9.035s]       |                  [01;31m[K^[m[K
+[9.070s] [01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[9.070s] [01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:92:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+[9.070s]    92 |   close(STMSubscriber[01;31m[K.[m[Kserial_port)
+[9.070s]       |                      [01;31m[K^[m[K
+[12.814s] gmake[2]: *** [CMakeFiles/stm32_bridge.dir/build.make:76: CMakeFiles/stm32_bridge.dir/src/stm32_bridge.cpp.o] Error 1
+[12.814s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/stm32_bridge.dir/all] Error 2
+[12.815s] gmake: *** [Makefile:146: all] Error 2
+[12.817s] Invoked command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8

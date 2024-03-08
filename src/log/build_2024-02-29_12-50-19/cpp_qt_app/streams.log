@@ -1,0 +1,24 @@
+[0.667s] Invoking command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/cpp_qt_app -- -j8 -l8
+[1.049s] [ 12%] [34m[1mAutomatic MOC and UIC for target cpp_qt_app[0m
+[1.049s] [ 12%] Built target cpp_qt_app_autogen
+[1.050s] [100%] Built target cpp_qt_app
+[1.065s] Invoked command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/cpp_qt_app -- -j8 -l8
+[1.179s] Invoking command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/cpp_qt_app
+[1.194s] -- Install configuration: ""
+[1.194s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/lib/cpp_qt_app/cpp_qt_app
+[1.195s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/ament_index/resource_index/package_run_dependencies/cpp_qt_app
+[1.195s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/ament_index/resource_index/parent_prefix_path/cpp_qt_app
+[1.195s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/ament_prefix_path.sh
+[1.195s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/ament_prefix_path.dsv
+[1.196s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/path.sh
+[1.196s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/path.dsv
+[1.196s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.bash
+[1.197s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.sh
+[1.200s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.zsh
+[1.200s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.dsv
+[1.201s] -- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.dsv
+[1.201s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/ament_index/resource_index/packages/cpp_qt_app
+[1.201s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/cmake/cpp_qt_appConfig.cmake
+[1.201s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/cmake/cpp_qt_appConfig-version.cmake
+[1.201s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.xml
+[1.504s] Invoked command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/cpp_qt_app

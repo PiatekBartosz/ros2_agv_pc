@@ -1,0 +1,22 @@
+[0.812s] Invoking command in '/workspaces/ros_agv_pc/src/build/publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/publisher_pkg -- -j8 -l8
+[1.239s] [100%] Built target publisher_exp
+[1.599s] Invoked command in '/workspaces/ros_agv_pc/src/build/publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/publisher_pkg -- -j8 -l8
+[1.662s] Invoking command in '/workspaces/ros_agv_pc/src/build/publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/publisher_pkg
+[1.692s] -- Install configuration: ""
+[1.696s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/lib/publisher_pkg/publisher_exp
+[1.696s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/package_run_dependencies/publisher_pkg
+[1.699s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/parent_prefix_path/publisher_pkg
+[1.699s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/ament_prefix_path.sh
+[1.699s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/ament_prefix_path.dsv
+[1.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/path.sh
+[1.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/path.dsv
+[1.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.bash
+[1.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.sh
+[1.701s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.zsh
+[1.702s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.dsv
+[1.702s] -- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.dsv
+[1.702s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/packages/publisher_pkg
+[1.703s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/cmake/publisher_pkgConfig.cmake
+[1.703s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/cmake/publisher_pkgConfig-version.cmake
+[1.705s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.xml
+[1.966s] Invoked command in '/workspaces/ros_agv_pc/src/build/publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/publisher_pkg
