@@ -88,7 +88,7 @@ rosidl_generator_cpp/interfaces/msg/steer.hpp: /opt/ros/humble/share/rosidl_gene
 rosidl_generator_cpp/interfaces/msg/steer.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/interfaces/msg/steer.hpp: rosidl_adapter/interfaces/msg/Steer.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspaces/ros_agv_pc/src/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_generator_cpp__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/interfaces/msg/detail/steer__builder.hpp: rosidl_generator_cpp/interfaces/msg/steer.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interfaces/msg/detail/steer__builder.hpp

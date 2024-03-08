@@ -77,7 +77,7 @@ rosidl_typesupport_cpp/interfaces/msg/steer__type_support.cpp: /opt/ros/humble/s
 rosidl_typesupport_cpp/interfaces/msg/steer__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_cpp/interfaces/msg/steer__type_support.cpp: rosidl_adapter/interfaces/msg/Steer.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspaces/ros_agv_pc/src/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /workspaces/ros_agv_pc/src/build/interfaces/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
 CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/steer__type_support.cpp.o: CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/steer__type_support.cpp.o: rosidl_typesupport_cpp/interfaces/msg/steer__type_support.cpp
