@@ -19,7 +19,7 @@ build:
     - git clone -b dev https://gitlab.com/sknce/agv/ros_agv/ros_agv_pc.git
     # Build the ROS2 workspace
     - cd ~/ros2_ws
-    - colcon build --symlink-install
-  artifacts:
-    paths:
-      - ~/ros2_ws/install
+    # - colcon build --symlink-install
+  # artifacts:
+  #   paths:
+  #     - ~/ros2_ws/install
