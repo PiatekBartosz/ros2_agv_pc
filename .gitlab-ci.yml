@@ -1,23 +1,30 @@
-# This file is a template, and might need editing before it works on your project.
-# To contribute improvements to CI/CD templates, please follow the Development guide at:
-# https://docs.gitlab.com/ee/development/cicd/templates.html
-# This specific template is located at:
-# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Docker.gitlab-ci.yml
+stages:
+  - build
+  - test
+  - deploy
 
-# Build a Docker image with CI/CD and push to the GitLab registry.
-# Docker-in-Docker documentation: https://docs.gitlab.com/ee/ci/docker/using_docker_build.html
-#
-# This template uses one generic job with conditional builds
-# for the default branch and all other (MR) branches.
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  ROS_DISTRO: humble
 
-docker-build:
-  # Use the official docker image.
-  image: ros:humble-ros-base
-  # services:
-  #   - postgres:11.7
-  # before_script:
-  #   - bundle install
+image: ros:${ROS_DISTRO}-ros-base
 
-# test:
-  # script:
-    # - bundle exec rake spec
+before_script:
+  - apt-get update
+  - rosdep install --from-paths src --ignore-src -r -y
+  - source /opt/ros/${ROS_DISTRO}/setup.bash
+
+build:
+  stage: build
+  tags:
+    - docker
+  script:
+    - colcon build
+
+test:
+  stage: test
+  tags:
+    - docker
+  script:
+    - colcon build
+    - colcon test
