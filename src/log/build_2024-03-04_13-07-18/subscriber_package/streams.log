@@ -1,0 +1,23 @@
+[0.396s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[0.656s] [100%] Built target subcpp
+[0.665s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '0': /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[0.687s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/subscriber_package
+[0.699s] -- Install configuration: ""
+[0.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+[0.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+[0.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/package_run_dependencies/subscriber_package
+[0.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/parent_prefix_path/subscriber_package
+[0.700s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.sh
+[0.701s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.dsv
+[0.701s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.sh
+[0.701s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.dsv
+[0.701s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.bash
+[0.702s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.sh
+[0.702s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.zsh
+[0.702s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.dsv
+[0.702s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.dsv
+[0.702s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/packages/subscriber_package
+[0.702s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig.cmake
+[0.703s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig-version.cmake
+[0.703s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.xml
+[0.757s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '0': /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/subscriber_package

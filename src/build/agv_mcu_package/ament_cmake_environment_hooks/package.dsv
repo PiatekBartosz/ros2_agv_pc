@@ -1,0 +1,4 @@
+source;share/agv_mcu_package/local_setup.bash
+source;share/agv_mcu_package/local_setup.dsv
+source;share/agv_mcu_package/local_setup.sh
+source;share/agv_mcu_package/local_setup.zsh

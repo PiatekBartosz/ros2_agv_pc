@@ -1,0 +1,19 @@
+[100%] Built target oak_d_publisher
+-- Install configuration: ""
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/agv_sensor_package/oak_d_publisher
+-- Set runtime path of "/workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/agv_sensor_package/oak_d_publisher" to "/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib"
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/package_run_dependencies/agv_sensor_package
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/parent_prefix_path/agv_sensor_package
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/ament_prefix_path.sh
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/ament_prefix_path.dsv
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/path.sh
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/path.dsv
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.bash
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.sh
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.zsh
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.dsv
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.dsv
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/packages/agv_sensor_package
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/cmake/agv_sensor_packageConfig.cmake
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/cmake/agv_sensor_packageConfig-version.cmake
+-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.xml

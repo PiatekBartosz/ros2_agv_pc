@@ -1,0 +1,32 @@
+[0.193s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[0.337s] [35m[1mConsolidate compiler generated dependencies of target steer_sub[0m
+[0.390s] [ 50%] Built target subcpp
+[0.428s] [ 75%] [32mBuilding CXX object CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o[0m
+[4.498s] [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:22:25:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K<<[m[K’ token
+[4.498s]    22 |     rclcpp::Subscription[01;31m[K<<[m[Kinterfaces::msg::Steer>::SharedPtr subscription_;
+[4.498s]       |                         [01;31m[K^~[m[K
+[4.506s] [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.506s] [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:13:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[4.506s]    13 |       [01;31m[Ksubscription_[m[K = this->create_subscription<interfaces::msg::Steer>(
+[4.507s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[4.507s]       |       [32m[Krmw_subscription_t[m[K
+[4.571s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.571s]                  from [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:3[m[K:
+[4.571s] [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(const Steer&) const[m[K’:
+[4.572s] [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:20:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _data_type[m[K’ {aka ‘[01m[Kconst class std::vector<unsigned char, std::allocator<unsigned char> >[m[K’} has no member named ‘[01m[Kc_str[m[K’
+[4.572s]    20 |       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.[01;31m[Kc_str[m[K());
+[4.572s]       |                                                                 [01;31m[K^~~~~[m[K
+[7.321s] gmake[2]: *** [CMakeFiles/steer_sub.dir/build.make:76: CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o] Error 1
+[7.321s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/steer_sub.dir/all] Error 2
+[7.322s] gmake: *** [Makefile:146: all] Error 2
+[7.324s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '2': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8

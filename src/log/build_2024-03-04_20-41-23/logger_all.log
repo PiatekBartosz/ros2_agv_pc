@@ -1,0 +1,584 @@
+[1.833s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.833s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f3e2716a410>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f3e27169ae0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f3e27169ae0>>, mixin_verb=('build',))
+[1.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.890s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[1.891s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[1.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.891s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/ros_agv_pc/src'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['ignore', 'ignore_ament_install']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'ignore'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'ignore_ament_install'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['colcon_pkg']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'colcon_pkg'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['colcon_meta']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'colcon_meta'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['ros']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'ros'
+[1.909s] DEBUG:colcon.colcon_core.package_identification:Package 'AGV_simulator_description' with type 'ros.ament_python' and name 'AGV_simulator_description'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['ignore', 'ignore_ament_install']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'ignore'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'ignore_ament_install'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['colcon_pkg']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'colcon_pkg'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['colcon_meta']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'colcon_meta'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['ros']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'ros'
+[1.910s] DEBUG:colcon.colcon_core.package_identification:Package 'agv_mcu_package' with type 'ros.ament_cmake' and name 'agv_mcu_package'
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['ignore', 'ignore_ament_install']
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'ignore'
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'ignore_ament_install'
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['colcon_pkg']
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'colcon_pkg'
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['colcon_meta']
+[1.911s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'colcon_meta'
+[1.911s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['ros']
+[1.911s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'ros'
+[1.912s] DEBUG:colcon.colcon_core.package_identification:Package 'agv_sensor_package' with type 'ros.ament_cmake' and name 'agv_sensor_package'
+[1.912s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.912s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.913s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.913s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['ignore', 'ignore_ament_install']
+[1.913s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'ignore'
+[1.913s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'ignore_ament_install'
+[1.913s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['colcon_pkg']
+[1.913s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'colcon_pkg'
+[1.913s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['colcon_meta']
+[1.914s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'colcon_meta'
+[1.914s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['ros']
+[1.914s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'ros'
+[1.915s] DEBUG:colcon.colcon_core.package_identification:Package 'cpp_qt_app' with type 'ros.ament_cmake' and name 'cpp_qt_app'
+[1.915s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.915s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.915s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.915s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'ignore'
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'ignore_ament_install'
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['colcon_pkg']
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'colcon_pkg'
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['colcon_meta']
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'colcon_meta'
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['ros']
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'ros'
+[1.917s] DEBUG:colcon.colcon_core.package_identification:Package 'interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'ignore'
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'ignore_ament_install'
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['colcon_pkg']
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'colcon_pkg'
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['colcon_meta']
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'colcon_meta'
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['ros']
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'ros'
+[1.919s] DEBUG:colcon.colcon_core.package_identification:Package 'publisher_pkg' with type 'ros.ament_cmake' and name 'publisher_pkg'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['ignore', 'ignore_ament_install']
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'ignore'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'ignore_ament_install'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['colcon_pkg']
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'colcon_pkg'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['colcon_meta']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'colcon_meta'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['ros']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'ros'
+[1.920s] DEBUG:colcon.colcon_core.package_identification:Package 'py_qt_app' with type 'ros.ament_python' and name 'py_qt_app'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['ignore', 'ignore_ament_install']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'ignore'
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'ignore_ament_install'
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['colcon_pkg']
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'colcon_pkg'
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['colcon_meta']
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'colcon_meta'
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['ros']
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'ros'
+[1.922s] DEBUG:colcon.colcon_core.package_identification:Package 'subpkg' with type 'ros.ament_cmake' and name 'subscriber_package'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'ignore'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'ignore_ament_install'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['colcon_pkg']
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'colcon_pkg'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['colcon_meta']
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'colcon_meta'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['ros']
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'ros'
+[1.923s] DEBUG:colcon.colcon_core.package_identification:Package 'textual_gui_pkg' with type 'ros.ament_python' and name 'textual_gui_pkg'
+[1.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.057s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'cmake_args' from command line to 'None'
+[2.057s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'cmake_target' from command line to 'None'
+[2.083s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'AGV_simulator_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.084s] DEBUG:colcon.colcon_core.verb:Building package 'AGV_simulator_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/AGV_simulator_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/AGV_simulator_description', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/AGV_simulator_description', 'symlink_install': False, 'test_result_base': None}
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'cmake_args' from command line to 'None'
+[2.118s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'cmake_target' from command line to 'None'
+[2.118s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.118s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.118s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'agv_mcu_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.119s] DEBUG:colcon.colcon_core.verb:Building package 'agv_mcu_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/agv_mcu_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/agv_mcu_package', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/agv_mcu_package', 'symlink_install': False, 'test_result_base': None}
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'cmake_args' from command line to 'None'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'cmake_target' from command line to 'None'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.153s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.153s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.153s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.153s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.153s] Level 5:colcon.colcon_core.verb:set package 'agv_sensor_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.153s] DEBUG:colcon.colcon_core.verb:Building package 'agv_sensor_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/agv_sensor_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/agv_sensor_package', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/agv_sensor_package', 'symlink_install': False, 'test_result_base': None}
+[2.178s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'cmake_args' from command line to 'None'
+[2.178s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'cmake_target' from command line to 'None'
+[2.178s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.178s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'cmake_clean_cache' from command line to 'False'
+[2.178s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'cmake_clean_first' from command line to 'False'
+[2.178s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'cmake_force_configure' from command line to 'False'
+[2.179s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'ament_cmake_args' from command line to 'None'
+[2.179s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'catkin_cmake_args' from command line to 'None'
+[2.179s] Level 5:colcon.colcon_core.verb:set package 'cpp_qt_app' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.179s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_qt_app' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/cpp_qt_app', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/cpp_qt_app', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/cpp_qt_app', 'symlink_install': False, 'test_result_base': None}
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_args' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[2.207s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.207s] DEBUG:colcon.colcon_core.verb:Building package 'interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/interfaces', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/interfaces', 'symlink_install': False, 'test_result_base': None}
+[2.231s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'cmake_args' from command line to 'None'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'cmake_target' from command line to 'None'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'publisher_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.232s] DEBUG:colcon.colcon_core.verb:Building package 'publisher_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/publisher_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/publisher_pkg', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/publisher_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.255s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'cmake_args' from command line to 'None'
+[2.255s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'cmake_target' from command line to 'None'
+[2.255s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'cmake_clean_cache' from command line to 'False'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'cmake_clean_first' from command line to 'False'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'cmake_force_configure' from command line to 'False'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'ament_cmake_args' from command line to 'None'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'catkin_cmake_args' from command line to 'None'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'py_qt_app' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.256s] DEBUG:colcon.colcon_core.verb:Building package 'py_qt_app' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/py_qt_app', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/py_qt_app', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/py_qt_app', 'symlink_install': False, 'test_result_base': None}
+[2.279s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'cmake_args' from command line to 'None'
+[2.279s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'cmake_target' from command line to 'None'
+[2.280s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.280s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.280s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.280s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.280s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.280s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.280s] Level 5:colcon.colcon_core.verb:set package 'textual_gui_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.280s] DEBUG:colcon.colcon_core.verb:Building package 'textual_gui_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/textual_gui_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/textual_gui_pkg', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/textual_gui_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.314s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'cmake_args' from command line to 'None'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'cmake_target' from command line to 'None'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.315s] Level 5:colcon.colcon_core.verb:set package 'subscriber_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.315s] DEBUG:colcon.colcon_core.verb:Building package 'subscriber_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/subscriber_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/subscriber_package', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/subpkg', 'symlink_install': False, 'test_result_base': None}
+[2.348s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.388s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.390s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros_agv_pc/src/interfaces' with build type 'ament_cmake'
+[2.390s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros_agv_pc/src/interfaces'
+[2.438s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.539s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/ros_agv_pc/src/AGV_simulator_description' with build type 'ament_python'
+[2.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('AGV_simulator_description', 'ament_prefix_path')
+[2.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/hook/ament_prefix_path.ps1'
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/hook/ament_prefix_path.dsv'
+[2.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/hook/ament_prefix_path.sh'
+[2.612s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.613s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.723s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros_agv_pc/src/agv_mcu_package' with build type 'ament_cmake'
+[2.724s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros_agv_pc/src/agv_mcu_package'
+[2.758s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.758s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.854s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros_agv_pc/src/agv_sensor_package' with build type 'ament_cmake'
+[2.854s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros_agv_pc/src/agv_sensor_package'
+[2.877s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.877s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.964s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros_agv_pc/src/cpp_qt_app' with build type 'ament_cmake'
+[2.964s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros_agv_pc/src/cpp_qt_app'
+[2.995s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.995s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.131s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros_agv_pc/src/publisher_pkg' with build type 'ament_cmake'
+[3.131s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros_agv_pc/src/publisher_pkg'
+[3.166s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.257s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/ros_agv_pc/src/py_qt_app' with build type 'ament_python'
+[3.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_qt_app', 'ament_prefix_path')
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/hook/ament_prefix_path.ps1'
+[3.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/hook/ament_prefix_path.dsv'
+[3.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/hook/ament_prefix_path.sh'
+[3.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.397s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/ros_agv_pc/src/textual_gui_pkg' with build type 'ament_python'
+[3.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('textual_gui_pkg', 'ament_prefix_path')
+[3.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/hook/ament_prefix_path.ps1'
+[3.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/hook/ament_prefix_path.dsv'
+[3.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/hook/ament_prefix_path.sh'
+[3.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.556s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/interfaces -- -j8 -l8
+[4.262s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/ros_agv_pc/src/AGV_simulator_description'
+[4.291s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.291s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8
+[4.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_sensor_package -- -j8 -l8
+[4.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/cpp_qt_app -- -j8 -l8
+[4.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/publisher_pkg -- -j8 -l8
+[5.008s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/ros_agv_pc/src/py_qt_app'
+[5.038s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.038s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.677s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/ros_agv_pc/src/textual_gui_pkg'
+[5.706s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.706s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/interfaces -- -j8 -l8
+[5.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_sensor_package -- -j8 -l8
+[5.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8
+[5.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/publisher_pkg -- -j8 -l8
+[5.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/cpp_qt_app -- -j8 -l8
+[5.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_sensor_package
+[5.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/publisher_pkg
+[5.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_mcu_package
+[5.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/cpp_qt_app
+[5.995s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_sensor_package)
+[6.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/agv_sensor_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_sensor_package
+[6.057s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package' for CMake module files
+[6.059s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package' for CMake config files
+[6.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_sensor_package', 'cmake_prefix_path')
+[6.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/hook/cmake_prefix_path.ps1'
+[6.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/hook/cmake_prefix_path.dsv'
+[6.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/hook/cmake_prefix_path.sh'
+[6.107s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/lib'
+[6.107s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/bin'
+[6.108s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/pkgconfig/agv_sensor_package.pc'
+[6.108s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/python3.10/site-packages'
+[6.109s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/bin'
+[6.140s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.ps1'
+[6.142s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.dsv'
+[6.144s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.sh'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.bash'
+[6.155s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.zsh'
+[6.160s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/colcon-core/packages/agv_sensor_package)
+[6.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/interfaces
+[6.187s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(publisher_pkg)
+[6.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/publisher_pkg
+[6.246s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg' for CMake module files
+[6.248s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg' for CMake config files
+[6.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('publisher_pkg', 'cmake_prefix_path')
+[6.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/hook/cmake_prefix_path.ps1'
+[6.296s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/hook/cmake_prefix_path.dsv'
+[6.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/hook/cmake_prefix_path.sh'
+[6.302s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/lib'
+[6.303s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/bin'
+[6.303s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/lib/pkgconfig/publisher_pkg.pc'
+[6.304s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/lib/python3.10/site-packages'
+[6.305s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/bin'
+[6.346s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.ps1'
+[6.347s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.dsv'
+[6.348s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.sh'
+[6.348s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.bash'
+[6.349s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.zsh'
+[6.350s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/publisher_pkg/share/colcon-core/packages/publisher_pkg)
+[6.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_mcu_package)
+[6.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_mcu_package
+[6.401s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package' for CMake module files
+[6.402s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package' for CMake config files
+[6.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mcu_package', 'cmake_prefix_path')
+[6.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/hook/cmake_prefix_path.ps1'
+[6.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/hook/cmake_prefix_path.dsv'
+[6.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/hook/cmake_prefix_path.sh'
+[6.452s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/lib'
+[6.452s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/bin'
+[6.452s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/lib/pkgconfig/agv_mcu_package.pc'
+[6.453s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/lib/python3.10/site-packages'
+[6.454s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/bin'
+[6.494s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.ps1'
+[6.495s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.dsv'
+[6.496s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.sh'
+[6.497s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.bash'
+[6.498s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.zsh'
+[6.499s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/colcon-core/packages/agv_mcu_package)
+[6.501s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_qt_app)
+[6.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/cpp_qt_app' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/cpp_qt_app
+[6.548s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app' for CMake module files
+[6.549s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app' for CMake config files
+[6.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_qt_app', 'cmake_prefix_path')
+[6.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/hook/cmake_prefix_path.ps1'
+[6.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/hook/cmake_prefix_path.dsv'
+[6.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/hook/cmake_prefix_path.sh'
+[6.591s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/lib'
+[6.592s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/bin'
+[6.592s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/lib/pkgconfig/cpp_qt_app.pc'
+[6.593s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/lib/python3.10/site-packages'
+[6.594s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/bin'
+[6.628s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.ps1'
+[6.629s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.dsv'
+[6.630s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.sh'
+[6.630s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.bash'
+[6.631s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.zsh'
+[6.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/colcon-core/packages/cpp_qt_app)
+[6.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_sensor_package)
+[6.808s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package' for CMake module files
+[6.810s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package' for CMake config files
+[6.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_sensor_package', 'cmake_prefix_path')
+[6.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/hook/cmake_prefix_path.ps1'
+[6.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/hook/cmake_prefix_path.dsv'
+[6.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/hook/cmake_prefix_path.sh'
+[6.859s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/lib'
+[6.859s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/bin'
+[6.859s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/pkgconfig/agv_sensor_package.pc'
+[6.860s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/python3.10/site-packages'
+[6.860s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_sensor_package/bin'
+[6.891s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.ps1'
+[6.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.dsv'
+[6.893s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.sh'
+[6.893s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.bash'
+[6.894s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.zsh'
+[6.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/agv_sensor_package/share/colcon-core/packages/agv_sensor_package)
+[6.930s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(publisher_pkg)
+[6.958s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg' for CMake module files
+[6.959s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg' for CMake config files
+[6.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('publisher_pkg', 'cmake_prefix_path')
+[6.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/hook/cmake_prefix_path.ps1'
+[6.987s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/hook/cmake_prefix_path.dsv'
+[6.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/hook/cmake_prefix_path.sh'
+[6.990s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/lib'
+[6.990s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/bin'
+[6.990s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/lib/pkgconfig/publisher_pkg.pc'
+[6.991s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/lib/python3.10/site-packages'
+[6.992s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/publisher_pkg/bin'
+[7.019s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.ps1'
+[7.021s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.dsv'
+[7.022s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.sh'
+[7.023s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.bash'
+[7.024s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.zsh'
+[7.025s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/publisher_pkg/share/colcon-core/packages/publisher_pkg)
+[7.026s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[7.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/interfaces
+[7.053s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake module files
+[7.055s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake config files
+[7.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[7.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[7.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[7.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[7.110s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib'
+[7.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[7.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[7.143s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[7.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[7.144s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[7.144s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/pkgconfig/interfaces.pc'
+[7.144s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/python3.10/site-packages'
+[7.144s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[7.177s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.ps1'
+[7.178s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.dsv'
+[7.179s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.sh'
+[7.180s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.bash'
+[7.181s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.zsh'
+[7.182s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/interfaces/share/colcon-core/packages/interfaces)
+[7.217s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_mcu_package)
+[7.245s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package' for CMake module files
+[7.246s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package' for CMake config files
+[7.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mcu_package', 'cmake_prefix_path')
+[7.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/hook/cmake_prefix_path.ps1'
+[7.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/hook/cmake_prefix_path.dsv'
+[7.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/hook/cmake_prefix_path.sh'
+[7.282s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/lib'
+[7.282s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/bin'
+[7.282s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/lib/pkgconfig/agv_mcu_package.pc'
+[7.283s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/lib/python3.10/site-packages'
+[7.284s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/agv_mcu_package/bin'
+[7.314s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.ps1'
+[7.315s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.dsv'
+[7.316s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.sh'
+[7.320s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.bash'
+[7.322s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.zsh'
+[7.324s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/agv_mcu_package/share/colcon-core/packages/agv_mcu_package)
+[7.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/py_qt_app': PYTHONPATH=/workspaces/ros_agv_pc/src/build/py_qt_app/prefix_override:/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/py_qt_app build --build-base /workspaces/ros_agv_pc/src/build/py_qt_app/build install --record /workspaces/ros_agv_pc/src/build/py_qt_app/install.log --single-version-externally-managed
+[7.363s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_qt_app)
+[7.398s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app' for CMake module files
+[7.399s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app' for CMake config files
+[7.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_qt_app', 'cmake_prefix_path')
+[7.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/hook/cmake_prefix_path.ps1'
+[7.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/hook/cmake_prefix_path.dsv'
+[7.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/hook/cmake_prefix_path.sh'
+[7.438s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/lib'
+[7.438s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/bin'
+[7.439s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/lib/pkgconfig/cpp_qt_app.pc'
+[7.439s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/lib/python3.10/site-packages'
+[7.440s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/cpp_qt_app/bin'
+[7.467s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.ps1'
+[7.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.dsv'
+[7.471s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.sh'
+[7.472s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.bash'
+[7.474s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.zsh'
+[7.475s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/cpp_qt_app/share/colcon-core/packages/cpp_qt_app)
+[7.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/textual_gui_pkg': PYTHONPATH=/workspaces/ros_agv_pc/src/build/textual_gui_pkg/prefix_override:/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/textual_gui_pkg build --build-base /workspaces/ros_agv_pc/src/build/textual_gui_pkg/build install --record /workspaces/ros_agv_pc/src/build/textual_gui_pkg/install.log --single-version-externally-managed
+[7.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/AGV_simulator_description': PYTHONPATH=/workspaces/ros_agv_pc/src/build/AGV_simulator_description/prefix_override:/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/AGV_simulator_description build --build-base /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build install --record /workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log --install-scripts $base/lib/AGV_simulator_description --single-version-externally-managed
+[7.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[7.569s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake module files
+[7.571s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake config files
+[7.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[7.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[7.610s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[7.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[7.611s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib'
+[7.612s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[7.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[7.649s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[7.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[7.653s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[7.654s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/pkgconfig/interfaces.pc'
+[7.654s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/python3.10/site-packages'
+[7.655s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[7.691s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.ps1'
+[7.694s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.dsv'
+[7.695s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.sh'
+[7.696s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.bash'
+[7.697s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.zsh'
+[7.698s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/interfaces/share/colcon-core/packages/interfaces)
+[7.700s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros_agv_pc/src/subpkg' with build type 'ament_cmake'
+[7.702s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros_agv_pc/src/subpkg'
+[7.747s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.747s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.912s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[8.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/py_qt_app' returned '0': PYTHONPATH=/workspaces/ros_agv_pc/src/build/py_qt_app/prefix_override:/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/py_qt_app build --build-base /workspaces/ros_agv_pc/src/build/py_qt_app/build install --record /workspaces/ros_agv_pc/src/build/py_qt_app/install.log --single-version-externally-managed
+[8.244s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/py_qt_app' for CMake module files
+[8.245s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/py_qt_app' for CMake config files
+[8.246s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/py_qt_app/lib'
+[8.246s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/py_qt_app/bin'
+[8.247s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/py_qt_app/lib/pkgconfig/py_qt_app.pc'
+[8.247s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages'
+[8.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_qt_app', 'pythonpath')
+[8.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/hook/pythonpath.ps1'
+[8.334s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/hook/pythonpath.dsv'
+[8.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/hook/pythonpath.sh'
+[8.336s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/py_qt_app/bin'
+[8.337s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_qt_app)
+[8.382s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/package.ps1'
+[8.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/package.dsv'
+[8.386s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/package.sh'
+[8.391s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/package.bash'
+[8.393s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/py_qt_app/share/py_qt_app/package.zsh'
+[8.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/py_qt_app/share/colcon-core/packages/py_qt_app)
+[8.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/textual_gui_pkg' returned '0': PYTHONPATH=/workspaces/ros_agv_pc/src/build/textual_gui_pkg/prefix_override:/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/textual_gui_pkg build --build-base /workspaces/ros_agv_pc/src/build/textual_gui_pkg/build install --record /workspaces/ros_agv_pc/src/build/textual_gui_pkg/install.log --single-version-externally-managed
+[8.446s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/textual_gui_pkg' for CMake module files
+[8.447s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/textual_gui_pkg' for CMake config files
+[8.449s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib'
+[8.449s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/bin'
+[8.449s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/pkgconfig/textual_gui_pkg.pc'
+[8.450s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages'
+[8.450s] Level 1:colcon.colcon_core.shell:create_environment_hook('textual_gui_pkg', 'pythonpath')
+[8.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/hook/pythonpath.ps1'
+[8.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/hook/pythonpath.dsv'
+[8.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/hook/pythonpath.sh'
+[8.502s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/bin'
+[8.502s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(textual_gui_pkg)
+[8.540s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/package.ps1'
+[8.542s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/package.dsv'
+[8.543s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/package.sh'
+[8.545s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/package.bash'
+[8.545s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/textual_gui_pkg/package.zsh'
+[8.546s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/textual_gui_pkg/share/colcon-core/packages/textual_gui_pkg)
+[8.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/AGV_simulator_description' returned '0': PYTHONPATH=/workspaces/ros_agv_pc/src/build/AGV_simulator_description/prefix_override:/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/AGV_simulator_description build --build-base /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build install --record /workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log --install-scripts $base/lib/AGV_simulator_description --single-version-externally-managed
+[8.577s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/AGV_simulator_description' for CMake module files
+[8.578s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/AGV_simulator_description' for CMake config files
+[8.579s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib'
+[8.580s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/bin'
+[8.580s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/pkgconfig/AGV_simulator_description.pc'
+[8.581s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages'
+[8.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('AGV_simulator_description', 'pythonpath')
+[8.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/hook/pythonpath.ps1'
+[8.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/hook/pythonpath.dsv'
+[8.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/hook/pythonpath.sh'
+[8.616s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/bin'
+[8.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(AGV_simulator_description)
+[8.648s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/package.ps1'
+[8.649s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/package.dsv'
+[8.650s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/package.sh'
+[8.650s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/package.bash'
+[8.651s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/package.zsh'
+[8.653s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/colcon-core/packages/AGV_simulator_description)
+[15.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '2': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[15.361s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(subscriber_package)
+[15.378s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/subscriber_package' for CMake module files
+[15.379s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/subscriber_package' for CMake config files
+[15.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('subscriber_package', 'cmake_prefix_path')
+[15.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/hook/cmake_prefix_path.ps1'
+[15.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/hook/cmake_prefix_path.dsv'
+[15.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/hook/cmake_prefix_path.sh'
+[15.398s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/subscriber_package/lib'
+[15.398s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/subscriber_package/bin'
+[15.398s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/subscriber_package/lib/pkgconfig/subscriber_package.pc'
+[15.399s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/subscriber_package/lib/python3.10/site-packages'
+[15.399s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/subscriber_package/bin'
+[15.415s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.ps1'
+[15.415s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.dsv'
+[15.416s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.sh'
+[15.417s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.bash'
+[15.417s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.zsh'
+[15.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/subscriber_package/share/colcon-core/packages/subscriber_package)
+[15.429s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.429s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.429s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[15.429s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[15.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.452s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.454s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[15.454s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.473s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.ps1'
+[15.474s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/ros_agv_pc/src/install/_local_setup_util_ps1.py'
+[15.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.ps1'
+[15.502s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.sh'
+[15.503s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/ros_agv_pc/src/install/_local_setup_util_sh.py'
+[15.504s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.sh'
+[15.532s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.bash'
+[15.532s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.bash'
+[15.553s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.zsh'
+[15.554s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.zsh'

@@ -1,0 +1,6 @@
+{
+  "package_name": "interfaces",
+  "non_idl_tuples": [
+    "/workspaces/ros_agv_pc/src/interfaces:msg/Steer.msg"
+  ]
+}

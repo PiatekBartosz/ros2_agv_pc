@@ -1,0 +1,56 @@
+[0.110s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[0.133s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.273s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.304s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.307s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.312s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.324s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.339s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.396s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.398s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.540s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.794s] -- Found interfaces: 0.0.0 (/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/cmake)
+[0.822s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.939s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.939s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspaces/ros_agv_pc/src/subpkg/include>
+[0.939s] -- Configured cppcheck exclude dirs and/or files: 
+[0.940s] -- Added test 'lint_cmake' to check CMake code style
+[0.941s] -- Added test 'uncrustify' to check C / C++ code style
+[0.941s] -- Configured uncrustify additional arguments: 
+[0.941s] -- Added test 'xmllint' to check XML markup files
+[0.942s] -- Configuring done
+[0.960s] -- Generating done
+[0.962s] -- Build files have been written to: /workspaces/ros_agv_pc/src/build/subscriber_package
+[0.998s] [35m[1mConsolidate compiler generated dependencies of target subcpp[0m
+[0.998s] [35m[1mConsolidate compiler generated dependencies of target steer_sub[0m
+[1.032s] [ 25%] [32mBuilding CXX object CMakeFiles/subcpp.dir/src/subcpp.cpp.o[0m
+[1.046s] [ 50%] [32mBuilding CXX object CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o[0m
+[10.636s] [ 75%] [32m[1mLinking CXX executable subcpp[0m
+[10.925s] [100%] [32m[1mLinking CXX executable steer_sub[0m
+[11.012s] [100%] Built target subcpp
+[11.291s] [100%] Built target steer_sub
+[11.316s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '0': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[11.346s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/subscriber_package
+[11.357s] -- Install configuration: ""
+[11.367s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+[11.367s] -- Set runtime path of "/workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp" to ""
+[11.367s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/steer_sub
+[11.367s] -- Set runtime path of "/workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/steer_sub" to ""
+[11.367s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+[11.368s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/steer_sub
+[11.368s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/package_run_dependencies/subscriber_package
+[11.368s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/parent_prefix_path/subscriber_package
+[11.368s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.sh
+[11.368s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.dsv
+[11.368s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.sh
+[11.368s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.dsv
+[11.368s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.bash
+[11.369s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.sh
+[11.369s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.zsh
+[11.369s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.dsv
+[11.369s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.dsv
+[11.369s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/packages/subscriber_package
+[11.369s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig.cmake
+[11.369s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig-version.cmake
+[11.369s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.xml
+[11.377s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '0': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/subscriber_package
