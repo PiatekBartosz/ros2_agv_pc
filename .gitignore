@@ -3,3 +3,8 @@ install/*
 log/*
 site/*
 .vscode/*
+
+src/build/*
+src/install/*
+src/log/*
+src/site/*

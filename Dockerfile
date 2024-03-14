@@ -41,4 +41,23 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     htop \
     python3-pip \
     qtbase5-private-dev \
-    libopencv-dev
+    libopencv-dev \
+    kmod \
+    kbd \
+    ~nros-humble-rqt*
+
+RUN pip install --upgrade pip && \
+    pip install pyserial textual keyboard
+
+RUN apt update && apt upgrade -y && apt install -y \
+    ros-$ROS_DISTRO-foxglove-bridge \
+    ros-$ROS_DISTRO-bond \
+    ros-$ROS_DISTRO-control-msgs \
+    ros-$ROS_DISTRO-controller-manager-msgs \
+    ros-$ROS_DISTRO-image-transport-plugins \
+    ros-$ROS_DISTRO-map-msgs \
+    ros-$ROS_DISTRO-nav2-msgs \
+    ros-$ROS_DISTRO-tf2-msgs \
+    ros-$ROS_DISTRO-robot-localization && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
