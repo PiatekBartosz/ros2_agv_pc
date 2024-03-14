@@ -1,0 +1,26 @@
+[0.490s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[0.768s] [ 50%] Built target steer_sub
+[0.771s] [100%] Built target subcpp
+[0.978s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '0': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[1.177s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/subscriber_package
+[1.207s] -- Install configuration: ""
+[1.208s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+[1.208s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/steer_sub
+[1.208s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp
+[1.210s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/steer_sub
+[1.212s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/package_run_dependencies/subscriber_package
+[1.212s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/parent_prefix_path/subscriber_package
+[1.212s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.sh
+[1.213s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.dsv
+[1.213s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.sh
+[1.213s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.dsv
+[1.213s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.bash
+[1.214s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.sh
+[1.214s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.zsh
+[1.214s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.dsv
+[1.214s] -- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.dsv
+[1.215s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/packages/subscriber_package
+[1.215s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig.cmake
+[1.216s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig-version.cmake
+[1.216s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.xml
+[1.232s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '0': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/subscriber_package

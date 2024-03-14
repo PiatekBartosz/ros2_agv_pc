@@ -1,0 +1,40 @@
+[0.207s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[0.344s] [35m[1mConsolidate compiler generated dependencies of target steer_sub[0m
+[0.388s] [ 50%] Built target subcpp
+[0.435s] [ 75%] [32mBuilding CXX object CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o[0m
+[4.577s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.578s]                  from [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:3[m[K:
+[4.578s] [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(const Steer&) const[m[K’:
+[4.578s] [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:24:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kconst char*[m[K’
+[4.578s]    24 |         RCLCPP_INFO(this->get_logger(),[01;31m[K"I heard "+msg_string[m[K);
+[4.579s]       |                                        [01;31m[K~~~~~~~~~~^~~~~~~~~~~[m[K
+[4.579s]       |                                                  [01;31m[K|[m[K
+[4.579s]       |                                                  [01;31m[Kstd::__cxx11::basic_string<char>[m[K
+[4.579s] In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+[4.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.580s]                  from [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:3[m[K:
+[4.580s] [01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+[4.580s]   479 |   [01;36m[Kconst char * format[m[K,
+[4.580s]       |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[7.601s] gmake[2]: *** [CMakeFiles/steer_sub.dir/build.make:76: CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o] Error 1
+[7.601s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/steer_sub.dir/all] Error 2
+[7.601s] gmake: *** [Makefile:146: all] Error 2
+[7.605s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '2': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8

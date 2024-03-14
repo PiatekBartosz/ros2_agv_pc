@@ -1,0 +1,222 @@
+[1.067s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'interfaces']
+[1.067s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['interfaces'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7faf36f71180>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7faf36f71d20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7faf36f71d20>>, mixin_verb=('build',))
+[1.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.133s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[1.134s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.134s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/ros_agv_pc/src'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['ignore', 'ignore_ament_install']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'ignore'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'ignore_ament_install'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['colcon_pkg']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'colcon_pkg'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['colcon_meta']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'colcon_meta'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extensions ['ros']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(AGV_simulator_description) by extension 'ros'
+[1.150s] DEBUG:colcon.colcon_core.package_identification:Package 'AGV_simulator_description' with type 'ros.ament_python' and name 'AGV_simulator_description'
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['ignore', 'ignore_ament_install']
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'ignore'
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'ignore_ament_install'
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['colcon_pkg']
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'colcon_pkg'
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['colcon_meta']
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'colcon_meta'
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extensions ['ros']
+[1.150s] Level 1:colcon.colcon_core.package_identification:_identify(agv_mcu_package) by extension 'ros'
+[1.151s] DEBUG:colcon.colcon_core.package_identification:Package 'agv_mcu_package' with type 'ros.ament_cmake' and name 'agv_mcu_package'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['ignore', 'ignore_ament_install']
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'ignore'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'ignore_ament_install'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['colcon_pkg']
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'colcon_pkg'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['colcon_meta']
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'colcon_meta'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extensions ['ros']
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(agv_sensor_package) by extension 'ros'
+[1.152s] DEBUG:colcon.colcon_core.package_identification:Package 'agv_sensor_package' with type 'ros.ament_cmake' and name 'agv_sensor_package'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['ignore', 'ignore_ament_install']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'ignore'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'ignore_ament_install'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['colcon_pkg']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'colcon_pkg'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['colcon_meta']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'colcon_meta'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extensions ['ros']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_qt_app) by extension 'ros'
+[1.154s] DEBUG:colcon.colcon_core.package_identification:Package 'cpp_qt_app' with type 'ros.ament_cmake' and name 'cpp_qt_app'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'ignore'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'ignore_ament_install'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['colcon_pkg']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'colcon_pkg'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['colcon_meta']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'colcon_meta'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extensions ['ros']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(interfaces) by extension 'ros'
+[1.155s] DEBUG:colcon.colcon_core.package_identification:Package 'interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'ignore'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'ignore_ament_install'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['colcon_pkg']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'colcon_pkg'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['colcon_meta']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'colcon_meta'
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extensions ['ros']
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(publisher_pkg) by extension 'ros'
+[1.156s] DEBUG:colcon.colcon_core.package_identification:Package 'publisher_pkg' with type 'ros.ament_cmake' and name 'publisher_pkg'
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['ignore', 'ignore_ament_install']
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'ignore'
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'ignore_ament_install'
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['colcon_pkg']
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'colcon_pkg'
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['colcon_meta']
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'colcon_meta'
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extensions ['ros']
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(py_qt_app) by extension 'ros'
+[1.157s] DEBUG:colcon.colcon_core.package_identification:Package 'py_qt_app' with type 'ros.ament_python' and name 'py_qt_app'
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['ignore', 'ignore_ament_install']
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'ignore'
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'ignore_ament_install'
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['colcon_pkg']
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'colcon_pkg'
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['colcon_meta']
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'colcon_meta'
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extensions ['ros']
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(subpkg) by extension 'ros'
+[1.159s] DEBUG:colcon.colcon_core.package_identification:Package 'subpkg' with type 'ros.ament_cmake' and name 'subscriber_package'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'ignore'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'ignore_ament_install'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['colcon_pkg']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'colcon_pkg'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['colcon_meta']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'colcon_meta'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extensions ['ros']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(textual_gui_pkg) by extension 'ros'
+[1.159s] DEBUG:colcon.colcon_core.package_identification:Package 'textual_gui_pkg' with type 'ros.ament_python' and name 'textual_gui_pkg'
+[1.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'AGV_simulator_description' in 'AGV_simulator_description'
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'agv_mcu_package' in 'agv_mcu_package'
+[1.227s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'agv_sensor_package' in 'agv_sensor_package'
+[1.227s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cpp_qt_app' in 'cpp_qt_app'
+[1.227s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'publisher_pkg' in 'publisher_pkg'
+[1.227s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'py_qt_app' in 'py_qt_app'
+[1.227s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'textual_gui_pkg' in 'textual_gui_pkg'
+[1.227s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'subscriber_package' in 'subpkg'
+[1.242s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_args' from command line to 'None'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target' from command line to 'None'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.243s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.243s] DEBUG:colcon.colcon_core.verb:Building package 'interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros_agv_pc/src/build/interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros_agv_pc/src/install/interfaces', 'merge_install': False, 'path': '/workspaces/ros_agv_pc/src/interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.256s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.268s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.269s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros_agv_pc/src/interfaces' with build type 'ament_cmake'
+[1.269s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros_agv_pc/src/interfaces'
+[1.283s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/interfaces': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/interfaces -- -j8 -l8
+[5.160s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/interfaces -- -j8 -l8
+[5.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros_agv_pc/src/build/interfaces': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/interfaces
+[5.344s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[5.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros_agv_pc/src/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/install/textual_gui_pkg:/workspaces/ros_agv_pc/install/py_qt_app:/workspaces/ros_agv_pc/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/interfaces
+[5.385s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake module files
+[5.386s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake config files
+[5.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[5.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[5.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[5.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[5.414s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib'
+[5.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[5.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[5.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[5.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[5.432s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[5.433s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/pkgconfig/interfaces.pc'
+[5.435s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/python3.10/site-packages'
+[5.435s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[5.449s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.ps1'
+[5.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.dsv'
+[5.451s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.sh'
+[5.452s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.bash'
+[5.453s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.zsh'
+[5.453s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/interfaces/share/colcon-core/packages/interfaces)
+[5.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[5.541s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake module files
+[5.541s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces' for CMake config files
+[5.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[5.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[5.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[5.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[5.556s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib'
+[5.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[5.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[5.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[5.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[5.572s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[5.572s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/pkgconfig/interfaces.pc'
+[5.573s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/lib/python3.10/site-packages'
+[5.573s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros_agv_pc/src/install/interfaces/bin'
+[5.587s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.ps1'
+[5.588s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.dsv'
+[5.588s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.sh'
+[5.589s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.bash'
+[5.589s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/package.zsh'
+[5.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros_agv_pc/src/install/interfaces/share/colcon-core/packages/interfaces)
+[5.590s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.590s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.590s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.590s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.621s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.621s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.621s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.621s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.625s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[5.625s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.651s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.ps1'
+[5.653s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/ros_agv_pc/src/install/_local_setup_util_ps1.py'
+[5.656s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.ps1'
+[5.683s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.sh'
+[5.684s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/ros_agv_pc/src/install/_local_setup_util_sh.py'
+[5.686s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.sh'
+[5.713s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.bash'
+[5.714s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.bash'
+[5.739s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros_agv_pc/src/install/local_setup.zsh'
+[5.740s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros_agv_pc/src/install/setup.zsh'

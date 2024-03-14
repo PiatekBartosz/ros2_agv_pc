@@ -1,0 +1,17 @@
+[1.802s] Invoking command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8
+[2.605s] [35m[1mConsolidate compiler generated dependencies of target stm32_bridge[0m
+[2.605s] [ 50%] [32mBuilding CXX object CMakeFiles/stm32_bridge.dir/src/stm32_bridge.cpp.o[0m
+[8.475s] [01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:[m[K In member function ‘[01m[Kvoid STMSubscriber::topic_callback(const Steer&) const[m[K’:
+[8.475s] [01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:33:32:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _data_type[m[K’ {aka ‘[01m[Kconst std::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kconst void*[m[K’
+[8.475s]    33 |         write(serial_port, [01;31m[Kmsg.data[m[K, sizeof(msg.data));
+[8.475s]       |                            [01;31m[K~~~~^~~~[m[K
+[8.475s]       |                                [01;31m[K|[m[K
+[8.475s]       |                                [01;31m[Kconst _data_type {aka const std::vector<unsigned char, std::allocator<unsigned char> >}[m[K
+[8.475s] In file included from [01m[K/workspaces/ros_agv_pc/src/agv_mcu_package/src/stm32_bridge.cpp:9[m[K:
+[8.475s] [01m[K/usr/include/unistd.h:378:45:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kssize_t write(int, const void*, size_t)[m[K’
+[8.475s]   378 | extern ssize_t write (int __fd, [01;36m[Kconst void *__buf[m[K, size_t __n) __wur
+[8.475s]       |                                 [01;36m[K~~~~~~~~~~~~^~~~~[m[K
+[11.812s] gmake[2]: *** [CMakeFiles/stm32_bridge.dir/build.make:76: CMakeFiles/stm32_bridge.dir/src/stm32_bridge.cpp.o] Error 1
+[11.813s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/stm32_bridge.dir/all] Error 2
+[11.813s] gmake: *** [Makefile:146: all] Error 2
+[11.815s] Invoked command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8

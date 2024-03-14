@@ -1,0 +1,51 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+creating ../build/AGV_simulator_description/AGV_simulator_description.egg-info
+writing ../build/AGV_simulator_description/AGV_simulator_description.egg-info/PKG-INFO
+writing dependency_links to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/dependency_links.txt
+writing entry points to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/entry_points.txt
+writing requirements to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/requires.txt
+writing top-level names to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/top_level.txt
+writing manifest file '../build/AGV_simulator_description/AGV_simulator_description.egg-info/SOURCES.txt'
+reading manifest file '../build/AGV_simulator_description/AGV_simulator_description.egg-info/SOURCES.txt'
+writing manifest file '../build/AGV_simulator_description/AGV_simulator_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build
+creating /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build/lib
+creating /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build/lib/AGV_simulator_description
+copying AGV_simulator_description/__init__.py -> /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build/lib/AGV_simulator_description
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description
+copying /workspaces/ros_agv_pc/src/build/AGV_simulator_description/build/lib/AGV_simulator_description/__init__.py -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description
+byte-compiling /workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/ament_index
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/ament_index/resource_index
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/ament_index/resource_index/packages
+copying resource/AGV_simulator_description -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/ament_index/resource_index/packages
+copying package.xml -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/launch
+copying launch/gazebo.launch.py -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/launch
+copying launch/display.launch.py -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/launch
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/urdf
+copying urdf/AGV_simulator.trans -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/urdf
+copying urdf/materials.xacro -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/urdf
+copying urdf/AGV_simulator.xacro -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/urdf
+copying urdf/AGV_simulator.gazebo -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/urdf
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/meshes
+copying meshes/base_link.stl -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/meshes
+copying meshes/back_left_1_1_1_1.stl -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/meshes
+copying meshes/front_left_1_1_1_1.stl -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/meshes
+copying meshes/back_right_1_1_1_1.stl -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/meshes
+copying meshes/front_right_1_1_1_1.stl -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/meshes
+creating /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/config
+copying config/display.rviz -> /workspaces/ros_agv_pc/src/install/AGV_simulator_description/share/AGV_simulator_description/config
+running install_egg_info
+Copying ../build/AGV_simulator_description/AGV_simulator_description.egg-info to /workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log'

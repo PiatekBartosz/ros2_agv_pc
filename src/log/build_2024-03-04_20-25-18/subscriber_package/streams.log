@@ -1,0 +1,22 @@
+[0.214s] Invoking command in '/workspaces/ros_agv_pc/src/build/subscriber_package': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8
+[0.280s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.645s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.751s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.757s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.772s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.800s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.836s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.959s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.967s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.195s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.452s] -- Found interfaces: 0.0.0 (/workspaces/ros_agv_pc/src/install/interfaces/share/interfaces/cmake)
+[1.476s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[1.476s]   ament_target_dependencies() the first argument must be a valid target name
+[1.476s] Call Stack (most recent call first):
+[1.476s]   CMakeLists.txt:21 (ament_target_dependencies)
+[1.476s] 
+[1.476s] [0m
+[1.476s] -- Configuring incomplete, errors occurred!
+[1.477s] See also "/workspaces/ros_agv_pc/src/build/subscriber_package/CMakeFiles/CMakeOutput.log".
+[1.485s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[1.487s] Invoked command in '/workspaces/ros_agv_pc/src/build/subscriber_package' returned '2': CMAKE_PREFIX_PATH=/workspaces/ros_agv_pc/src/install/interfaces:/workspaces/ros_agv_pc/src/install/subscriber_package:/workspaces/ros_agv_pc/src/install/publisher_pkg:/workspaces/ros_agv_pc/src/install/cpp_qt_app:/workspaces/ros_agv_pc/src/install/agv_sensor_package:/workspaces/ros_agv_pc/src/install/agv_mcu_package:/workspaces/ros_agv_pc/src/install/textual_gui_pkg:/workspaces/ros_agv_pc/src/install/py_qt_app:/workspaces/ros_agv_pc/src/install/AGV_simulator_description:/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/subscriber_package -- -j8 -l8

@@ -22,7 +22,7 @@ build:
 	@. /opt/ros/humble/setup.bash
 	@mkdir -p $(BUILD_DIR) $(INSTALL_DIR) $(LOG_DIR)
 	@colcon build --packages-select $(MSG_PCKG)
-	@. $(INSTALL_DIR)/setup.bash
+	@. $(INSTALL_DIR)/local_setup.bash
 	@colcon build 
 
 # Clean target

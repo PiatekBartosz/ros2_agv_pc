@@ -1,0 +1,24 @@
+[3.070s] Invoking command in '/workspaces/ros_agv_pc/src/py_qt_app': PYTHONPATH=/workspaces/ros_agv_pc/src/build/py_qt_app/prefix_override:/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/py_qt_app build --build-base /workspaces/ros_agv_pc/src/build/py_qt_app/build install --record /workspaces/ros_agv_pc/src/build/py_qt_app/install.log --single-version-externally-managed
+[3.731s] running egg_info
+[3.735s] writing ../build/py_qt_app/py_qt_app.egg-info/PKG-INFO
+[3.735s] writing dependency_links to ../build/py_qt_app/py_qt_app.egg-info/dependency_links.txt
+[3.736s] writing entry points to ../build/py_qt_app/py_qt_app.egg-info/entry_points.txt
+[3.736s] writing requirements to ../build/py_qt_app/py_qt_app.egg-info/requires.txt
+[3.736s] writing top-level names to ../build/py_qt_app/py_qt_app.egg-info/top_level.txt
+[3.741s] reading manifest file '../build/py_qt_app/py_qt_app.egg-info/SOURCES.txt'
+[3.741s] adding license file 'LICENSE'
+[3.744s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.744s]   warnings.warn(
+[3.746s] writing manifest file '../build/py_qt_app/py_qt_app.egg-info/SOURCES.txt'
+[3.746s] running build
+[3.746s] running build_py
+[3.746s] running install
+[3.746s] running install_lib
+[3.753s] running install_data
+[3.754s] running install_egg_info
+[3.755s] removing '/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages/py_qt_app-0.0.0-py3.10.egg-info' (and everything under it)
+[3.757s] Copying ../build/py_qt_app/py_qt_app.egg-info to /workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages/py_qt_app-0.0.0-py3.10.egg-info
+[3.760s] running install_scripts
+[3.820s] Installing py_qt_app script to /workspaces/ros_agv_pc/src/install/py_qt_app/lib/py_qt_app
+[3.821s] writing list of installed files to '/workspaces/ros_agv_pc/src/build/py_qt_app/install.log'
+[3.922s] Invoked command in '/workspaces/ros_agv_pc/src/py_qt_app' returned '0': PYTHONPATH=/workspaces/ros_agv_pc/src/build/py_qt_app/prefix_override:/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/py_qt_app build --build-base /workspaces/ros_agv_pc/src/build/py_qt_app/build install --record /workspaces/ros_agv_pc/src/build/py_qt_app/install.log --single-version-externally-managed

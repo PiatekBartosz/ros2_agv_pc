@@ -1,0 +1,22 @@
+[0.887s] Invoking command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8
+[1.426s] [100%] Built target stm32_bridge
+[1.901s] Invoked command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/ros_agv_pc/src/build/agv_mcu_package -- -j8 -l8
+[2.027s] Invoking command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_mcu_package
+[2.041s] -- Install configuration: ""
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/lib/agv_mcu_package/stm32_bridge
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/package_run_dependencies/agv_mcu_package
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/parent_prefix_path/agv_mcu_package
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/ament_prefix_path.sh
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/ament_prefix_path.dsv
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/path.sh
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/path.dsv
+[2.041s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.bash
+[2.042s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.sh
+[2.042s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.zsh
+[2.042s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.dsv
+[2.042s] -- Installing: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.dsv
+[2.042s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/packages/agv_mcu_package
+[2.042s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/cmake/agv_mcu_packageConfig.cmake
+[2.042s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/cmake/agv_mcu_packageConfig-version.cmake
+[2.042s] -- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.xml
+[2.748s] Invoked command in '/workspaces/ros_agv_pc/src/build/agv_mcu_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/ros_agv_pc/src/build/agv_mcu_package

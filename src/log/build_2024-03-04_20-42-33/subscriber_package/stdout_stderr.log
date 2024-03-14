@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target steer_sub[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o[0m
+[ 75%] Built target subcpp
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:3[m[K:
+[01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(const Steer&) const[m[K’:
+[01m[K/workspaces/ros_agv_pc/src/subpkg/src/steer_sub.cpp:24:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kstr[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd[m[K’?
+   24 |         RCLCPP_INFO(this->get_logger(),([01;31m[Kstr[m[K)"I heard "+msg_string);
+      |                                         [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/steer_sub.dir/build.make:76: CMakeFiles/steer_sub.dir/src/steer_sub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/steer_sub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

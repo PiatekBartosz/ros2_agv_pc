@@ -1,0 +1,453 @@
+[0.000000] (-) TimerEvent: {}
+[0.000354] (AGV_simulator_description) JobQueued: {'identifier': 'AGV_simulator_description', 'dependencies': OrderedDict()}
+[0.000426] (agv_mcu_package) JobQueued: {'identifier': 'agv_mcu_package', 'dependencies': OrderedDict()}
+[0.000460] (agv_sensor_package) JobQueued: {'identifier': 'agv_sensor_package', 'dependencies': OrderedDict()}
+[0.000493] (cpp_qt_app) JobQueued: {'identifier': 'cpp_qt_app', 'dependencies': OrderedDict()}
+[0.000521] (publisher_pkg) JobQueued: {'identifier': 'publisher_pkg', 'dependencies': OrderedDict()}
+[0.001161] (py_qt_app) JobQueued: {'identifier': 'py_qt_app', 'dependencies': OrderedDict()}
+[0.001450] (subscriber_package) JobQueued: {'identifier': 'subscriber_package', 'dependencies': OrderedDict()}
+[0.001584] (AGV_simulator_description) JobStarted: {'identifier': 'AGV_simulator_description'}
+[0.081885] (agv_mcu_package) JobStarted: {'identifier': 'agv_mcu_package'}
+[0.099750] (-) TimerEvent: {}
+[0.149798] (agv_sensor_package) JobStarted: {'identifier': 'agv_sensor_package'}
+[0.200024] (-) TimerEvent: {}
+[0.208535] (cpp_qt_app) JobStarted: {'identifier': 'cpp_qt_app'}
+[0.300209] (-) TimerEvent: {}
+[1.274712] (publisher_pkg) JobStarted: {'identifier': 'publisher_pkg'}
+[1.275565] (-) TimerEvent: {}
+[1.376232] (-) TimerEvent: {}
+[1.476790] (-) TimerEvent: {}
+[1.577472] (-) TimerEvent: {}
+[1.678062] (-) TimerEvent: {}
+[1.702382] (py_qt_app) JobStarted: {'identifier': 'py_qt_app'}
+[1.767656] (subscriber_package) JobStarted: {'identifier': 'subscriber_package'}
+[1.778500] (-) TimerEvent: {}
+[1.879096] (-) TimerEvent: {}
+[1.979601] (-) TimerEvent: {}
+[2.080210] (-) TimerEvent: {}
+[2.180833] (-) TimerEvent: {}
+[2.259897] (agv_mcu_package) JobProgress: {'identifier': 'agv_mcu_package', 'progress': 'cmake'}
+[2.261044] (agv_mcu_package) JobProgress: {'identifier': 'agv_mcu_package', 'progress': 'build'}
+[2.262504] (agv_mcu_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/ros_agv_pc/src/build/agv_mcu_package', '--', '-j8', '-l8'], 'cwd': '/workspaces/ros_agv_pc/src/build/agv_mcu_package', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/agv_mcu_package'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.266984] (agv_sensor_package) JobProgress: {'identifier': 'agv_sensor_package', 'progress': 'cmake'}
+[2.267668] (agv_sensor_package) JobProgress: {'identifier': 'agv_sensor_package', 'progress': 'build'}
+[2.268106] (agv_sensor_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/ros_agv_pc/src/build/agv_sensor_package', '--', '-j8', '-l8'], 'cwd': '/workspaces/ros_agv_pc/src/build/agv_sensor_package', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/agv_sensor_package'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.270356] (cpp_qt_app) JobProgress: {'identifier': 'cpp_qt_app', 'progress': 'cmake'}
+[2.270797] (cpp_qt_app) JobProgress: {'identifier': 'cpp_qt_app', 'progress': 'build'}
+[2.271191] (cpp_qt_app) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/ros_agv_pc/src/build/cpp_qt_app', '--', '-j8', '-l8'], 'cwd': '/workspaces/ros_agv_pc/src/build/cpp_qt_app', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/cpp_qt_app'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.273307] (publisher_pkg) JobProgress: {'identifier': 'publisher_pkg', 'progress': 'cmake'}
+[2.273654] (publisher_pkg) JobProgress: {'identifier': 'publisher_pkg', 'progress': 'build'}
+[2.274043] (publisher_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/ros_agv_pc/src/build/publisher_pkg', '--', '-j8', '-l8'], 'cwd': '/workspaces/ros_agv_pc/src/build/publisher_pkg', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/publisher_pkg'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.281031] (-) TimerEvent: {}
+[2.381567] (-) TimerEvent: {}
+[2.482012] (-) TimerEvent: {}
+[2.582539] (-) TimerEvent: {}
+[2.683409] (-) TimerEvent: {}
+[2.692871] (agv_mcu_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stm32_bridge\x1b[0m\n'}
+[2.694155] (agv_mcu_package) StdoutLine: {'line': b'[100%] Built target stm32_bridge\n'}
+[2.695221] (agv_sensor_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.695771] (cpp_qt_app) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.696198] (cpp_qt_app) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.696894] (publisher_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.697601] (publisher_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.697955] (subscriber_package) JobProgress: {'identifier': 'subscriber_package', 'progress': 'cmake'}
+[2.699196] (subscriber_package) JobProgress: {'identifier': 'subscriber_package', 'progress': 'build'}
+[2.699772] (subscriber_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/ros_agv_pc/src/build/subscriber_package', '--', '-j8', '-l8'], 'cwd': '/workspaces/ros_agv_pc/src/build/subscriber_package', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/subscriber_package'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.704272] (agv_mcu_package) CommandEnded: {'returncode': 0}
+[2.706453] (agv_sensor_package) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.8 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[2.745717] (agv_mcu_package) JobProgress: {'identifier': 'agv_mcu_package', 'progress': 'install'}
+[2.747694] (subscriber_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.762462] (agv_mcu_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/ros_agv_pc/src/build/agv_mcu_package'], 'cwd': '/workspaces/ros_agv_pc/src/build/agv_mcu_package', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/agv_mcu_package'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.780571] (agv_mcu_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.780788] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/lib/agv_mcu_package/stm32_bridge\n'}
+[2.780923] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/package_run_dependencies/agv_mcu_package\n'}
+[2.781460] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/parent_prefix_path/agv_mcu_package\n'}
+[2.781552] (agv_mcu_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/ament_prefix_path.sh\n'}
+[2.781624] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/ament_prefix_path.dsv\n'}
+[2.781906] (agv_mcu_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/path.sh\n'}
+[2.783490] (-) TimerEvent: {}
+[2.784695] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/environment/path.dsv\n'}
+[2.785029] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.bash\n'}
+[2.785764] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.sh\n'}
+[2.785918] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.zsh\n'}
+[2.786048] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/local_setup.dsv\n'}
+[2.786182] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.dsv\n'}
+[2.786314] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/ament_index/resource_index/packages/agv_mcu_package\n'}
+[2.786446] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/cmake/agv_mcu_packageConfig.cmake\n'}
+[2.786579] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/cmake/agv_mcu_packageConfig-version.cmake\n'}
+[2.786714] (agv_mcu_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_mcu_package/share/agv_mcu_package/package.xml\n'}
+[2.786842] (agv_mcu_package) CommandEnded: {'returncode': 0}
+[2.794879] (cpp_qt_app) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.795217] (agv_sensor_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.798878] (publisher_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.807096] (agv_sensor_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.807420] (publisher_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.807633] (cpp_qt_app) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.830635] (agv_sensor_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.831219] (publisher_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.831369] (cpp_qt_app) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.869868] (agv_sensor_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.871064] (publisher_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.871494] (cpp_qt_app) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.883589] (-) TimerEvent: {}
+[2.928229] (cpp_qt_app) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.931512] (publisher_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.934007] (agv_sensor_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.983736] (-) TimerEvent: {}
+[3.047047] (subscriber_package) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.083940] (-) TimerEvent: {}
+[3.105573] (subscriber_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.112224] (subscriber_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.115103] (agv_mcu_package) JobEnded: {'identifier': 'agv_mcu_package', 'rc': 0}
+[3.125478] (agv_sensor_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.125812] (cpp_qt_app) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.126064] (publisher_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.132830] (subscriber_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.135398] (publisher_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.135679] (cpp_qt_app) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.137287] (agv_sensor_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.158432] (subscriber_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.184099] (-) TimerEvent: {}
+[3.201734] (subscriber_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.284200] (-) TimerEvent: {}
+[3.332869] (subscriber_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.335091] (subscriber_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.384372] (-) TimerEvent: {}
+[3.430319] (py_qt_app) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/py_qt_app', 'build', '--build-base', '/workspaces/ros_agv_pc/src/build/py_qt_app/build', 'install', '--record', '/workspaces/ros_agv_pc/src/build/py_qt_app/install.log', '--single-version-externally-managed'], 'cwd': '/workspaces/ros_agv_pc/src/py_qt_app', 'env': {'HOSTNAME': 'dawid-XPS-13-9310', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/', 'TERM_PROGRAM_VERSION': '1.87.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-dfe3d959c1.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X3', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/ros_agv_pc/src/build/py_qt_app', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspaces/ros_agv_pc/src/build/py_qt_app/prefix_override:/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.435280] (AGV_simulator_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/AGV_simulator_description', 'build', '--build-base', '/workspaces/ros_agv_pc/src/build/AGV_simulator_description/build', 'install', '--record', '/workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log', '--install-scripts', '$base/lib/AGV_simulator_description', '--single-version-externally-managed'], 'cwd': '/workspaces/ros_agv_pc/src/AGV_simulator_description', 'env': {'HOSTNAME': 'dawid-XPS-13-9310', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/', 'TERM_PROGRAM_VERSION': '1.87.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-dfe3d959c1.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X3', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/ros_agv_pc/src/build/AGV_simulator_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspaces/ros_agv_pc/src/build/AGV_simulator_description/prefix_override:/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.484531] (-) TimerEvent: {}
+[3.491898] (cpp_qt_app) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.519515] (publisher_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.545053] (agv_sensor_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.584668] (-) TimerEvent: {}
+[3.679351] (subscriber_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.684803] (-) TimerEvent: {}
+[3.785913] (-) TimerEvent: {}
+[3.868148] (AGV_simulator_description) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[3.868853] (AGV_simulator_description) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.878945] (AGV_simulator_description) StdoutLine: {'line': b'running egg_info\n'}
+[3.881013] (AGV_simulator_description) StdoutLine: {'line': b'writing ../build/AGV_simulator_description/AGV_simulator_description.egg-info/PKG-INFO\n'}
+[3.881290] (AGV_simulator_description) StdoutLine: {'line': b'writing dependency_links to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/dependency_links.txt\n'}
+[3.881503] (AGV_simulator_description) StdoutLine: {'line': b'writing entry points to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/entry_points.txt\n'}
+[3.881651] (AGV_simulator_description) StdoutLine: {'line': b'writing requirements to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/requires.txt\n'}
+[3.881831] (AGV_simulator_description) StdoutLine: {'line': b'writing top-level names to ../build/AGV_simulator_description/AGV_simulator_description.egg-info/top_level.txt\n'}
+[3.884865] (AGV_simulator_description) StdoutLine: {'line': b"reading manifest file '../build/AGV_simulator_description/AGV_simulator_description.egg-info/SOURCES.txt'\n"}
+[3.885976] (-) TimerEvent: {}
+[3.886840] (AGV_simulator_description) StdoutLine: {'line': b"writing manifest file '../build/AGV_simulator_description/AGV_simulator_description.egg-info/SOURCES.txt'\n"}
+[3.887106] (AGV_simulator_description) StdoutLine: {'line': b'running build\n'}
+[3.887251] (AGV_simulator_description) StdoutLine: {'line': b'running build_py\n'}
+[3.887473] (AGV_simulator_description) StdoutLine: {'line': b'running install\n'}
+[3.889305] (AGV_simulator_description) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.889471] (AGV_simulator_description) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.889870] (AGV_simulator_description) StdoutLine: {'line': b'running install_lib\n'}
+[3.891851] (AGV_simulator_description) StdoutLine: {'line': b'running install_data\n'}
+[3.893515] (AGV_simulator_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.893750] (py_qt_app) StdoutLine: {'line': b'running egg_info\n'}
+[3.895270] (py_qt_app) StdoutLine: {'line': b'writing ../build/py_qt_app/py_qt_app.egg-info/PKG-INFO\n'}
+[3.895674] (py_qt_app) StdoutLine: {'line': b'writing dependency_links to ../build/py_qt_app/py_qt_app.egg-info/dependency_links.txt\n'}
+[3.895947] (py_qt_app) StdoutLine: {'line': b'writing entry points to ../build/py_qt_app/py_qt_app.egg-info/entry_points.txt\n'}
+[3.896156] (py_qt_app) StdoutLine: {'line': b'writing requirements to ../build/py_qt_app/py_qt_app.egg-info/requires.txt\n'}
+[3.896344] (py_qt_app) StdoutLine: {'line': b'writing top-level names to ../build/py_qt_app/py_qt_app.egg-info/top_level.txt\n'}
+[3.896806] (AGV_simulator_description) StdoutLine: {'line': b"removing '/workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.897363] (AGV_simulator_description) StdoutLine: {'line': b'Copying ../build/AGV_simulator_description/AGV_simulator_description.egg-info to /workspaces/ros_agv_pc/src/install/AGV_simulator_description/lib/python3.10/site-packages/AGV_simulator_description-0.0.0-py3.10.egg-info\n'}
+[3.898743] (AGV_simulator_description) StdoutLine: {'line': b'running install_scripts\n'}
+[3.900024] (py_qt_app) StdoutLine: {'line': b"reading manifest file '../build/py_qt_app/py_qt_app.egg-info/SOURCES.txt'\n"}
+[3.900431] (py_qt_app) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[3.901693] (py_qt_app) StdoutLine: {'line': b"writing manifest file '../build/py_qt_app/py_qt_app.egg-info/SOURCES.txt'\n"}
+[3.901928] (py_qt_app) StdoutLine: {'line': b'running build\n'}
+[3.902064] (py_qt_app) StdoutLine: {'line': b'running build_py\n'}
+[3.902653] (py_qt_app) StdoutLine: {'line': b'running install\n'}
+[3.902895] (py_qt_app) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.903075] (py_qt_app) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.903594] (py_qt_app) StdoutLine: {'line': b'running install_lib\n'}
+[3.906099] (py_qt_app) StdoutLine: {'line': b'running install_data\n'}
+[3.907018] (py_qt_app) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.910269] (py_qt_app) StdoutLine: {'line': b"removing '/workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages/py_qt_app-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.910850] (py_qt_app) StdoutLine: {'line': b'Copying ../build/py_qt_app/py_qt_app.egg-info to /workspaces/ros_agv_pc/src/install/py_qt_app/lib/python3.10/site-packages/py_qt_app-0.0.0-py3.10.egg-info\n'}
+[3.912278] (py_qt_app) StdoutLine: {'line': b'running install_scripts\n'}
+[3.939536] (AGV_simulator_description) StdoutLine: {'line': b"writing list of installed files to '/workspaces/ros_agv_pc/src/build/AGV_simulator_description/install.log'\n"}
+[3.957715] (py_qt_app) StdoutLine: {'line': b'Installing py_qt_app script to /workspaces/ros_agv_pc/src/install/py_qt_app/lib/py_qt_app\n'}
+[3.958569] (py_qt_app) StdoutLine: {'line': b"writing list of installed files to '/workspaces/ros_agv_pc/src/build/py_qt_app/install.log'\n"}
+[3.962316] (publisher_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.978394] (AGV_simulator_description) CommandEnded: {'returncode': 0}
+[3.986100] (-) TimerEvent: {}
+[4.050725] (AGV_simulator_description) JobEnded: {'identifier': 'AGV_simulator_description', 'rc': 0}
+[4.052560] (py_qt_app) CommandEnded: {'returncode': 0}
+[4.086407] (-) TimerEvent: {}
+[4.098333] (subscriber_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.103615] (publisher_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.104576] (publisher_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspaces/ros_agv_pc/src/publisher_pkg/include>\n'}
+[4.104897] (publisher_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.106447] (publisher_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.109678] (publisher_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.110145] (publisher_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.111332] (publisher_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.113367] (publisher_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.140971] (publisher_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[4.144363] (publisher_pkg) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/ros_agv_pc/src/build/publisher_pkg\n'}
+[4.157671] (py_qt_app) JobEnded: {'identifier': 'py_qt_app', 'rc': 0}
+[4.176154] (cpp_qt_app) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.186617] (-) TimerEvent: {}
+[4.196528] (publisher_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target publisher_exp\x1b[0m\n'}
+[4.257379] (publisher_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/publisher_exp.dir/src/publisher_exp.cpp.o\x1b[0m\n'}
+[4.265242] (subscriber_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.266040] (subscriber_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspaces/ros_agv_pc/src/subpkg/include>\n'}
+[4.266367] (subscriber_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.267819] (subscriber_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.269483] (subscriber_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.269778] (subscriber_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.270789] (subscriber_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.272512] (subscriber_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.286746] (-) TimerEvent: {}
+[4.290411] (subscriber_package) StdoutLine: {'line': b'-- Generating done\n'}
+[4.295700] (subscriber_package) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/ros_agv_pc/src/build/subscriber_package\n'}
+[4.359031] (subscriber_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target subcpp\x1b[0m\n'}
+[4.386908] (-) TimerEvent: {}
+[4.393188] (subscriber_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/subcpp.dir/src/subcpp.cpp.o\x1b[0m\n'}
+[4.463390] (cpp_qt_app) StdoutLine: {'line': b'-- Generating done\n'}
+[4.466425] (cpp_qt_app) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/ros_agv_pc/src/build/cpp_qt_app\n'}
+[4.487070] (-) TimerEvent: {}
+[4.507820] (agv_sensor_package) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[4.531697] (cpp_qt_app) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target cpp_qt_app\x1b[0m\n'}
+[4.547409] (agv_sensor_package) StdoutLine: {'line': b'-- Found depthai_bridge: 2.9.0 (/opt/ros/humble/share/depthai_bridge/cmake)\n'}
+[4.570884] (cpp_qt_app) StdoutLine: {'line': b'[ 12%] Built target cpp_qt_app_autogen\n'}
+[4.587654] (cpp_qt_app) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_qt_app\x1b[0m\n'}
+[4.587970] (-) TimerEvent: {}
+[4.631603] (cpp_qt_app) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/cpp_qt_app.dir/src/cameras.cpp.o\x1b[0m\n'}
+[4.632199] (cpp_qt_app) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_qt_app.dir/src/control.cpp.o\x1b[0m\n'}
+[4.632552] (cpp_qt_app) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/cpp_qt_app.dir/cpp_qt_app_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[4.637626] (cpp_qt_app) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/cpp_qt_app.dir/src/mainwindow.cpp.o\x1b[0m\n'}
+[4.647035] (cpp_qt_app) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/cpp_qt_app.dir/src/settings.cpp.o\x1b[0m\n'}
+[4.688148] (-) TimerEvent: {}
+[4.788736] (-) TimerEvent: {}
+[4.889546] (-) TimerEvent: {}
+[4.990884] (-) TimerEvent: {}
+[5.092048] (-) TimerEvent: {}
+[5.192600] (-) TimerEvent: {}
+[5.293038] (-) TimerEvent: {}
+[5.393537] (-) TimerEvent: {}
+[5.494036] (-) TimerEvent: {}
+[5.659943] (-) TimerEvent: {}
+[5.760714] (-) TimerEvent: {}
+[5.861431] (-) TimerEvent: {}
+[5.962167] (-) TimerEvent: {}
+[6.062917] (-) TimerEvent: {}
+[6.163996] (-) TimerEvent: {}
+[6.265135] (-) TimerEvent: {}
+[6.366217] (-) TimerEvent: {}
+[6.467340] (-) TimerEvent: {}
+[6.568507] (-) TimerEvent: {}
+[6.669648] (-) TimerEvent: {}
+[6.770876] (-) TimerEvent: {}
+[6.872251] (-) TimerEvent: {}
+[6.972993] (-) TimerEvent: {}
+[7.074115] (-) TimerEvent: {}
+[7.175221] (-) TimerEvent: {}
+[7.202085] (agv_sensor_package) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[7.206041] (agv_sensor_package) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[7.275364] (-) TimerEvent: {}
+[7.376625] (-) TimerEvent: {}
+[7.441273] (agv_sensor_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.476759] (-) TimerEvent: {}
+[7.513958] (agv_sensor_package) StdoutLine: {'line': b'-- Generating done\n'}
+[7.520780] (agv_sensor_package) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/ros_agv_pc/src/build/agv_sensor_package\n'}
+[7.576892] (-) TimerEvent: {}
+[7.599055] (agv_sensor_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target oak_d_publisher\x1b[0m\n'}
+[7.661241] (agv_sensor_package) StdoutLine: {'line': b'[100%] Built target oak_d_publisher\n'}
+[7.677047] (-) TimerEvent: {}
+[7.697045] (agv_sensor_package) CommandEnded: {'returncode': 0}
+[7.755801] (agv_sensor_package) JobProgress: {'identifier': 'agv_sensor_package', 'progress': 'install'}
+[7.755952] (agv_sensor_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/ros_agv_pc/src/build/agv_sensor_package'], 'cwd': '/workspaces/ros_agv_pc/src/build/agv_sensor_package', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/agv_sensor_package'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.769254] (agv_sensor_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.770216] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/lib/agv_sensor_package/oak_d_publisher\n'}
+[7.770428] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/package_run_dependencies/agv_sensor_package\n'}
+[7.771200] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/parent_prefix_path/agv_sensor_package\n'}
+[7.771571] (agv_sensor_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/ament_prefix_path.sh\n'}
+[7.772125] (agv_sensor_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/ament_prefix_path.dsv\n'}
+[7.774345] (agv_sensor_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/path.sh\n'}
+[7.774508] (agv_sensor_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/environment/path.dsv\n'}
+[7.774663] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.bash\n'}
+[7.774798] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.sh\n'}
+[7.774930] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.zsh\n'}
+[7.775066] (agv_sensor_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/local_setup.dsv\n'}
+[7.775201] (agv_sensor_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.dsv\n'}
+[7.775337] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/ament_index/resource_index/packages/agv_sensor_package\n'}
+[7.775473] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/cmake/agv_sensor_packageConfig.cmake\n'}
+[7.775609] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/cmake/agv_sensor_packageConfig-version.cmake\n'}
+[7.775758] (agv_sensor_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/agv_sensor_package/share/agv_sensor_package/package.xml\n'}
+[7.781530] (-) TimerEvent: {}
+[7.792440] (agv_sensor_package) CommandEnded: {'returncode': 0}
+[7.881734] (-) TimerEvent: {}
+[7.982200] (-) TimerEvent: {}
+[8.083644] (-) TimerEvent: {}
+[8.120203] (agv_sensor_package) JobEnded: {'identifier': 'agv_sensor_package', 'rc': 0}
+[8.184718] (-) TimerEvent: {}
+[8.285284] (-) TimerEvent: {}
+[8.386312] (-) TimerEvent: {}
+[8.486815] (-) TimerEvent: {}
+[8.587440] (-) TimerEvent: {}
+[8.687864] (-) TimerEvent: {}
+[8.728801] (cpp_qt_app) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable cpp_qt_app\x1b[0m\n'}
+[8.787965] (-) TimerEvent: {}
+[8.888521] (-) TimerEvent: {}
+[8.989092] (-) TimerEvent: {}
+[9.089502] (-) TimerEvent: {}
+[9.189973] (-) TimerEvent: {}
+[9.290360] (-) TimerEvent: {}
+[9.390910] (-) TimerEvent: {}
+[9.491460] (-) TimerEvent: {}
+[9.592006] (-) TimerEvent: {}
+[9.692611] (-) TimerEvent: {}
+[9.793074] (-) TimerEvent: {}
+[9.893485] (-) TimerEvent: {}
+[9.993948] (-) TimerEvent: {}
+[10.094605] (-) TimerEvent: {}
+[10.195223] (-) TimerEvent: {}
+[10.295579] (-) TimerEvent: {}
+[10.396092] (-) TimerEvent: {}
+[10.496522] (-) TimerEvent: {}
+[10.597201] (-) TimerEvent: {}
+[10.697700] (-) TimerEvent: {}
+[10.798204] (-) TimerEvent: {}
+[10.803733] (cpp_qt_app) StdoutLine: {'line': b'[100%] Built target cpp_qt_app\n'}
+[10.820427] (cpp_qt_app) CommandEnded: {'returncode': 0}
+[10.867653] (cpp_qt_app) JobProgress: {'identifier': 'cpp_qt_app', 'progress': 'install'}
+[10.868225] (cpp_qt_app) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/ros_agv_pc/src/build/cpp_qt_app'], 'cwd': '/workspaces/ros_agv_pc/src/build/cpp_qt_app', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/cpp_qt_app'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.878140] (cpp_qt_app) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.878564] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/lib/cpp_qt_app/cpp_qt_app\n'}
+[10.879128] (cpp_qt_app) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/ros_agv_pc/src/install/cpp_qt_app/lib/cpp_qt_app/cpp_qt_app" to ""\n'}
+[10.879431] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/ament_index/resource_index/package_run_dependencies/cpp_qt_app\n'}
+[10.879610] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/ament_index/resource_index/parent_prefix_path/cpp_qt_app\n'}
+[10.879795] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/ament_prefix_path.sh\n'}
+[10.879973] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/ament_prefix_path.dsv\n'}
+[10.880198] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/path.sh\n'}
+[10.880391] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/environment/path.dsv\n'}
+[10.880611] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.bash\n'}
+[10.880751] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.sh\n'}
+[10.880878] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.zsh\n'}
+[10.881016] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/local_setup.dsv\n'}
+[10.881155] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.dsv\n'}
+[10.881284] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/ament_index/resource_index/packages/cpp_qt_app\n'}
+[10.881414] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/cmake/cpp_qt_appConfig.cmake\n'}
+[10.881554] (cpp_qt_app) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/cmake/cpp_qt_appConfig-version.cmake\n'}
+[10.881696] (cpp_qt_app) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/cpp_qt_app/share/cpp_qt_app/package.xml\n'}
+[10.882963] (cpp_qt_app) CommandEnded: {'returncode': 0}
+[10.898483] (-) TimerEvent: {}
+[10.999719] (-) TimerEvent: {}
+[11.100161] (-) TimerEvent: {}
+[11.112363] (cpp_qt_app) JobEnded: {'identifier': 'cpp_qt_app', 'rc': 0}
+[11.200304] (-) TimerEvent: {}
+[11.300825] (-) TimerEvent: {}
+[11.401358] (-) TimerEvent: {}
+[11.501822] (-) TimerEvent: {}
+[11.602291] (-) TimerEvent: {}
+[11.702750] (-) TimerEvent: {}
+[11.803341] (-) TimerEvent: {}
+[11.904099] (-) TimerEvent: {}
+[12.004840] (-) TimerEvent: {}
+[12.105516] (-) TimerEvent: {}
+[12.206242] (-) TimerEvent: {}
+[12.306787] (-) TimerEvent: {}
+[12.407258] (-) TimerEvent: {}
+[12.507785] (-) TimerEvent: {}
+[12.524960] (publisher_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable publisher_exp\x1b[0m\n'}
+[12.607947] (-) TimerEvent: {}
+[12.708423] (-) TimerEvent: {}
+[12.806261] (publisher_pkg) StdoutLine: {'line': b'[100%] Built target publisher_exp\n'}
+[12.808525] (-) TimerEvent: {}
+[12.820476] (publisher_pkg) CommandEnded: {'returncode': 0}
+[12.855229] (publisher_pkg) JobProgress: {'identifier': 'publisher_pkg', 'progress': 'install'}
+[12.855610] (publisher_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/ros_agv_pc/src/build/publisher_pkg'], 'cwd': '/workspaces/ros_agv_pc/src/build/publisher_pkg', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/publisher_pkg'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.864260] (publisher_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.864573] (publisher_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/lib/publisher_pkg/publisher_exp\n'}
+[12.866275] (publisher_pkg) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/ros_agv_pc/src/install/publisher_pkg/lib/publisher_pkg/publisher_exp" to ""\n'}
+[12.866478] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/package_run_dependencies/publisher_pkg\n'}
+[12.866572] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/parent_prefix_path/publisher_pkg\n'}
+[12.866655] (publisher_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/ament_prefix_path.sh\n'}
+[12.866780] (publisher_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/ament_prefix_path.dsv\n'}
+[12.866860] (publisher_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/path.sh\n'}
+[12.866984] (publisher_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/environment/path.dsv\n'}
+[12.867106] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.bash\n'}
+[12.867256] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.sh\n'}
+[12.867336] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.zsh\n'}
+[12.867415] (publisher_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/local_setup.dsv\n'}
+[12.867533] (publisher_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.dsv\n'}
+[12.867658] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/ament_index/resource_index/packages/publisher_pkg\n'}
+[12.867781] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/cmake/publisher_pkgConfig.cmake\n'}
+[12.867907] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/cmake/publisher_pkgConfig-version.cmake\n'}
+[12.867984] (publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/publisher_pkg/share/publisher_pkg/package.xml\n'}
+[12.869821] (publisher_pkg) CommandEnded: {'returncode': 0}
+[12.908820] (-) TimerEvent: {}
+[13.009487] (-) TimerEvent: {}
+[13.026508] (publisher_pkg) JobEnded: {'identifier': 'publisher_pkg', 'rc': 0}
+[13.109651] (-) TimerEvent: {}
+[13.210075] (-) TimerEvent: {}
+[13.310587] (-) TimerEvent: {}
+[13.411119] (-) TimerEvent: {}
+[13.511678] (-) TimerEvent: {}
+[13.612412] (-) TimerEvent: {}
+[13.713004] (-) TimerEvent: {}
+[13.813528] (-) TimerEvent: {}
+[13.913972] (-) TimerEvent: {}
+[14.014388] (-) TimerEvent: {}
+[14.115014] (-) TimerEvent: {}
+[14.215478] (-) TimerEvent: {}
+[14.316049] (-) TimerEvent: {}
+[14.416814] (-) TimerEvent: {}
+[14.517267] (-) TimerEvent: {}
+[14.617796] (-) TimerEvent: {}
+[14.718508] (-) TimerEvent: {}
+[14.819053] (-) TimerEvent: {}
+[14.919733] (-) TimerEvent: {}
+[15.020528] (-) TimerEvent: {}
+[15.121140] (-) TimerEvent: {}
+[15.221615] (-) TimerEvent: {}
+[15.322224] (-) TimerEvent: {}
+[15.422816] (-) TimerEvent: {}
+[15.523508] (-) TimerEvent: {}
+[15.624205] (-) TimerEvent: {}
+[15.724880] (-) TimerEvent: {}
+[15.825502] (-) TimerEvent: {}
+[15.926086] (-) TimerEvent: {}
+[16.026829] (-) TimerEvent: {}
+[16.127412] (-) TimerEvent: {}
+[16.228297] (-) TimerEvent: {}
+[16.328887] (-) TimerEvent: {}
+[16.429376] (-) TimerEvent: {}
+[16.529897] (-) TimerEvent: {}
+[16.630457] (-) TimerEvent: {}
+[16.731150] (-) TimerEvent: {}
+[16.831990] (-) TimerEvent: {}
+[16.879363] (subscriber_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable subcpp\x1b[0m\n'}
+[16.932129] (-) TimerEvent: {}
+[17.032621] (-) TimerEvent: {}
+[17.133071] (-) TimerEvent: {}
+[17.233596] (-) TimerEvent: {}
+[17.317179] (subscriber_package) StdoutLine: {'line': b'[100%] Built target subcpp\n'}
+[17.328256] (subscriber_package) CommandEnded: {'returncode': 0}
+[17.333664] (-) TimerEvent: {}
+[17.357548] (subscriber_package) JobProgress: {'identifier': 'subscriber_package', 'progress': 'install'}
+[17.358063] (subscriber_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/ros_agv_pc/src/build/subscriber_package'], 'cwd': '/workspaces/ros_agv_pc/src/build/subscriber_package', 'env': OrderedDict([('HOSTNAME', 'dawid-XPS-13-9310'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.87.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d8c65098-049a-4c44-af70-5256d2206681.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/019f4d1419fbc8219a181fab7892ebccf7ee29a2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock","/tmp/.X11-unix/X3","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dfe3d959c1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-e7881f6c-015c-412e-b9ee-89e2a99e350b.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/ros_agv_pc/src/build/subscriber_package'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[17.367492] (subscriber_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.367816] (subscriber_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp\n'}
+[17.373622] (subscriber_package) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp" to ""\n'}
+[17.374124] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/lib/subscriber_package/subcpp\n'}
+[17.374458] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/package_run_dependencies/subscriber_package\n'}
+[17.374590] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/parent_prefix_path/subscriber_package\n'}
+[17.374703] (subscriber_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.sh\n'}
+[17.374980] (subscriber_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/ament_prefix_path.dsv\n'}
+[17.375212] (subscriber_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.sh\n'}
+[17.375463] (subscriber_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/environment/path.dsv\n'}
+[17.375693] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.bash\n'}
+[17.375793] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.sh\n'}
+[17.375914] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.zsh\n'}
+[17.376005] (subscriber_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/local_setup.dsv\n'}
+[17.376137] (subscriber_package) StdoutLine: {'line': b'-- Installing: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.dsv\n'}
+[17.376453] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/ament_index/resource_index/packages/subscriber_package\n'}
+[17.376582] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig.cmake\n'}
+[17.376661] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/cmake/subscriber_packageConfig-version.cmake\n'}
+[17.376735] (subscriber_package) StdoutLine: {'line': b'-- Up-to-date: /workspaces/ros_agv_pc/src/install/subscriber_package/share/subscriber_package/package.xml\n'}
+[17.379558] (subscriber_package) CommandEnded: {'returncode': 0}
+[17.433902] (-) TimerEvent: {}
+[17.514636] (subscriber_package) JobEnded: {'identifier': 'subscriber_package', 'rc': 0}
+[17.516206] (-) EventReactorShutdown: {}

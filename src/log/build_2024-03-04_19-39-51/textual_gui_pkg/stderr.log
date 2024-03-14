@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/workspaces/ros_agv_pc/src/install/textual_gui_pkg/lib/python3.10/site-packages/textual_gui_pkg/tui_topic.py", line 32
+    self.publisher_ = self.create_publisher(,'tui_steering', 10)
+                                            ^
+SyntaxError: invalid syntax
+
