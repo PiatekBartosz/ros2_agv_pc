@@ -1,28 +1,9 @@
-default:
-  image: ros:humble-ros-base
+image: ros:humble-ros-base
 
 stages:
   - build
 
-variables:
-  DOCKER_IMAGE: "ros:humble-ros-base"
-
-before_script:
-  - docker info
-
-build:
+docker-build:
   stage: build
-  image: $DOCKER_IMAGE
-  script:
-    - apt-get update && apt-get install -y build-essential
-    # Add any other dependencies needed for your ROS2 application
-    - mkdir -p ~/ros2_ws/src
-    # Clone your ROS2 application repository
-    - cd ~/ros2_ws/src
-    - git clone -b dev https://gitlab.com/sknce/agv/ros_agv/ros_agv_pc.git
-    # Build the ROS2 workspace
-    - cd ~/ros2_ws
-    # - colcon build --symlink-install
-  # artifacts:
-  #   paths:
-  #     - ~/ros2_ws/install
+  script: docker build -t  $IMAGE_NAME
+    
