@@ -44,7 +44,7 @@ std::tuple<dai::Pipeline, int, int> createPipeline() {
 
     // name outputs
     xoutPreview->setStreamName("preview");
-    xoutPreview->setStreamName("imu");
+    xoutImu->setStreamName("imu");
 
     // node properties
     cam->setPreviewSize(width, height);
@@ -59,18 +59,22 @@ std::tuple<dai::Pipeline, int, int> createPipeline() {
 
     // linking 
     cam->preview.link(xoutPreview->input);
-    imu->preview.link(xoutImu->input);
+    imu->out.link(xoutImu->input);
 
     return std::make_tuple(pipeline, width, height);
 }
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
-    auto node = rclcpp::Node::make_shared("stereo_inertial_node");
+    auto node = rclcpp::Node::make_shared("oak_d_node");
 
     // TODO: move parameters into launch file / cfg file
     int previewWidth = 300;
     int previewHeight = 300;
+    dai::ros::ImuSyncMethod imuMode = static_cast<dai::ros::ImuSyncMethod>(1);
+    // TODO: what is this covariance
+    double linearAccelCovariance = 0;
+    double angularVelCovariance = 0.02;
 
     dai::Pipeline pipeline;
     int width, height;
@@ -79,43 +83,54 @@ int main(int argc, char** argv) {
     dai::Device device(pipeline);
 
     auto previewQueue = device.getOutputQueue("preview", 30, false);
-    auto imuQueue = device.getOutputQueue("imu", 50, false);
+    auto imuQueue = device.getOutputQueue("imu", 30, false);
 
     auto calibrationHandler = device.readCalibration();
 
-    std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> rgbPreviewPublish;
-    std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>> imuPublish;
+    // std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> rgbPreviewPublish;
+    // std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>> imuPublish;
 
     dai::rosBridge::ImageConverter rgbConverter("oak_camera_optical_frame", true);
     auto previewCameraInfo = rgbConverter.calibrationToCameraInfo(calibrationHandler, dai::CameraBoardSocket::CAM_A, previewWidth, previewHeight);
+    dai::rosBridge::ImuConverter imuConverter("oak_imu_frame", imuMode, linearAccelCovariance, angularVelCovariance);
 
-    rgbPreviewPublish = std::make_unique<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>>(  
-            previewQueue,
-            node,
-            std::string("color/preview/image"),
-            std::bind(&dai::rosBridge::ImageConverter::toRosMsg,
-                &rgbConverter,
-                std::placeholders::_1,
-                std::placeholders::_2),
-            30,
-            previewCameraInfo,
-            "color/preview"
-    );
-    rgbPreviewPublish->addPublisherCallback();
+    // std::make_unique<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> rgbPreviewPublish(  
+    //         previewQueue,
+    //         node,
+    //         std::string("color/preview/image"),
+    //         std::bind(&dai::rosBridge::ImageConverter::toRosMsg,//
+    //             &rgbConverter,
+    //             std::placeholders::_1,
+    //             std::placeholders::_2),
+    //         30,
+    //         previewCameraInfo,
+    //         "color/preview"
+    // );
+    // rgbPreviewPublish->addPublisherCallback();
 
-    imuPreview = std::make_unique<dai::rosBridgend ::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>>(  
-            previewQueue,
-            node,
-            std::string("color/preview/image"),
-            std::bind(&dai::rosBridge::ImageConverter::toRosMsg,
-                &rgbConverter,
-                std::placeholders::_1,
-                std::placeholders::_2),
-            30,
-            previewCameraInfo,
-            "color/preview"
-    );
-    rgbPreviewPublish->addPublisherCallback();
+    dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame> rgbPreviewPublish(
+        previewQueue,
+        node,
+        std::string("color/preview/image"),
+        std::bind(&dai::rosBridge::ImageConverter::toRosMsg,//
+            &rgbConverter,
+            std::placeholders::_1,
+            std::placeholders::_2),
+        30,
+        previewCameraInfo,
+        "color/preview");
+    rgbPreviewPublish.addPublisherCallback();
+
+    dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData> imuPublish(
+        imuQueue,
+        node,
+        std::string("imu"),
+        std::bind(&dai::rosBridge::ImuConverter::toRosMsg, &imuConverter, std::placeholders::_1, std::placeholders::_2),
+        30,
+        "",
+        "imu");
+
+    imuPublish.addPublisherCallback();
 
     rclcpp::spin(node);
     rclcpp::shutdown();
