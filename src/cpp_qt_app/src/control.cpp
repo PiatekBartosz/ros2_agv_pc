@@ -29,4 +29,3 @@ void Control::on_pushButton_cameras_clicked()
 {
     emit CamerasClicked();
 }
-

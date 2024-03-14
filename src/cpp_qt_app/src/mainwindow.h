@@ -5,7 +5,7 @@
 #include "settings.h"
 #include "control.h"
 #include "cameras.h"
-#include "image_receiver.h"
+#include "QLabel"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

@@ -20,8 +20,6 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 find_package(OpenCV REQUIRED)
-find_package(cv_bridge REQUIRED)
-find_package(image_transport)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 file(GLOB PRO_FORM_DIR RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ui/*.ui)
@@ -44,6 +42,7 @@ add_executable(cpp_qt_app
     ${PRO_SOURCES_DIR} 
     ${PROJECT_SOURCES_UI} 
     ${PROJECT_SOURCES_MOC}
+    #resources.qrc
 )
 
 ament_target_dependencies(cpp_qt_app
@@ -53,8 +52,6 @@ ament_target_dependencies(cpp_qt_app
 target_link_libraries(cpp_qt_app 
     Qt5::Widgets
     ${OpenCV_LIBS}
-    cv_bridge::cv_bridge
-    image_transport::image_transport
 )
 
 # Install the executable

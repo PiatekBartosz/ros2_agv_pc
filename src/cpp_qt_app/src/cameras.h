@@ -12,18 +12,13 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-#include <cv_bridge/cv_bridge.h>
-#include <image_transport/image_transport.hpp>
-#include <image_transport/subscriber.hpp>
-
-#include <sensor_msgs/msg/image.hpp>
-
 
 namespace Ui {
 class Cameras;
 }
 
-class Cameras : public QMainWindow {
+class Cameras : public QMainWindow
+{
     Q_OBJECT
 
 public:
@@ -38,16 +33,15 @@ private slots:
 
     void on_pushButton_home_clicked();
 
-    // static void captureRun(QLabel *label, QPushButton *btn);
+    static void captureRun(QLabel *label, QPushButton *btn);
 
-    void on_pushButton_capture_clicked();
+    void on_pushbutton_capture_clicked();
 
 
 signals:
     void HomeClicked();
     void ControlClicked();
     void SettingsClicked();
-    void CaptureClicked();
 
 private:
     Ui::Cameras *ui;
