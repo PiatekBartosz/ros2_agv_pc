@@ -3,8 +3,11 @@ install/*
 log/*
 site/*
 .vscode/*
+<<<<<<< HEAD
 
 src/build/*
 src/install/*
 src/log/*
 src/site/*
+=======
+>>>>>>> 2846aa7 (agv_sensor_package: added IMU publsiher, working, not displaying in rviz2)
