@@ -1,6 +1,15 @@
 ARG ROS_DISTRO=humble
 
-FROM ros:${ROS_DISTRO}-ros-base
+# Copyright (c) 2022, NVIDIA CORPORATION.  All rights reserved.
+#
+# NVIDIA CORPORATION and its licensors retain all intellectual property
+# and proprietary rights in and to this software, related documentation
+# and any modifications thereto.  Any use, reproduction, disclosure or
+# distribution of this software and related documentation without an express
+# license agreement from NVIDIA CORPORATION is strictly prohibited.
+FROM nvcr.io/nvidia/isaac/ros:x86_64-ros2_humble_bcf535ea3b9d16a854aaeb1701ab5a86
+
+# FROM ros:${ROS_DISTRO}-ros-base
 # FROM luxonis/depthai-ros:v2.8.1-humble 
 # FROM luxonis/depthai-ros:foxy-latest
 # FROM dustynv/ros:foxy-ros-base-l4t-r32.7.1

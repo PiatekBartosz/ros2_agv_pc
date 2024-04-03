@@ -8,6 +8,7 @@
     
 	"runArgs": [
 	  "--device=/dev/ttyUSB0",
+	  "--gpus=all"
 	  "--privileged",
 	  "--network=host",
 	  // "--cap", crashing?
@@ -15,7 +16,7 @@
 	  "--security-opt=apparmor:unconfined",
 	  "--volume=/dev:/dev",
 	  "--volume=/tmp/.X11-unix:/tmp/.X11-unix"
-	//   "--runtime=nvidia" // TODO check if viable
+	  "--runtime=nvidia" // TODO check if viable
 	], 
     
 	// used for GUI programs like RVIZ / QT
