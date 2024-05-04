@@ -44,24 +44,21 @@ include_directories(
   ${ament_INCLUDE_DIRS}
 )
 
-macro(dai_add_node_ros2 node_name node_src)
-  add_executable("${node_name}" "${node_src}")
 
-  target_link_libraries("${node_name}"
-                        depthai::core
-                        opencv_imgproc
-                        opencv_highgui
-                        )
+add_executable(agv_sensor_package_node 
+  src/agv_sensor_package_node.cpp
+  src/oak_d_publisher.cpp)
 
-  ament_target_dependencies("${node_name}"
+target_link_libraries(agv_sensor_package_node
+                      depthai::core
+                      opencv_imgproc
+                      opencv_highgui)
+
+ament_target_dependencies(agv_sensor_package_node
                             ${dependencies})
 
-endmacro()
-
-dai_add_node_ros2(oak_d_publisher src/oak_d_publisher.cpp)
-
 install(TARGETS
-  oak_d_publisher
+  agv_sensor_package_node
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

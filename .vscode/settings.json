@@ -4,5 +4,9 @@
     ],
     "python.analysis.extraPaths": [
         "/opt/ros/humble/lib/python3.8/site-packages"
-    ]
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true,
+    "vim.smartRelativeLine": true
 }
