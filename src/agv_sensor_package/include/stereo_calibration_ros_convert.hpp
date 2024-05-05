@@ -38,89 +38,48 @@ public:
         // };
 
         // TODO: hard code for now change it
-        std::array<double, 9> k0Hard = {387.6078796386719,
+        std::array<double, 9> k0Hard = {7.9729111496640428e+02,
                                         0.0,
-                                        321.7539978027344,
+                                        6.6105097896843006e+02,
                                         0.0,
-                                        387.78021240234375,
-                                        195.091552734375,
-                                        0.0,
-                                        0.0,
-                                        1.0};
-
-        std::vector<double> d0Hard{13.927103996276855,
-                                   -17.65325355529785,
-                                   -0.0012899963185191154,
-                                   -0.00023264925403054804,
-                                   7.315122604370117,
-                                   13.56337833404541,
-                                   -16.417219161987305,
-                                   6.393351078033447};
-
-        std::array<double, 9> r0Hard = {0.9999092817306519,
-                                        -0.0009979094611480832,
-                                        -0.013434091582894325,
-                                        0.0010041322093456984,
-                                        0.9999994039535522,
-                                        0.00045646235230378807,
-                                        0.013433627784252167,
-                                        -0.00046991053386591375,
-                                        0.9999096393585205};
-
-        std::array<double, 12> p0Hard = {394.9974670410156,
-                                         0.0,
-                                         311.137451171875,
-                                         -29.79098888168126,
-                                         0.0,
-                                         395.2129211425781,
-                                         218.3057861328125,
-                                         0.0,
-                                         0.0,
-                                         0.0,
-                                         1.0,
-                                         0.0};
-
-        std::array<double, 9> k1Hard = {394.9974670410156,
-                                        0.0,
-                                        311.137451171875,
-                                        0.0,
-                                        395.2129211425781,
-                                        218.3057861328125,
+                                        7.9654404477327751e+02,
+                                        3.7505947915574194e+02,
                                         0.0,
                                         0.0,
                                         1.0};
 
-        std::vector<double> d1Hard{17.606203079223633,
-                                   -25.553176879882812,
-                                   -0.0008225829224102199,
-                                   -0.0008230231469497085,
-                                   11.105332374572754,
-                                   17.11235809326172,
-                                   -24.001296997070312,
-                                   9.950390815734863};
+        std::vector<double> d0Hard{-1.0213830211147780e+01, 6.8510709385541674e+01,
+                                   -8.2820829027617520e-05, 2.4734139353600515e-04,
+                                   -8.1909334884705942e+01, -1.0267068372311039e+01,
+                                   6.8621408267212558e+01, -8.1832381504479997e+01};
 
-        std::array<double, 9> r1Hard = {0.9998387694358826,
-                                        0.0013629017630591989,
-                                        0.017905261367559433,
-                                        -0.001354607637040317,
-                                        0.9999989867210388,
-                                        -0.0004753438988700509,
-                                        -0.017905890941619873,
-                                        0.0004510126600507647,
-                                        0.9998396039009094};
+        std::array<double, 9> r0Hard = {9.9165206438534792e-01, 3.4419505290368513e-03,
+                                        -1.2889661041638634e-01, -3.5239828954628555e-03,
+                                        9.9999370737409299e-01, -4.0835862824141294e-04,
+                                        1.2889439376803979e-01, 8.5917912709563551e-04,
+                                        9.9165795366466802e-01};
 
-        std::array<double, 12> p1Hard = {394.9974670410156,
-                                         0.0,
-                                         311.137451171875,
-                                         0.0,
-                                         0.0,
-                                         395.2129211425781,
-                                         218.3057861328125,
-                                         0.0,
-                                         0.0,
-                                         0.0,
-                                         1.0,
-                                         0.0};
+        std::array<double, 12> p0Hard = {7.9919907777638241e+02, 0., 8.2560940551757812e+02, 0., 0.,
+                                         7.9919907777638241e+02, 3.6137877273559570e+02, 0., 0., 0., 1.,
+                                         0.};
+
+        std::array<double, 9> k1Hard = {8.0263250602985181e+02, 0., 6.4012734502958028e+02, 0.,
+                                        8.0185411077948720e+02, 3.7665317612930204e+02, 0., 0., 1.};
+
+        std::vector<double> d1Hard{-1.1227843794555394e+01, 8.7248827063968122e+01,
+                                   -1.1776659414862432e-03, 2.3356882826313150e-04,
+                                   -8.2874383277203208e+01, -1.1272778963618663e+01,
+                                   8.7126226296288991e+01, -8.2245597439955574e+01};
+
+        std::array<double, 9> r1Hard = {9.9256674035125469e-01, 5.1640067272647177e-03,
+                                        -1.2159193634039220e-01, -5.0866392612288602e-03,
+                                        9.9998661485941187e-01, 9.4668000948516112e-04,
+                                        1.2159519747716745e-01, -3.2114877393251686e-04,
+                                        9.9257972214525592e-01};
+
+        std::array<double, 12> p1Hard = {7.9919907777638241e+02, 0., 8.2560940551757812e+02,
+                                         -6.0244284946139388e+01, 0., 7.9919907777638241e+02,
+                                         3.6137877273559570e+02, 0., 0., 0., 1., 0.};
 
         sensor_msgs::msg::CameraInfo left_cam_info;
         left_cam_info.k = k0Hard;
@@ -147,42 +106,42 @@ public:
         return {left_cam_info, right_cam_info};
     }
 
-// private:
-//     /**
-//      * @brief Helper function to convert a cv::Matx-like array to an std::array<double, N>
-//      *
-//      * @tparam InputT The cv::Matx-like array type
-//      * @tparam ArrSize The size of the output array
-//      * @param input The cv::Matx array
-//      * @return std::array<double, ArrSize>
-//      */
-//     template <typename InputT, std::size_t ArrSize = InputT::rows * InputT::cols>
-//     static std::array<double, ArrSize> convert_to_array(const InputT &input)
-//     {
-//         std::array<double, ArrSize> output;
-//         for (auto i = 0; i < input.rows; i++)
-//         {
-//             for (auto j = 0; j < input.cols; j++)
-//             {
-//                 output[i * input.cols + j] = input(i, j);
-//             }
-//         }
-//         return output;
-//     }
+    // private:
+    //     /**
+    //      * @brief Helper function to convert a cv::Matx-like array to an std::array<double, N>
+    //      *
+    //      * @tparam InputT The cv::Matx-like array type
+    //      * @tparam ArrSize The size of the output array
+    //      * @param input The cv::Matx array
+    //      * @return std::array<double, ArrSize>
+    //      */
+    //     template <typename InputT, std::size_t ArrSize = InputT::rows * InputT::cols>
+    //     static std::array<double, ArrSize> convert_to_array(const InputT &input)
+    //     {
+    //         std::array<double, ArrSize> output;
+    //         for (auto i = 0; i < input.rows; i++)
+    //         {
+    //             for (auto j = 0; j < input.cols; j++)
+    //             {
+    //                 output[i * input.cols + j] = input(i, j);
+    //             }
+    //         }
+    //         return output;
+    //     }
 
-//     /**
-//      * @brief Helper function to convert a cv::Rect to a sensor_msgs::msg::RegionOfInterest
-//      *
-//      * @param rect The cv::Rect to convert
-//      * @return sensor_msgs::msg::RegionOfInterest
-//      */
-//     static sensor_msgs::msg::RegionOfInterest rect_to_roi(const cv::Rect &rect)
-//     {
-//         sensor_msgs::msg::RegionOfInterest roi;
-//         roi.x_offset = rect.x;
-//         roi.y_offset = rect.y;
-//         roi.width = rect.width;
-//         roi.height = rect.height;
-//         return roi;
-//     }
+    //     /**
+    //      * @brief Helper function to convert a cv::Rect to a sensor_msgs::msg::RegionOfInterest
+    //      *
+    //      * @param rect The cv::Rect to convert
+    //      * @return sensor_msgs::msg::RegionOfInterest
+    //      */
+    //     static sensor_msgs::msg::RegionOfInterest rect_to_roi(const cv::Rect &rect)
+    //     {
+    //         sensor_msgs::msg::RegionOfInterest roi;
+    //         roi.x_offset = rect.x;
+    //         roi.y_offset = rect.y;
+    //         roi.width = rect.width;
+    //         roi.height = rect.height;
+    //         return roi;
+    //     }
 };
