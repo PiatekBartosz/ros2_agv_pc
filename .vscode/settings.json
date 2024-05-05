@@ -8,5 +8,15 @@
     "files.autoSave": "afterDelay",
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.formatOnSave": true,
-    "vim.smartRelativeLine": true
+    "vim.smartRelativeLine": true,
+    "files.associations": {
+        "*.ipp": "cpp",
+        "chrono": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp"
+    }
 }

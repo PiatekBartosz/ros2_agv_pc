@@ -11,6 +11,7 @@
 
   <depend>depthai</depend>
   <depend>depthai_bridge</depend>
+  <depend>cv_bridge</depend>
   <depend>sensor_msgs</depend>
   <depend>rclcpp</depend>
   <depend>stereo_msgs</depend>

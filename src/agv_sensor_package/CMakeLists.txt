@@ -30,7 +30,8 @@ find_package(vision_msgs REQUIRED)
 
 set(dependencies
   camera_info_manager
-  cv_bridge depthai_ros_msgs
+  cv_bridge 
+  depthai_ros_msgs
   depthai_bridge
   rclcpp
   sensor_msgs
@@ -41,6 +42,7 @@ set(dependencies
 
 include_directories(
   include
+  ${OpenCV_INCLUDE_DIRS}
   ${ament_INCLUDE_DIRS}
 )
 
@@ -52,7 +54,8 @@ add_executable(agv_sensor_package_node
 target_link_libraries(agv_sensor_package_node
                       depthai::core
                       opencv_imgproc
-                      opencv_highgui)
+                      opencv_highgui
+                      ${OpenCV_LIBS})
 
 ament_target_dependencies(agv_sensor_package_node
                             ${dependencies})

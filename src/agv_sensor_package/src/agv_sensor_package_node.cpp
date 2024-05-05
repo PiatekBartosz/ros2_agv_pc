@@ -7,8 +7,6 @@ int main(int argc, char **argv)
 
     auto node = rclcpp::Node::make_shared("oak_d_publisher");
 
-    // TODO: declare parameters
-
     // run Node
     OakDPublisher oakdPublisherNode(node);
     oakdPublisherNode.spin();
