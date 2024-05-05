@@ -1,3 +1,8 @@
+/*
+    TODO: move to 3rd party
+    source: https://github.com/msardonini/flyStereo/tree/253a8e85f6e3fb1bcb39791e9a3aaf858e3a2e49
+*/
+
 #pragma once
 
 #include <chrono>
@@ -13,6 +18,7 @@
 #include "sensor_msgs/msg/camera_info.hpp"
 #include "sensor_msgs/msg/imu.hpp"
 #include "stereo_calibration_dai_convert.h"
+#include "stereo_calibration_ros_convert.hpp"
 #include "cv_bridge/cv_bridge.h"
 
 class OakDPublisher
@@ -30,7 +36,8 @@ private:
 
     std::shared_ptr<rclcpp::Node> node;
     std::atomic<bool> isThreadRunning = (false);
-    std::unique_ptr<StereoCalibration> calibrationPtr;
+    // std::unique_ptr<StereoCalibration> calibrationPtr;
+    // dai::CalibrationHandler calibrationHandler;
 
     // dai pipeline and pipeline nodes
     dai::Pipeline pipeline;

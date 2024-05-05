@@ -194,12 +194,12 @@ static const std::string rightCamInfoTopic = "/stereo_camera/right/camera_info";
 
 OakDPublisher::OakDPublisher(std::shared_ptr<rclcpp::Node> node) : node(node)
 {
-    // TODO: skip calibration for now
-    // auto oakDParameters = YAML::LoadFile("/workspaces/ros_agv_pc/src/agv_sensor_package/config/oak_d_publisher_param.yaml");
-    // auto calibration = oakDParameter["stereo_calibration"];
-    // if(calibration)
+    // if (calibration)
     // {
     //     calibrationPtr = std::make_unique<StereoCalibration>(*calibration);
+
+    //     // TODO: for now skip OAK-Calibration
+    //     // pipeline.setCalibrationData(calibrationHandler);
     // }
 
     initOak();
@@ -378,7 +378,8 @@ void OakDPublisher::imagePublisherThreadFn()
         cv_bridge::CvImage rightBridge(header, "mono8", secondImg);
 
         // add default configuration header and update timestamp
-        auto stereoCamInfo = stereo_calibration_convert<std::array<sensor_msgs::msg::CameraInfo, 2>>(*calibrationPtr);
+        // auto stereoCamInfo = stereo_calibration_convert<std::array<sensor_msgs::msg::CameraInfo, 2>>();
+        auto stereoCamInfo = HardcodedCameraInfo::convert();
 
         stereoCamInfo[0].header = header;
         stereoCamInfo[1].header = header;
@@ -393,3 +394,27 @@ void OakDPublisher::imagePublisherThreadFn()
 void OakDPublisher::imuPublisherThreadFn()
 {
 }
+
+// OakCalibration::OakCalibration(const YAML::Node &calibration)
+// {
+//     K_cam0 = cv::Matx33d(stereo_calibration["K0"]["data"].as<std::vector<double>>().data());
+//     K_cam1 = cv::Matx33d(stereo_calibration["K1"]["data"].as<std::vector<double>>().data());
+//     D_cam0 = stereo_calibration["D0"]["data"].as<std::vector<double>>();
+//     D_cam1 = stereo_calibration["D1"]["data"].as<std::vector<double>>();
+//     R_cam0_cam1 = cv::Matx33d(stereo_calibration["R"]["data"].as<std::vector<double>>().data());
+//     T_cam0_cam1 = cv::Vec3d(stereo_calibration["T"]["data"].as<std::vector<double>>().data());
+//     image_size = cv::Size(stereo_calibration["image_size"].as<std::vector<int>>()[0],
+//                           stereo_calibration["image_size"].as<std::vector<int>>()[1]);
+
+//     const cv::Matx33d T_cross_mat(0.0, -T_cam0_cam1[2], T_cam0_cam1[1], T_cam0_cam1[2], 0.0, -T_cam0_cam1[0],
+//                                   -T_cam0_cam1[1], T_cam0_cam1[0], 0.0);
+
+//     E = T_cross_mat * R_cam0_cam1;
+//     F = K_cam0.inv().t() * E * K_cam1.inv();
+//     cv::stereoRectify(K_cam0, D_cam0, K_cam1, D_cam1, cv::Size(1280, 720), R_cam0_cam1, T_cam0_cam1, R0, R1, P0, P1, Q,
+//                       cv::CALIB_ZERO_DISPARITY, -1.0, cv::Size(), &valid_roi_left, &valid_roi_right);
+// }
+
+// static std::pair<sensor_msgs::ImageInfo, sensor_msgs::ImageInfo> CalibrationConverter::convert(const YAML::Node &calibration)
+// {
+// }
