@@ -371,8 +371,8 @@ void OakDPublisher::imagePublisherThreadFn()
         // assign the timestamp of the left frame to the msg header
         header.stamp = getTimestamp(imgPair.first->getTimestamp());
 
-        cv::Mat firstImg = imgPair.first->getCvFrame();
-        cv::Mat secondImg = imgPair.second->getCvFrame();
+        auto firstImg = imgPair.first->getCvFrame();
+        auto secondImg = imgPair.second->getCvFrame();
 
         cv_bridge::CvImage leftBridge(header, "mono8", firstImg);
         cv_bridge::CvImage rightBridge(header, "mono8", secondImg);

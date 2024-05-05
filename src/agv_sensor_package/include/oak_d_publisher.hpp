@@ -4,6 +4,7 @@
 #include <utility>
 #include <thread>
 #include <atomic>
+#include <array>
 
 #include "depthai/depthai.hpp"
 #include "rclcpp/rclcpp.hpp"

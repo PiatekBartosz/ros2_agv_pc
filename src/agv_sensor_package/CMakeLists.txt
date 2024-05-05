@@ -16,6 +16,9 @@ if(NOT OpenCV_FOUND)
   find_package(OpenCV 3 REQUIRED COMPONENTS highgui)
 endif()
 
+# TODO: test if needed for opencv
+# set(CMAKE_BUILD_RPATH "usr/local/lib")
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(camera_info_manager REQUIRED)
@@ -53,6 +56,7 @@ add_executable(agv_sensor_package_node
 
 target_link_libraries(agv_sensor_package_node
                       depthai::core
+                      depthai::opencv
                       opencv_imgproc
                       opencv_highgui
                       ${OpenCV_LIBS})
