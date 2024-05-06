@@ -393,6 +393,21 @@ void OakDPublisher::imagePublisherThreadFn()
 
 void OakDPublisher::imuPublisherThreadFn()
 {
+    double linearAccelerationCovariance = 0.0;
+    double angularVelocityCovariance = 0.02;
+
+    dai::ros::ImuSyncMethod imuMode = static_cast<dai::ros::ImuSyncMethod>(1);
+
+    imuConverter =
+        std::make_unique<dai::rosBridge::ImuConverter>("imu_converter", imuMode, linearAccelerationCovariance, angularVelocityCovariance);
+
+    imuPublisher = std::make_unique<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>>(
+        queueImu, node, std::string(imuTopic),
+        std::bind(&dai::rosBridge::ImuConverter::toRosMsg, imuConverter.get(), std::placeholders::_1,
+                  std::placeholders::_2),
+        30, "", "imu");
+
+    imuPublisher->addPublisherCallback();
 }
 
 // OakCalibration::OakCalibration(const YAML::Node &calibration)

@@ -20,6 +20,8 @@
 #include "stereo_calibration_dai_convert.h"
 #include "stereo_calibration_ros_convert.hpp"
 #include "cv_bridge/cv_bridge.h"
+#include "depthai_bridge/BridgePublisher.hpp"
+#include "depthai_bridge/ImuConverter.hpp"
 
 class OakDPublisher
 {
@@ -61,6 +63,10 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr leftCameraInfoPublisher;
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr rightImagePublisher;
     rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr rightCameraInfoPublisher;
+
+    // dai imu converter and publisher
+    std::unique_ptr<dai::rosBridge::ImuConverter> imuConverter;
+    std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>> imuPublisher;
 
     // threads
     std::thread imagePublisherThread;
