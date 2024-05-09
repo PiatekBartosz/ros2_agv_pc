@@ -1,11 +1,5 @@
-/*
-    TODO: move to 3rd party
-    source: https://github.com/msardonini/flyStereo/tree/253a8e85f6e3fb1bcb39791e9a3aaf858e3a2e49
-*/
-
 #pragma once
 
-#include "stereo_calibration.h"
 #include "sensor_msgs/distortion_models.hpp"
 #include "sensor_msgs/msg/camera_info.hpp"
 
@@ -21,21 +15,6 @@ public:
      */
     static std::array<sensor_msgs::msg::CameraInfo, 2> convert()
     {
-        // auto get_distortion_model = [](std::size_t num_coeffs)
-        // {
-        //     if (num_coeffs == 5)
-        //     {
-        //         return sensor_msgs::distortion_models::PLUMB_BOB;
-        //     }
-        //     else if (num_coeffs == 8)
-        //     {
-        //         return sensor_msgs::distortion_models::RATIONAL_POLYNOMIAL;
-        //     }
-        //     else
-        //     {
-        //         throw std::runtime_error("Unsupported number of distortion coefficients");
-        //     }
-        // };
 
         // TODO: hard code for now change it
         std::array<double, 9> k0Hard = {7.9729111496640428e+02,
@@ -88,8 +67,6 @@ public:
         left_cam_info.p = p0Hard;
         left_cam_info.width = 1280;
         left_cam_info.height = 720;
-        // roi should be zeroed? by default
-        // left_cam_info.roi = rect_to_roi(calibration.valid_roi_left);
         left_cam_info.distortion_model = sensor_msgs::distortion_models::RATIONAL_POLYNOMIAL;
 
         sensor_msgs::msg::CameraInfo right_cam_info;
@@ -99,49 +76,8 @@ public:
         right_cam_info.p = p1Hard;
         right_cam_info.width = 1280;
         right_cam_info.height = 720;
-        // roi should be zeroed? by default
-        // right_cam_info.roi = rect_to_roi(calibration.valid_roi_right);
         right_cam_info.distortion_model = sensor_msgs::distortion_models::RATIONAL_POLYNOMIAL;
 
         return {left_cam_info, right_cam_info};
     }
-
-    // private:
-    //     /**
-    //      * @brief Helper function to convert a cv::Matx-like array to an std::array<double, N>
-    //      *
-    //      * @tparam InputT The cv::Matx-like array type
-    //      * @tparam ArrSize The size of the output array
-    //      * @param input The cv::Matx array
-    //      * @return std::array<double, ArrSize>
-    //      */
-    //     template <typename InputT, std::size_t ArrSize = InputT::rows * InputT::cols>
-    //     static std::array<double, ArrSize> convert_to_array(const InputT &input)
-    //     {
-    //         std::array<double, ArrSize> output;
-    //         for (auto i = 0; i < input.rows; i++)
-    //         {
-    //             for (auto j = 0; j < input.cols; j++)
-    //             {
-    //                 output[i * input.cols + j] = input(i, j);
-    //             }
-    //         }
-    //         return output;
-    //     }
-
-    //     /**
-    //      * @brief Helper function to convert a cv::Rect to a sensor_msgs::msg::RegionOfInterest
-    //      *
-    //      * @param rect The cv::Rect to convert
-    //      * @return sensor_msgs::msg::RegionOfInterest
-    //      */
-    //     static sensor_msgs::msg::RegionOfInterest rect_to_roi(const cv::Rect &rect)
-    //     {
-    //         sensor_msgs::msg::RegionOfInterest roi;
-    //         roi.x_offset = rect.x;
-    //         roi.y_offset = rect.y;
-    //         roi.width = rect.width;
-    //         roi.height = rect.height;
-    //         return roi;
-    //     }
 };

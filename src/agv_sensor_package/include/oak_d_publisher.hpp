@@ -17,11 +17,12 @@
 #include "sensor_msgs/msg/image.hpp"
 #include "sensor_msgs/msg/camera_info.hpp"
 #include "sensor_msgs/msg/imu.hpp"
-#include "stereo_calibration_dai_convert.h"
+// #include "stereo_calibration_dai_convert.h"
 #include "stereo_calibration_ros_convert.hpp"
 #include "cv_bridge/cv_bridge.h"
 #include "depthai_bridge/BridgePublisher.hpp"
 #include "depthai_bridge/ImuConverter.hpp"
+#include "depthai_bridge/ImageConverter.hpp"
 
 class OakDPublisher
 {
@@ -32,8 +33,11 @@ public:
 
 private:
     void initOak();
+
     void imagePublisherThreadFn();
     void imuPublisherThreadFn();
+    void previewPublisherThreadFn();
+
     std::pair<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> getImagePair();
 
     std::shared_ptr<rclcpp::Node> node;
@@ -57,6 +61,7 @@ private:
     std::shared_ptr<dai::DataOutputQueue> queueLeft;
     std::shared_ptr<dai::DataOutputQueue> queueRight;
     std::shared_ptr<dai::DataOutputQueue> queueImu;
+    std::shared_ptr<dai::DataOutputQueue> queuePreview;
 
     // ros publishers
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr leftImagePublisher;
@@ -68,9 +73,13 @@ private:
     std::unique_ptr<dai::rosBridge::ImuConverter> imuConverter;
     std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>> imuPublisher;
 
+    std::unique_ptr<dai::rosBridge::ImageConverter> previewConverter;
+    std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> previewPublisher;
+
     // threads
     std::thread imagePublisherThread;
     std::thread imuPublisherThread;
+    std::thread previewPublisherThread;
 
     std::chrono::time_point<std::chrono::steady_clock> startTime;
 
