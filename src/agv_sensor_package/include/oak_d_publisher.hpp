@@ -68,18 +68,19 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr leftCameraInfoPublisher;
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr rightImagePublisher;
     rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr rightCameraInfoPublisher;
+    rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr previewPublisher;
 
     // dai imu converter and publisher
     std::unique_ptr<dai::rosBridge::ImuConverter> imuConverter;
     std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>> imuPublisher;
 
-    std::unique_ptr<dai::rosBridge::ImageConverter> previewConverter;
-    std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> previewPublisher;
+    // std::unique_ptr<dai::rosBridge::ImageConverter> previewConverter;
+    // std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> previewPublisher;
 
     // threads
     std::thread imagePublisherThread;
     std::thread imuPublisherThread;
-    std::thread previewPublisherThread;
+    // std::thread previewPublisherThread;
 
     std::chrono::time_point<std::chrono::steady_clock> startTime;
 

@@ -9,6 +9,7 @@ static const std::string leftCamTopic = "/stereo_camera/left/image";
 static const std::string leftCamInfoTopic = "/stereo_camera/left/camera_info";
 static const std::string rightCamTopic = "/stereo_camera/right/image";
 static const std::string rightCamInfoTopic = "/stereo_camera/right/camera_info";
+static const std::string previewTopic = "/cam/rgb";
 
 OakDPublisher::OakDPublisher(std::shared_ptr<rclcpp::Node> node) : node(node)
 {
@@ -88,6 +89,7 @@ void OakDPublisher::initOak()
 
     // declare oak device and queue
     device = std::make_unique<dai::Device>(pipeline);
+
     queuePreview = device->getOutputQueue("preview", 1, false);
     queueImu = device->getOutputQueue("imu", 30, false);
 
@@ -100,6 +102,7 @@ void OakDPublisher::initOak()
     leftCameraInfoPublisher = node->create_publisher<sensor_msgs::msg::CameraInfo>(leftCamInfoTopic, 1);
     rightImagePublisher = node->create_publisher<sensor_msgs::msg::Image>(rightCamTopic, 1);
     rightCameraInfoPublisher = node->create_publisher<sensor_msgs::msg::CameraInfo>(rightCamInfoTopic, 1);
+    previewPublisher = node->create_publisher<sensor_msgs::msg::Image>(previewTopic, 1);
 
     isThreadRunning = true;
     imagePublisherThread = std::thread(&OakDPublisher::imagePublisherThreadFn, this);
@@ -192,8 +195,16 @@ void OakDPublisher::imagePublisherThreadFn()
         auto firstImg = imgPair.first->getCvFrame();
         auto secondImg = imgPair.second->getCvFrame();
 
+        // Color img publisher
+        // TODO: move to septate function
+        // doesn't need to be synched
+        bool hasTimeout = false;
+        auto colorDaiImgFrame = queuePreview->get<dai::ImgFrame>(timeout, hasTimeout);
+        auto colorImg = colorDaiImgFrame->getCvFrame();
+
         cv_bridge::CvImage leftBridge(header, "mono8", firstImg);
         cv_bridge::CvImage rightBridge(header, "mono8", secondImg);
+        cv_bridge::CvImage colorBridge(header, "mono8", colorImg);
 
         // add default configuration header and update timestamp
         auto stereoCamInfo = HardcodedCameraInfo::convert();
@@ -205,6 +216,8 @@ void OakDPublisher::imagePublisherThreadFn()
         leftCameraInfoPublisher->publish(stereoCamInfo[0]);
         rightImagePublisher->publish(*rightBridge.toImageMsg());
         rightCameraInfoPublisher->publish(stereoCamInfo[1]);
+
+        previewPublisher->publish(*colorBridge.toImageMsg());
     }
 }
 
