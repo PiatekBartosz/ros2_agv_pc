@@ -102,6 +102,7 @@ void OakDPublisher::initOak()
     leftCameraInfoPublisher = node->create_publisher<sensor_msgs::msg::CameraInfo>(leftCamInfoTopic, 1);
     rightImagePublisher = node->create_publisher<sensor_msgs::msg::Image>(rightCamTopic, 1);
     rightCameraInfoPublisher = node->create_publisher<sensor_msgs::msg::CameraInfo>(rightCamInfoTopic, 1);
+
     previewPublisher = node->create_publisher<sensor_msgs::msg::Image>(previewTopic, 1);
 
     isThreadRunning = true;
@@ -185,6 +186,15 @@ void OakDPublisher::imagePublisherThreadFn()
 {
     while (isThreadRunning.load())
     {
+        // Color img publisher
+        // TODO: move to septate function
+        // doesn't need to be synched
+        while (!queuePreview->has<dai::ImgFrame>())
+        {
+        }
+
+        bool hasTimeout = false;
+        auto colorDaiImgFrame = queuePreview->get<dai::ImgFrame>(timeout, hasTimeout);
         auto imgPair = getImagePair();
 
         std_msgs::msg::Header header;
@@ -195,11 +205,6 @@ void OakDPublisher::imagePublisherThreadFn()
         auto firstImg = imgPair.first->getCvFrame();
         auto secondImg = imgPair.second->getCvFrame();
 
-        // Color img publisher
-        // TODO: move to septate function
-        // doesn't need to be synched
-        bool hasTimeout = false;
-        auto colorDaiImgFrame = queuePreview->get<dai::ImgFrame>(timeout, hasTimeout);
         auto colorImg = colorDaiImgFrame->getCvFrame();
 
         cv_bridge::CvImage leftBridge(header, "mono8", firstImg);

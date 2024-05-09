@@ -68,7 +68,8 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr leftCameraInfoPublisher;
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr rightImagePublisher;
     rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr rightCameraInfoPublisher;
-    rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr previewPublisher;
+
+    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr previewPublisher;
 
     // dai imu converter and publisher
     std::unique_ptr<dai::rosBridge::ImuConverter> imuConverter;
