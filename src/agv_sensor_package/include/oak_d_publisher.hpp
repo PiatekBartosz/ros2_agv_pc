@@ -10,6 +10,8 @@
 #include <thread>
 #include <atomic>
 #include <array>
+#include <tuple>
+#include <memory>
 
 #include "depthai/depthai.hpp"
 #include "rclcpp/rclcpp.hpp"
@@ -36,14 +38,11 @@ private:
 
     void imagePublisherThreadFn();
     void imuPublisherThreadFn();
-    void previewPublisherThreadFn();
 
-    std::pair<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> getImagePair();
+    std::tuple<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> getImages();
 
     std::shared_ptr<rclcpp::Node> node;
     std::atomic<bool> isThreadRunning = (false);
-    // std::unique_ptr<StereoCalibration> calibrationPtr;
-    // dai::CalibrationHandler calibrationHandler;
 
     // dai pipeline and pipeline nodes
     dai::Pipeline pipeline;
@@ -75,13 +74,9 @@ private:
     std::unique_ptr<dai::rosBridge::ImuConverter> imuConverter;
     std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Imu, dai::IMUData>> imuPublisher;
 
-    // std::unique_ptr<dai::rosBridge::ImageConverter> previewConverter;
-    // std::unique_ptr<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>> previewPublisher;
-
     // threads
     std::thread imagePublisherThread;
     std::thread imuPublisherThread;
-    // std::thread previewPublisherThread;
 
     std::chrono::time_point<std::chrono::steady_clock> startTime;
 

@@ -9,7 +9,7 @@ static const std::string leftCamTopic = "/stereo_camera/left/image";
 static const std::string leftCamInfoTopic = "/stereo_camera/left/camera_info";
 static const std::string rightCamTopic = "/stereo_camera/right/image";
 static const std::string rightCamInfoTopic = "/stereo_camera/right/camera_info";
-static const std::string previewTopic = "/cam/rgb";
+static const std::string previewTopic = "/rgb";
 
 OakDPublisher::OakDPublisher(std::shared_ptr<rclcpp::Node> node) : node(node)
 {
@@ -102,21 +102,19 @@ void OakDPublisher::initOak()
     leftCameraInfoPublisher = node->create_publisher<sensor_msgs::msg::CameraInfo>(leftCamInfoTopic, 1);
     rightImagePublisher = node->create_publisher<sensor_msgs::msg::Image>(rightCamTopic, 1);
     rightCameraInfoPublisher = node->create_publisher<sensor_msgs::msg::CameraInfo>(rightCamInfoTopic, 1);
-
     previewPublisher = node->create_publisher<sensor_msgs::msg::Image>(previewTopic, 1);
 
     isThreadRunning = true;
     imagePublisherThread = std::thread(&OakDPublisher::imagePublisherThreadFn, this);
     imuPublisherThread = std::thread(&OakDPublisher::imuPublisherThreadFn, this);
-    // previewPublisherThread = std::thread(&OakDPublisher::previewPublisherThreadFn, this);
 }
 
 // TODO change this method to have only one exit point
-std::pair<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> OakDPublisher::getImagePair()
+std::tuple<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> OakDPublisher::getImages()
 {
     // check if two frames are present
     auto counter = 0l;
-    while (!queueLeft->has<dai::ImgFrame>() || !queueRight->has<dai::ImgFrame>())
+    while (!queueLeft->has<dai::ImgFrame>() || !queueRight->has<dai::ImgFrame>() || !queuePreview->has<dai::ImgFrame>())
     {
         if (counter > std::chrono::duration_cast<std::chrono::microseconds>(timeout).count())
         {
@@ -128,9 +126,9 @@ std::pair<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> OakDPu
 
     auto leftSequenceNum = queueLeft->front<dai::ImgFrame>()->getSequenceNum();
     auto rightSequenceNum = queueRight->front<dai::ImgFrame>()->getSequenceNum();
+
     if (leftSequenceNum != rightSequenceNum)
     {
-
         // RCLCPP_ERROR_STREAM_THROTTLE(node->get_logger(), *node->get_lock(), 1000, "Frames not synced");
         // try to sync the frames
         if (leftSequenceNum > rightSequenceNum)
@@ -147,7 +145,6 @@ std::pair<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> OakDPu
 
     bool hasTimeout = false;
     auto leftImg = queueLeft->get<dai::ImgFrame>(timeout, hasTimeout);
-
     if (hasTimeout)
     {
         // RCLCPP_ERROR_STREAM_THROTTLE(node->get_logger(), *node->get_lock(), 1000, "Timeout while getting frame");
@@ -155,14 +152,20 @@ std::pair<std::shared_ptr<dai::ImgFrame>, std::shared_ptr<dai::ImgFrame>> OakDPu
     }
 
     auto rightImg = queueRight->get<dai::ImgFrame>(timeout, hasTimeout);
-
     if (hasTimeout)
     {
         // RCLCPP_ERROR_STREAM_THROTTLE(node->get_logger(), *node->get_lock(), 1000, "Timeout while getting frame");
         return {};
     }
 
-    return std::make_pair(leftImg, rightImg);
+    auto previewImg = queuePreview->get<dai::ImgFrame>(timeout, hasTimeout);
+    if (hasTimeout)
+    {
+        // RCLCPP_ERROR_STREAM_THROTTLE(node->get_logger(), *node->get_lock(), 1000, "Timeout while getting frame");
+        return {};
+    }
+
+    return std::make_tuple(leftImg, rightImg, previewImg);
 }
 /**
  * @brief
@@ -186,32 +189,29 @@ void OakDPublisher::imagePublisherThreadFn()
 {
     while (isThreadRunning.load())
     {
-        // Color img publisher
-        // TODO: move to septate function
-        // doesn't need to be synched
-        while (!queuePreview->has<dai::ImgFrame>())
-        {
-        }
-
         bool hasTimeout = false;
         auto colorDaiImgFrame = queuePreview->get<dai::ImgFrame>(timeout, hasTimeout);
-        auto imgPair = getImagePair();
+        auto images = getImages();
 
         std_msgs::msg::Header header;
 
-        // assign the timestamp of the left frame to the msg header
-        header.stamp = getTimestamp(imgPair.first->getTimestamp());
+        if (std::tuple_size<decltype(images)>::value != 3)
+            continue;
 
-        auto firstImg = imgPair.first->getCvFrame();
-        auto secondImg = imgPair.second->getCvFrame();
+        auto firstImgPtr = std::get<0>(images);
+        auto secondImgPtr = std::get<1>(images);
+        auto previewImgPtr = std::get<2>(images);
 
-        auto colorImg = colorDaiImgFrame->getCvFrame();
+        header.stamp = getTimestamp(firstImgPtr->getTimestamp());
+
+        auto firstImg = firstImgPtr->getCvFrame();
+        auto secondImg = secondImgPtr->getCvFrame();
+        auto previewImg = previewImgPtr->getCvFrame();
 
         cv_bridge::CvImage leftBridge(header, "mono8", firstImg);
         cv_bridge::CvImage rightBridge(header, "mono8", secondImg);
-        cv_bridge::CvImage colorBridge(header, "mono8", colorImg);
+        cv_bridge::CvImage colorBridge(header, "mono8", previewImg);
 
-        // add default configuration header and update timestamp
         auto stereoCamInfo = HardcodedCameraInfo::convert();
 
         stereoCamInfo[0].header = header;
@@ -245,28 +245,4 @@ void OakDPublisher::imuPublisherThreadFn()
         30, "", "imu");
 
     imuPublisher->addPublisherCallback();
-}
-
-void OakDPublisher::previewPublisherThreadFn()
-{
-    // // TODO: for now hardcoded
-    // int previewWidth = 300;
-    // int previewHeight = 300;
-
-    // auto calibrationHandler = device->readCalibration();
-    // auto previewInfo = previewConverter->calibrationToCameraInfo(calibrationHandler, dai::CameraBoardSocket::CAM_A, previewWidth, previewHeight);
-
-    // previewPublisher = std::make_unique<dai::rosBridge::BridgePublisher<sensor_msgs::msg::Image, dai::ImgFrame>>(
-    //     queuePreview,
-    //     node,
-    //     std::string("preview123/image123"),
-    //     std::bind(&dai::rosBridge::ImageConverter::toRosMsg,
-    //               previewConverter.get(),
-    //               std::placeholders::_1,
-    //               std::placeholders::_2),
-    //     30,
-    //     "",
-    //     "preview123");
-
-    // previewPublisher->addPublisherCallback();
 }
